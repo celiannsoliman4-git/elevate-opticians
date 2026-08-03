@@ -17,8 +17,8 @@ export function Legal() {
               Elevate Opticians is a volunteer-led study group and is not a
               licensing, accrediting, or governing body. Content shared
               through study sessions and resources is for educational
-              purposes only and does not replace official ABO/NCLE study
-              materials or state licensure requirements.
+              purposes only and does not replace official ABO study
+              materials or requirements.
             </p>
           </div>
 

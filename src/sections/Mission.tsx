@@ -7,7 +7,7 @@ export function Mission() {
         </h2>
 
         <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/75">
-          <p>Studying for the ABO or NCLE exam alone is hard.</p>
+          <p>Studying for the ABO exam alone is hard.</p>
           <p>
             The material is dense. Practice questions are scattered across a
             dozen different sites. And there's no one to ask when a concept

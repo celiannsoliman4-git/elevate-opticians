@@ -69,7 +69,7 @@ export function Nav() {
         </nav>
         <div className="space-y-4 border-t border-white/10 pt-5">
           <p className="px-1 text-xs leading-relaxed text-white/50">
-            100% Free · Volunteer-Run · Open to Every Optician in California
+            100% Free · Volunteer-Run · Open to Anyone Pursuing Their ABO
           </p>
           <Button asChild className="w-full bg-white text-purple hover:bg-white/90">
             <a href="#join">Join Free</a>

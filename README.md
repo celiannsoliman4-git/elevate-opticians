@@ -1,6 +1,6 @@
 # Elevate Opticians
 
-A free, volunteer-led study group helping opticians across California prepare for ABO, NCLE, and state licensure exams — built with the same stack as [Golden State Opticians](https://golden-state-opticians.vercel.app/).
+A free, volunteer-led study group helping anyone pursuing their ABO license — no matter where they work or their experience level. Founded in the Bay Area, open to everyone.
 
 ## Stack
 

@@ -33,7 +33,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/15 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} Elevate Opticians · California · {JOIN_EMAIL}</p>
+          <p>© {year} Elevate Opticians · Founded in the Bay Area · {JOIN_EMAIL}</p>
           {import.meta.env.VITE_CLERK_PUBLISHABLE_KEY ? (
             <>
               <SignedOut>

@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     q: "Do I need experience to join?",
-    a: "No. We welcome apprentices just starting out as well as working opticians preparing for renewal or advanced credentials.",
+    a: "No. We welcome apprentices just starting out, career-changers, and working opticians studying for the ABO for the first time or retaking it — wherever you work, whatever your background.",
   },
   {
     q: "What's the time commitment?",

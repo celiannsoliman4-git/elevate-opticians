@@ -38,7 +38,7 @@ export const pathway = [
   {
     step: "01",
     title: "Study",
-    description: "Join weekly peer sessions covering everything on the ABO and NCLE blueprints.",
+    description: "Join weekly peer sessions covering everything on the ABO blueprint.",
   },
   {
     step: "02",
@@ -60,8 +60,8 @@ export const pathway = [
 export const whoWeServe = [
   "Apprentice Opticians",
   "ABO Candidates",
-  "NCLE Candidates",
-  "CE Renewal",
+  "Working Opticians",
   "Career Changers",
+  "Any Experience Level",
   "Mentors & Volunteers",
 ] as const
