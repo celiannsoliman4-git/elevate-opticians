@@ -3,7 +3,7 @@ import { JOIN_EMAIL } from "@/data/programs"
 
 const links = [
   { href: "#path", label: "Your ABO Journey" },
-  { href: "#mission", label: "Mission" },
+  { href: "#mission", label: "Our Story" },
   { href: "#volunteers", label: "Volunteers" },
   { href: "#legal", label: "Legal" },
 ]
