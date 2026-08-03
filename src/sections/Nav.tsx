@@ -48,7 +48,7 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
 function Logo() {
   return (
     <a href="#top" className="flex items-center gap-2.5">
-      <img src="/logo-mark.svg" alt="Elevate Opticians mark" className="h-9 w-9" />
+      <img src="/seal.png" alt="Elevate Opticians seal" className="h-10 w-10 rounded-full" />
       <span className="font-display text-base font-bold text-white">
         Elevate Opticians
       </span>
@@ -99,8 +99,11 @@ export function Nav() {
           />
           <div className="absolute inset-y-0 left-0 flex w-72 max-w-[80%] flex-col bg-purple px-5 py-6">
             <div className="flex items-center justify-between">
-              <span className="font-display text-base font-bold text-white">
-                Elevate Opticians
+              <span className="flex items-center gap-2.5">
+                <img src="/seal.png" alt="Elevate Opticians seal" className="h-9 w-9 rounded-full" />
+                <span className="font-display text-base font-bold text-white">
+                  Elevate Opticians
+                </span>
               </span>
               <button
                 className="text-white"
