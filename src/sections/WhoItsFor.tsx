@@ -2,7 +2,7 @@ import { whoWeServe } from "@/data/programs"
 
 export function WhoItsFor() {
   return (
-    <section id="who" className="bg-lavender py-16">
+    <section id="who" className="bg-lavender/15 py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <p className="text-center text-sm font-semibold uppercase tracking-[0.15em] text-purple/60">
           Wherever you are in the journey, there's a seat for you

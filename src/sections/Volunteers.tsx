@@ -30,7 +30,7 @@ function VolunteerTile({ member }: { member: Volunteer }) {
 
 export function Volunteers() {
   return (
-    <section id="volunteers" className="bg-lavender py-20 sm:py-24">
+    <section id="volunteers" className="bg-lavender/15 py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <h2 className="font-display text-2xl font-bold text-purple sm:text-3xl">
           Run entirely by volunteers.
