@@ -4,7 +4,13 @@ export function Hero() {
   return (
     <section id="top" className="bg-lavender">
       <div className="mx-auto max-w-4xl px-6 py-20 text-center lg:px-10 lg:py-28">
-        <p className="inline-flex items-center rounded-full border border-purple/20 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-purple">
+        <img
+          src="/seal.png"
+          alt="Elevate Opticians seal — mentorship and study group, volunteer-led"
+          className="mx-auto h-36 w-36 rounded-full shadow-[0_20px_45px_-20px_rgba(76,29,149,0.45)] sm:h-40 sm:w-40"
+        />
+
+        <p className="mx-auto mt-8 inline-flex items-center rounded-full border border-purple/20 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-purple">
           California Opticians Licensing Support
         </p>
 
