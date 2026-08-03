@@ -3,7 +3,6 @@ import {
   Menu,
   X,
   Milestone,
-  LayoutGrid,
   Heart,
   Users2,
   CalendarDays,
@@ -14,8 +13,7 @@ import {
 import { Button } from "@/components/ui/button"
 
 const links: { href: string; label: string; icon: LucideIcon }[] = [
-  { href: "#path", label: "Path to Licensure", icon: Milestone },
-  { href: "#programs", label: "Programs", icon: LayoutGrid },
+  { href: "#path", label: "Your ABO Journey", icon: Milestone },
   { href: "#mission", label: "Mission", icon: Heart },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#events", label: "Sessions", icon: CalendarDays },

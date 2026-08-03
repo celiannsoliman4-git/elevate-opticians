@@ -2,8 +2,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-reac
 import { JOIN_EMAIL } from "@/data/programs"
 
 const links = [
-  { href: "#path", label: "Path to Licensure" },
-  { href: "#programs", label: "Programs" },
+  { href: "#path", label: "Your ABO Journey" },
   { href: "#mission", label: "Mission" },
   { href: "#events", label: "Sessions" },
   { href: "#volunteers", label: "Volunteers" },

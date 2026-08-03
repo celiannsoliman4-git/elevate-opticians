@@ -1,7 +1,6 @@
 import { Nav } from "@/sections/Nav"
 import { Hero } from "@/sections/Hero"
 import { Pathway } from "@/sections/Pathway"
-import { Programs } from "@/sections/Programs"
 import { Mission } from "@/sections/Mission"
 import { WhoItsFor } from "@/sections/WhoItsFor"
 import { Events } from "@/sections/Events"
@@ -19,7 +18,6 @@ function App() {
         <main>
           <Hero />
           <Pathway />
-          <Programs />
           <Mission />
           <WhoItsFor />
           <Events />

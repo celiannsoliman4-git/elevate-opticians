@@ -38,7 +38,7 @@ export const pathway = [
   {
     step: "01",
     title: "Study",
-    description: "Join weekly peer sessions covering everything on the ABO blueprint.",
+    description: "Join weekly peer sessions covering everything on the ABO (American Board of Opticianry) blueprint.",
   },
   {
     step: "02",
