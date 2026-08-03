@@ -5,7 +5,6 @@ import {
   Milestone,
   Heart,
   Users2,
-  CalendarDays,
   UserCheck,
   HelpCircle,
   type LucideIcon,
@@ -16,7 +15,6 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#path", label: "Your ABO Journey", icon: Milestone },
   { href: "#mission", label: "Mission", icon: Heart },
   { href: "#who", label: "Who It's For", icon: Users2 },
-  { href: "#events", label: "Sessions", icon: CalendarDays },
   { href: "#volunteers", label: "Volunteers", icon: UserCheck },
   { href: "#faq", label: "FAQ", icon: HelpCircle },
 ]

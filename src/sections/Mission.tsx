@@ -12,12 +12,12 @@ function Stat({ label, value }: { label: string; value: string }) {
 export function Mission() {
   return (
     <section id="mission" className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-2xl px-6 lg:px-10">
+      <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <h2 className="font-display text-2xl font-bold text-purple sm:text-3xl">
           The Story of Elevate Opticians
         </h2>
 
-        <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/75">
+        <div className="mt-8 columns-1 gap-10 space-y-5 text-lg leading-relaxed text-foreground/75 sm:columns-2 sm:gap-14 [&>p]:[break-inside:avoid]">
           <p>
             Elevate Opticians was born during one of the most challenging
             times in recent history, the COVID-19 pandemic in 2020. What
@@ -97,13 +97,6 @@ export function Mission() {
             about empowering people to believe in themselves and realize
             their full potential.
           </p>
-
-          <div className="grid gap-6 border-t border-purple/10 pt-8 sm:grid-cols-3">
-            <Stat label="Founded" value="2020" />
-            <Stat label="Opticians Certified" value="24" />
-            <Stat label="Years Running" value="6+" />
-          </div>
-
           <p>
             As Elevate Opticians continues to grow, so does its vision. The
             organization remains committed to fostering a culture of
@@ -117,6 +110,12 @@ export function Mission() {
             future generations of optical professionals, proving that when
             people lift each other up, extraordinary things are possible.
           </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 border-t border-purple/10 pt-8 sm:grid-cols-3">
+          <Stat label="Founded" value="2020" />
+          <Stat label="Opticians Certified" value="24" />
+          <Stat label="Years Running" value="6+" />
         </div>
 
         <blockquote className="mt-10 border-l-4 border-purple pl-6">

@@ -3,7 +3,6 @@ import { Hero } from "@/sections/Hero"
 import { Pathway } from "@/sections/Pathway"
 import { Mission } from "@/sections/Mission"
 import { WhoItsFor } from "@/sections/WhoItsFor"
-import { Events } from "@/sections/Events"
 import { Volunteers } from "@/sections/Volunteers"
 import { FAQ } from "@/sections/FAQ"
 import { Join } from "@/sections/Join"
@@ -20,7 +19,6 @@ function App() {
           <Pathway />
           <Mission />
           <WhoItsFor />
-          <Events />
           <Volunteers />
           <FAQ />
           <Join />
