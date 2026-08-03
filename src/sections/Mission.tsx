@@ -1,23 +1,23 @@
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-purple/50">
+      <p className="text-[9px] font-medium uppercase tracking-[0.2em] text-purple/50">
         {label}
       </p>
-      <p className="mt-2 font-display text-2xl font-bold text-purple">{value}</p>
+      <p className="mt-1 font-display text-base font-bold text-purple">{value}</p>
     </div>
   )
 }
 
 export function Mission() {
   return (
-    <section id="mission" className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-5xl px-6 lg:px-10">
-        <h2 className="font-display text-2xl font-bold text-purple sm:text-3xl">
+    <section id="mission" className="bg-white py-10 sm:py-12">
+      <div className="mx-auto max-w-6xl px-6 lg:px-10">
+        <h2 className="font-display text-xl font-bold text-purple sm:text-2xl">
           The Story of Elevate Opticians
         </h2>
 
-        <div className="mt-8 columns-1 gap-10 space-y-5 text-lg leading-relaxed text-foreground/75 sm:columns-2 sm:gap-14 [&>p]:[break-inside:avoid]">
+        <div className="mt-4 columns-1 gap-8 space-y-2 text-xs leading-snug text-foreground/70 sm:columns-2 lg:columns-3 lg:gap-10 [&>p]:[break-inside:avoid]">
           <p>
             Elevate Opticians was born during one of the most challenging
             times in recent history, the COVID-19 pandemic in 2020. What
@@ -112,14 +112,14 @@ export function Mission() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 border-t border-purple/10 pt-8 sm:grid-cols-3">
+        <div className="mt-4 grid gap-4 border-t border-purple/10 pt-3 sm:grid-cols-3">
           <Stat label="Founded" value="2020" />
           <Stat label="Opticians Certified" value="24" />
           <Stat label="Years Running" value="6+" />
         </div>
 
-        <blockquote className="mt-10 border-l-4 border-purple pl-6">
-          <p className="font-display text-xl font-semibold leading-snug text-purple sm:text-2xl">
+        <blockquote className="mt-4 border-l-4 border-purple pl-4">
+          <p className="font-display text-sm font-semibold leading-snug text-purple sm:text-base">
             Elevate the profession. Empower the optician. Leave no one
             behind.
           </p>
