@@ -21,7 +21,7 @@ export function Programs() {
             const Icon = icons[p.icon]
             return (
               <div key={p.id} className="flex flex-col gap-4 bg-purple p-7">
-                <Icon className="size-7 text-violet-300" strokeWidth={1.75} />
+                <Icon className="size-7 text-lavender" strokeWidth={1.75} />
                 <h3 className="font-display text-base font-semibold text-white">
                   {p.name}
                 </h3>

@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-purple text-purple-foreground hover:bg-purple/90 shadow-sm",
+          "bg-purple text-purple-foreground hover:bg-purple-secondary shadow-sm",
         violet:
           "bg-violet text-violet-foreground hover:bg-violet/90 shadow-sm font-semibold",
         outline:

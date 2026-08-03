@@ -51,7 +51,7 @@ export function Events() {
                 <h3 className="font-display text-lg font-semibold text-purple">
                   {s.title}
                 </h3>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-violet-600">
+                <p className="mt-1 text-xs font-medium uppercase tracking-wide text-accent">
                   {s.location}
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-foreground/65">
