@@ -2,7 +2,6 @@ import { useState } from "react"
 import {
   Menu,
   X,
-  Milestone,
   Heart,
   Users2,
   UserCheck,
@@ -12,7 +11,6 @@ import {
 import { Button } from "@/components/ui/button"
 
 const links: { href: string; label: string; icon: LucideIcon }[] = [
-  { href: "#path", label: "Your ABO Journey", icon: Milestone },
   { href: "#mission", label: "Our Story", icon: Heart },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#volunteers", label: "Volunteers", icon: UserCheck },

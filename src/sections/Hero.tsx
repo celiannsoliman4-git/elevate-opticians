@@ -7,7 +7,7 @@ export function Hero() {
         <img
           src="/seal.png"
           alt="Elevate Opticians seal — mentorship and study group, volunteer-led"
-          className="mx-auto h-80 w-80 rounded-full shadow-[0_20px_45px_-20px_rgba(76,29,149,0.45)] sm:h-[26rem] sm:w-[26rem]"
+          className="mx-auto h-40 w-40 rounded-full shadow-[0_20px_45px_-20px_rgba(76,29,149,0.45)] sm:h-48 sm:w-48"
         />
 
         <div className="mt-10">

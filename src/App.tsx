@@ -1,6 +1,5 @@
 import { Nav } from "@/sections/Nav"
 import { Hero } from "@/sections/Hero"
-import { Pathway } from "@/sections/Pathway"
 import { Mission } from "@/sections/Mission"
 import { WhoItsFor } from "@/sections/WhoItsFor"
 import { Volunteers } from "@/sections/Volunteers"
@@ -16,7 +15,6 @@ function App() {
       <div className="lg:pl-64">
         <main>
           <Hero />
-          <Pathway />
           <Mission />
           <WhoItsFor />
           <Volunteers />
