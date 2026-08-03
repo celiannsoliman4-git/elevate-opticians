@@ -7,14 +7,10 @@ export function Hero() {
         <img
           src="/seal.png"
           alt="Elevate Opticians seal — mentorship and study group, volunteer-led"
-          className="mx-auto h-52 w-52 rounded-full shadow-[0_20px_45px_-20px_rgba(76,29,149,0.45)] sm:h-64 sm:w-64"
+          className="mx-auto h-64 w-64 rounded-full shadow-[0_20px_45px_-20px_rgba(76,29,149,0.45)] sm:h-80 sm:w-80"
         />
 
-        <p className="mx-auto mt-8 inline-flex items-center rounded-full border border-purple/20 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-purple">
-          California Opticians Licensing Support
-        </p>
-
-        <h1 className="mx-auto mt-8 max-w-3xl font-display text-4xl font-bold leading-[1.08] text-purple sm:text-5xl lg:text-6xl">
+        <h1 className="mx-auto mt-12 max-w-3xl font-display text-4xl font-bold leading-[1.08] text-purple sm:text-5xl lg:text-6xl">
           Getting licensed shouldn't mean studying alone.
         </h1>
 
