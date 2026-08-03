@@ -1,6 +1,7 @@
 import { Nav } from "@/sections/Nav"
 import { Hero } from "@/sections/Hero"
 import { Pathway } from "@/sections/Pathway"
+import { Story } from "@/sections/Story"
 import { Mission } from "@/sections/Mission"
 import { WhoItsFor } from "@/sections/WhoItsFor"
 import { Volunteers } from "@/sections/Volunteers"
@@ -17,6 +18,7 @@ function App() {
         <main>
           <Hero />
           <Pathway />
+          <Story />
           <Mission />
           <WhoItsFor />
           <Volunteers />

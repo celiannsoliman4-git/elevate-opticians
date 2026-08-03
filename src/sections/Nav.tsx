@@ -4,6 +4,7 @@ import {
   X,
   Milestone,
   Heart,
+  Target,
   Users2,
   UserCheck,
   HelpCircle,
@@ -13,7 +14,8 @@ import { Button } from "@/components/ui/button"
 
 const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#path", label: "Your ABO Journey", icon: Milestone },
-  { href: "#mission", label: "Our Story", icon: Heart },
+  { href: "#story", label: "Our Story", icon: Heart },
+  { href: "#mission", label: "Mission", icon: Target },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#volunteers", label: "Volunteers", icon: UserCheck },
   { href: "#faq", label: "FAQ", icon: HelpCircle },
