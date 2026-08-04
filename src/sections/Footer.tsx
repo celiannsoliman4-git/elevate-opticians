@@ -3,7 +3,7 @@ import { JOIN_EMAIL } from "@/data/programs"
 
 const links = [
   { href: "#mission", label: "Our Story" },
-  { href: "#volunteers", label: "Volunteers" },
+  { href: "#testimonials", label: "Testimonials" },
   { href: "#legal", label: "Legal" },
 ]
 

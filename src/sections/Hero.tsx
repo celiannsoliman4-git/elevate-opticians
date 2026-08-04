@@ -68,7 +68,7 @@ export function Hero() {
           <span className="h-1 w-1 rounded-full bg-white/30" />
           <span>24 Opticians Certified</span>
           <span className="h-1 w-1 rounded-full bg-white/30" />
-          <span>100% Volunteer-Led</span>
+          <span>Founder-Led</span>
           <span className="h-1 w-1 rounded-full bg-white/30" />
           <span className="hidden sm:inline">Always Free</span>
         </div>

@@ -1,13 +1,32 @@
-export type Volunteer = {
-  name: string
-  roles: string[]
-  photo?: string
-  photoPosition?: string
+export const founder = {
+  name: "Kiara Resplandor",
+  title: "Founder & Facilitator",
+  bio: "Kiara founded Elevate Opticians in 2020 after failing her first ABO attempt — and has personally led every study session since.",
 }
 
-export const volunteers: Volunteer[] = [
-  { name: "Jordan Lee", roles: ["Founder & Lead Facilitator"] },
-  { name: "Priya Anand", roles: ["Study Session Coordinator"] },
-  { name: "Marcus Webb", roles: ["Mentor Program Lead"] },
-  { name: "Sofia Ramirez", roles: ["Resource Library Curator"] },
+export type Testimonial = {
+  quote: string
+  name: string
+  detail: string
+}
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "I failed my first attempt and almost gave up. This group gave me the structure and support I needed to pass on my second try.",
+    name: "Sample Graduate",
+    detail: "ABO Certified",
+  },
+  {
+    quote:
+      "Studying with people who actually wanted me to succeed made all the difference.",
+    name: "Sample Graduate",
+    detail: "ABO Certified",
+  },
+  {
+    quote:
+      "I went from feeling completely lost to walking into my exam confident.",
+    name: "Sample Graduate",
+    detail: "ABO Certified",
+  },
 ]

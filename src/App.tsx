@@ -2,7 +2,7 @@ import { Nav } from "@/sections/Nav"
 import { Hero } from "@/sections/Hero"
 import { Mission } from "@/sections/Mission"
 import { WhoItsFor } from "@/sections/WhoItsFor"
-import { Volunteers } from "@/sections/Volunteers"
+import { Testimonials } from "@/sections/Testimonials"
 import { FAQ } from "@/sections/FAQ"
 import { Join } from "@/sections/Join"
 import { Legal } from "@/sections/Legal"
@@ -17,7 +17,7 @@ function App() {
           <Hero />
           <Mission />
           <WhoItsFor />
-          <Volunteers />
+          <Testimonials />
           <FAQ />
           <Join />
           <Legal />
