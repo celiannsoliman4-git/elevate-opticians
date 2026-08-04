@@ -37,7 +37,10 @@ export function Volunteers() {
         </h2>
         <p className="mt-3 max-w-2xl text-foreground/70">
           Elevate Opticians is powered by opticians who believe in paying it
-          forward. Want to help facilitate a session? Reach out at{" "}
+          forward. Sessions are usually led by one facilitator — but they
+          often lean on others for a second interpretation or perspective.
+          Want to help facilitate, or just lend your perspective when it's
+          needed? Reach out at{" "}
           <a
             href={`mailto:${JOIN_EMAIL}`}
             className="font-medium text-purple underline-offset-4 hover:underline"
