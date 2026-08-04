@@ -30,3 +30,8 @@ export const testimonials: Testimonial[] = [
     detail: "ABO Certified",
   },
 ]
+
+export const graduates: string[] = Array.from(
+  { length: 23 },
+  (_, i) => `Graduate ${i + 1}`
+)
