@@ -1,5 +1,6 @@
 import { volunteers, type Volunteer } from "@/data/team"
 import { JOIN_EMAIL } from "@/data/programs"
+import { Button } from "@/components/ui/button"
 
 function initials(name: string) {
   return name
@@ -35,20 +36,17 @@ export function Volunteers() {
         <h2 className="font-display text-2xl font-bold text-purple sm:text-3xl">
           Run entirely by volunteers.
         </h2>
-        <p className="mt-3 max-w-2xl text-foreground/70">
-          Elevate Opticians is powered by opticians who believe in paying it
-          forward. Sessions are usually led by one facilitator — but they
-          often lean on others for a second interpretation or perspective.
-          Want to help facilitate, or just lend your perspective when it's
-          needed? Reach out at{" "}
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <Button asChild size="sm">
+            <a href={`mailto:${JOIN_EMAIL}`}>Join Now</a>
+          </Button>
           <a
             href={`mailto:${JOIN_EMAIL}`}
-            className="font-medium text-purple underline-offset-4 hover:underline"
+            className="text-sm font-medium text-purple underline-offset-4 hover:underline"
           >
             {JOIN_EMAIL}
           </a>
-          .
-        </p>
+        </div>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2">
           {volunteers.map((member) => (
