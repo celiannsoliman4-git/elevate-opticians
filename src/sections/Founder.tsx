@@ -14,7 +14,7 @@ export function Founder() {
           <img
             src="/kiara.jpg"
             alt={founder.name}
-            className="size-28 shrink-0 rounded-full object-cover ring-2 ring-bronze/40"
+            className="h-36 w-28 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
           />
           <div>
             <p className="font-display text-2xl font-bold text-ink">
