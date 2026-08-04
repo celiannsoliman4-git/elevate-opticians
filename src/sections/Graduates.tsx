@@ -19,7 +19,8 @@ export function Graduates() {
           ))}
         </div>
         <p className="mt-6 text-xs uppercase tracking-wide text-ink/40">
-          Some graduates have chosen to remain anonymous.
+          Some graduates have chosen to remain anonymous. Order is not
+          chronological by date of passing.
         </p>
       </div>
     </section>
