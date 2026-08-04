@@ -2,6 +2,8 @@ export const founder = {
   name: "Kiara Resplandor",
   title: "Founder & Facilitator",
   bio: "Kiara founded Elevate Opticians in 2020 after failing her first ABO attempt — and has personally led every study session since.",
+  linkedin:
+    "https://www.linkedin.com/in/mariechris-kiara-resplandor-aboc-abo-speaker-ldo-2ab55396/",
 }
 
 export type Testimonial = {
