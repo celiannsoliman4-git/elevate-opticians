@@ -17,7 +17,7 @@ export function Mission() {
           Our Story
         </p>
         <h2 className="mt-6 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
-          Lift as you climb — so{" "}
+          Lift as you climb —{" "}
           <span className="italic text-accent">no one is left behind.</span>
         </h2>
 
