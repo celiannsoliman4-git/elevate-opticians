@@ -33,8 +33,8 @@ export function Mission() {
           <p>
             The journey started when Araceli Garcia, an aspiring
             ABO-certified optician, expressed her desire to prepare for the
-            ABO exam. Recognizing her dedication, Dr. Malak offered to help
-            guide her studies. Soon after, Dr. Betsy Shyu, who practiced in
+            ABO exam. Recognizing her dedication, Dr. Najla Malak-Majdalani
+            offered to help guide her studies. Soon after, Dr. Betsy Shyu, who practiced in
             the same office, joined the effort. Together, they formed a
             study group that included six additional opticians who shared
             the same goal of becoming ABO certified.
