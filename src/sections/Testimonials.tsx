@@ -3,7 +3,7 @@ import { testimonials } from "@/data/team"
 export function Testimonials() {
   return (
     <section id="testimonials" className="bg-gold/15 py-20 sm:py-24">
-      <div className="mx-auto max-w-5xl px-6 lg:px-10">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
           Testimonials
         </p>
@@ -11,11 +11,21 @@ export function Testimonials() {
           What graduates say.
         </h2>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 space-y-6">
           {testimonials.map((t) => (
-            <div key={t.name + t.quote} className="border border-ink/10 bg-white p-6">
-              <p className="text-foreground/75">&ldquo;{t.quote}&rdquo;</p>
-              <p className="mt-4 font-display text-sm font-semibold text-ink">
+            <div
+              key={t.name + t.detail}
+              className="border border-ink/10 bg-white p-8"
+            >
+              {t.quote.split("\n\n").map((paragraph, i) => (
+                <p
+                  key={i}
+                  className={i === 0 ? "text-foreground/75" : "mt-4 text-foreground/75"}
+                >
+                  {paragraph}
+                </p>
+              ))}
+              <p className="mt-6 font-display text-sm font-semibold text-ink">
                 {t.name}
               </p>
               <p className="text-xs uppercase tracking-wide text-foreground/50">
@@ -24,10 +34,6 @@ export function Testimonials() {
             </div>
           ))}
         </div>
-        <p className="mt-6 text-xs uppercase tracking-wide text-ink/40">
-          Sample testimonials — replace with real quotes from your graduates
-          before publishing.
-        </p>
       </div>
     </section>
   )
