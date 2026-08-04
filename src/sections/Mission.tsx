@@ -106,7 +106,7 @@ export function Mission() {
 
           <div className="[column-span:all] grid gap-6 border-y border-ink/10 py-8 sm:grid-cols-3">
             <Stat label="Founded" value="2020" />
-            <Stat label="Opticians Certified" value="24" />
+            <Stat label="Opticians Certified" value="24+" />
             <Stat label="Years Running" value="6+" />
           </div>
 

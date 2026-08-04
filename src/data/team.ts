@@ -33,7 +33,28 @@ export const testimonials: Testimonial[] = [
   },
 ]
 
-export const graduates: string[] = Array.from(
-  { length: 23 },
-  (_, i) => `Graduate ${i + 1}`
-)
+export const graduates: string[] = [
+  "Josue Dominguez",
+  "Opal Chiem",
+  "Jessica Handley",
+  "Hassler Molina",
+  "Lian Soliman",
+  "Carmyna Yu",
+  "Elizabeth H.",
+  "Leo Jan Resplandor",
+  "Noah Resplandor",
+  "Armando Alvarez",
+  "Will Htwe",
+  "Aveena Chopra",
+  "Vincent Llorin",
+  "Heba",
+  "Edgar",
+  "Maureen Villanueva",
+  "Charleen Go",
+  "Araceli Garcia",
+  "Jackie Garcia",
+  "Christine",
+  "Cristina",
+  "Anonymous Graduate",
+  "Anonymous Graduate",
+]
