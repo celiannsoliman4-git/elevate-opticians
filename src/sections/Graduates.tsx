@@ -4,10 +4,7 @@ export function Graduates() {
   return (
     <section id="graduates" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
-        <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
-          24+ Opticians
-        </p>
-        <h2 className="mt-6 font-display text-2xl font-bold text-ink sm:text-3xl">
+        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
           Our graduates.
         </h2>
 
