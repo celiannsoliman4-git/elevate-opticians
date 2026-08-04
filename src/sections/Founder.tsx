@@ -2,15 +2,6 @@ import { founder } from "@/data/team"
 import { JOIN_EMAIL } from "@/data/programs"
 import { Button } from "@/components/ui/button"
 
-function initials(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase()
-}
-
 export function Founder() {
   return (
     <section id="founder" className="bg-white py-20 sm:py-24">
@@ -20,9 +11,11 @@ export function Founder() {
         </p>
 
         <div className="mt-6 flex flex-col items-start gap-6 border border-ink/10 bg-gold/15 p-8 sm:flex-row sm:items-center">
-          <div className="flex size-16 shrink-0 items-center justify-center bg-ink font-display text-lg font-bold text-white">
-            {initials(founder.name)}
-          </div>
+          <img
+            src="/kiara.jpg"
+            alt={founder.name}
+            className="size-28 shrink-0 rounded-full object-cover ring-2 ring-bronze/40"
+          />
           <div>
             <p className="font-display text-2xl font-bold text-ink">
               {founder.name}
