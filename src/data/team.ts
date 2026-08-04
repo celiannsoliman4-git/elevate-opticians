@@ -57,4 +57,5 @@ export const graduates: string[] = [
   "Cristina",
   "Anonymous Graduate",
   "Anonymous Graduate",
+  "Anonymous Graduate",
 ]
