@@ -17,8 +17,8 @@ export function Mission() {
           Our Story
         </p>
         <h2 className="mt-6 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
-          Believing in yourself, even when{" "}
-          <span className="italic text-accent">no one's watching.</span>
+          No one gets{" "}
+          <span className="italic text-accent">left behind.</span>
         </h2>
 
         <div className="mt-12 columns-1 gap-12 space-y-5 text-lg leading-relaxed text-foreground/75 lg:columns-2 lg:gap-16 [&>p]:[break-inside:avoid]">
