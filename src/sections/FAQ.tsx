@@ -11,28 +11,24 @@ const faqs = [
     q: "What's the time commitment?",
     a: "Whatever works for you. Come to every session or drop in only when a topic is relevant to you — there's no attendance requirement.",
   },
-  {
-    q: "How do I become a volunteer facilitator?",
-    a: "Reach out through the contact section below. We're always looking for licensed opticians willing to lead a session or mentor a member.",
-  },
 ]
 
 export function FAQ() {
   return (
     <section id="faq" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
-        <h2 className="font-display text-2xl font-bold text-purple sm:text-3xl">
+        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
           Questions people ask us.
         </h2>
 
-        <div className="mt-10 divide-y divide-purple/10 border-t border-purple/10">
+        <div className="mt-10 divide-y divide-ink/10 border-t border-ink/10">
           {faqs.map((f, i) => (
             <div key={f.q} className="flex gap-6 py-6">
-              <span className="font-display text-sm font-bold text-purple/30">
+              <span className="font-display text-sm font-bold text-ink/30">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
-                <p className="font-display text-base font-semibold text-purple">
+                <p className="font-display text-base font-semibold text-ink">
                   {f.q}
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-foreground/65">

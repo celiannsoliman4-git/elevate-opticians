@@ -1,10 +1,10 @@
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-purple/50">
+      <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-ink/50">
         {label}
       </p>
-      <p className="mt-2 font-display text-2xl font-bold text-purple">{value}</p>
+      <p className="mt-2 font-display text-2xl font-bold text-ink">{value}</p>
     </div>
   )
 }
@@ -13,10 +13,10 @@ export function Mission() {
   return (
     <section id="mission" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
-        <p className="text-xs font-medium uppercase tracking-[0.32em] text-purple/60">
+        <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
           Our Story
         </p>
-        <h2 className="mt-6 font-display text-4xl font-bold leading-tight text-purple sm:text-5xl">
+        <h2 className="mt-6 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
           A community built on{" "}
           <span className="italic text-accent">second chances.</span>
         </h2>
@@ -75,7 +75,7 @@ export function Mission() {
             rely on a few individuals alone. The mission had to continue
             and grow.
           </p>
-          <p className="font-medium text-purple">
+          <p className="font-medium text-ink">
             That mission became Elevate Opticians.
           </p>
           <p>
@@ -104,7 +104,7 @@ export function Mission() {
             themselves and realize their full potential.
           </p>
 
-          <div className="[column-span:all] grid gap-6 border-y border-purple/10 py-8 sm:grid-cols-3">
+          <div className="[column-span:all] grid gap-6 border-y border-ink/10 py-8 sm:grid-cols-3">
             <Stat label="Founded" value="2020" />
             <Stat label="Opticians Certified" value="24" />
             <Stat label="Years Running" value="6+" />
@@ -118,7 +118,7 @@ export function Mission() {
             also to build a community where no one feels alone in their
             journey.
           </p>
-          <p className="font-medium text-purple">
+          <p className="font-medium text-ink">
             This is only the beginning.
           </p>
           <p>
@@ -128,11 +128,11 @@ export function Mission() {
             possible.
           </p>
 
-          <blockquote className="[column-span:all] mt-2 border-l-4 border-purple pl-6">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-purple/50">
+          <blockquote className="[column-span:all] mt-2 border-l-4 border-ink pl-6">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-ink/50">
               Our mission is simple
             </p>
-            <p className="mt-2 font-display text-xl font-semibold leading-snug text-purple sm:text-2xl">
+            <p className="mt-2 font-display text-xl font-semibold leading-snug text-ink sm:text-2xl">
               Elevate the profession. Empower the optician. Leave no one
               behind.
             </p>

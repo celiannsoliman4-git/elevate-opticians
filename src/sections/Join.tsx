@@ -14,7 +14,7 @@ export function Join() {
   }
 
   return (
-    <section id="join" className="bg-purple py-20 sm:py-24">
+    <section id="join" className="bg-ink py-20 sm:py-24">
       <div className="mx-auto max-w-2xl px-6 text-center lg:px-10">
         <h2 className="font-display text-2xl font-bold text-white sm:text-3xl">
           No dues. No gatekeeping. Just show up.
@@ -42,7 +42,7 @@ export function Join() {
           />
           <button
             type="submit"
-            className="h-12 rounded-md bg-white px-6 text-sm font-semibold text-purple transition-colors hover:bg-white/90"
+            className="h-12 rounded-md bg-white px-6 text-sm font-semibold text-ink transition-colors hover:bg-white/90"
           >
             Join the Study Group
           </button>

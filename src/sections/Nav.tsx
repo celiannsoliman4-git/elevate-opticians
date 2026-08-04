@@ -56,7 +56,7 @@ export function Nav() {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col overflow-y-auto bg-purple px-5 py-7 lg:flex">
+      <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col overflow-y-auto bg-ink px-5 py-7 lg:flex">
         <Logo />
         <nav className="mt-10 flex-1">
           <NavLinks />
@@ -65,14 +65,14 @@ export function Nav() {
           <p className="px-1 text-xs leading-relaxed text-white/50">
             100% Free · Founder-Led · Open to Anyone Pursuing Their ABO
           </p>
-          <Button asChild className="w-full bg-white text-purple hover:bg-white/90">
+          <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
             <a href="#join">Join Free</a>
           </Button>
         </div>
       </aside>
 
       {/* Mobile top bar */}
-      <header className="sticky inset-x-0 top-0 z-50 flex items-center justify-between bg-purple px-5 py-3 lg:hidden">
+      <header className="sticky inset-x-0 top-0 z-50 flex items-center justify-between bg-ink px-5 py-3 lg:hidden">
         <Logo />
         <button
           className="text-white"
@@ -91,7 +91,7 @@ export function Nav() {
             onClick={() => setOpen(false)}
             aria-hidden
           />
-          <div className="absolute inset-y-0 left-0 flex w-72 max-w-[80%] flex-col bg-purple px-5 py-6">
+          <div className="absolute inset-y-0 left-0 flex w-72 max-w-[80%] flex-col bg-ink px-5 py-6">
             <div className="flex items-center justify-between">
               <span className="flex items-center gap-2.5">
                 <img src="/seal.png" alt="Elevate Opticians seal" className="h-9 w-9 rounded-full" />
@@ -110,7 +110,7 @@ export function Nav() {
             <nav className="mt-8 flex-1">
               <NavLinks onNavigate={() => setOpen(false)} />
             </nav>
-            <Button asChild className="w-full bg-white text-purple hover:bg-white/90">
+            <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
               <a href="#join" onClick={() => setOpen(false)}>
                 Join Free
               </a>

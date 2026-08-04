@@ -4,13 +4,13 @@ export function Legal() {
   return (
     <section id="legal" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-2xl px-6 lg:px-10">
-        <h2 className="font-display text-2xl font-bold text-purple sm:text-3xl">
+        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
           Legal notice &amp; privacy.
         </h2>
 
         <div className="mt-8 space-y-6 text-sm leading-relaxed text-foreground/70">
           <div>
-            <h3 className="font-display text-base font-semibold text-purple">
+            <h3 className="font-display text-base font-semibold text-ink">
               Legal notice
             </h3>
             <p className="mt-2">
@@ -23,7 +23,7 @@ export function Legal() {
           </div>
 
           <div>
-            <h3 className="font-display text-base font-semibold text-purple">
+            <h3 className="font-display text-base font-semibold text-ink">
               Privacy policy
             </h3>
             <p className="mt-2">
@@ -33,7 +33,7 @@ export function Legal() {
               Contact{" "}
               <a
                 href={`mailto:${JOIN_EMAIL}`}
-                className="text-purple underline-offset-4 hover:underline"
+                className="text-ink underline-offset-4 hover:underline"
               >
                 {JOIN_EMAIL}
               </a>
@@ -41,7 +41,7 @@ export function Legal() {
             </p>
           </div>
 
-          <p className="text-xs uppercase tracking-wide text-purple/40">
+          <p className="text-xs uppercase tracking-wide text-ink/40">
             Last updated August 2026
           </p>
         </div>

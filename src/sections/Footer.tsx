@@ -10,7 +10,7 @@ const links = [
 export function Footer() {
   const year = new Date().getFullYear()
   return (
-    <footer className="bg-purple text-white">
+    <footer className="bg-ink text-white">
       <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
           <a href="#top" className="flex items-center gap-3">
