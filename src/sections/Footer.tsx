@@ -44,7 +44,8 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/15 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Elevate Opticians · Founded in the Bay Area · {JOIN_EMAIL}</p>
-          <div className="flex gap-4">
+          <div className="flex items-center gap-3">
+            <span className="text-white/70">Follow us on Instagram</span>
             {socialLinks.map((link) => {
               const Icon = link.icon
               return (
