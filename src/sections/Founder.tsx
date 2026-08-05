@@ -1,6 +1,4 @@
 import { founder, coordinator } from "@/data/team"
-import { JOIN_EMAIL } from "@/data/programs"
-import { Button } from "@/components/ui/button"
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -74,18 +72,6 @@ export function Founder() {
             </p>
             <p className="mt-2 text-sm text-foreground/70">{coordinator.bio}</p>
           </div>
-        </div>
-
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          <Button asChild size="sm">
-            <a href={`mailto:${JOIN_EMAIL}`}>Join Now</a>
-          </Button>
-          <a
-            href={`mailto:${JOIN_EMAIL}`}
-            className="text-sm font-medium text-ink underline-offset-4 hover:underline"
-          >
-            {JOIN_EMAIL}
-          </a>
         </div>
       </div>
     </section>
