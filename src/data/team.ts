@@ -1,7 +1,6 @@
 export const founder = {
   name: "Kiara Resplandor",
   title: "Founder & Facilitator",
-  tagline: "Leading with Kindness",
   bio: "",
   linkedin:
     "https://www.linkedin.com/in/mariechris-kiara-resplandor-aboc-abo-speaker-ldo-2ab55396/",

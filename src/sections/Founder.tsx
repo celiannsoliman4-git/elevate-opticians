@@ -42,9 +42,6 @@ export function Founder() {
             <p className="text-sm font-medium uppercase tracking-wide text-accent">
               {founder.title}
             </p>
-            <p className="mt-1 font-display text-base italic text-ink/60">
-              {founder.tagline}
-            </p>
             <p className="mt-3 max-w-md text-lg text-foreground/70">
               {founder.bio}
             </p>
