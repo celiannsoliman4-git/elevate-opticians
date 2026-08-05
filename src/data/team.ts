@@ -87,6 +87,12 @@ export const testimonials: Testimonial[] = [
     name: "Heba Schindech-Baltodano",
     detail: "ABO Certified",
   },
+  {
+    quote:
+      "Preparing for my ABO certification was much less overwhelming thanks to Kiara's guidance and dedication. One of the most valuable aspects of the course was the strong emphasis on understanding and applying ANSI standards. Rather than simply memorizing information, I gained a deeper understanding of the concepts and how they relate to real-world optical practice.\n\nThe repetition throughout the course was incredibly effective. Key topics were reviewed consistently, which helped reinforce the material and built my confidence as exam day approached. She also created a sense of accountability by encouraging regular study habits, checking in on progress, and motivating me to stay on track with the use of worksheets. That structure made a significant difference in my preparation.\n\nI truly appreciate the time, knowledge, and encouragement Kiara provided throughout the process. Her method of teaching gave me the confidence and foundation I needed to successfully prepare for the ABO exam, and I would highly recommend them to anyone pursuing their certification.",
+    name: "Jessica Vistan",
+    detail: "ABO Certified",
+  },
 ]
 
 export type Graduate = {
