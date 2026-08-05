@@ -55,10 +55,10 @@ export function Join() {
           />
           <button
             type="submit"
-            disabled={status === "loading"}
+            disabled={status === "loading" || status === "success"}
             className="h-12 rounded-md bg-white px-6 text-sm font-semibold text-ink transition-colors hover:bg-white/90 disabled:opacity-60"
           >
-            {status === "loading" ? "Sending…" : "Join the Study Group"}
+            {status === "loading" ? "Sending…" : status === "success" ? "Check your email!" : "Join the Study Group"}
           </button>
         </form>
 

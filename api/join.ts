@@ -4,6 +4,10 @@ import { join } from "path"
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const RESEND_SANDBOX_FROM = "onboarding@resend.dev"
 
+// Simple in-memory cache for duplicate detection (24-hour window)
+// Note: Resets on deployment; for persistent tracking, use a database
+const recentSubmissions = new Map<string, number>()
+
 // Resend only allows sending from verified domains — not gmail.com, yahoo.com, etc.
 const UNVERIFIABLE_FROM_DOMAINS = [
   "gmail.com",
@@ -71,6 +75,19 @@ export default async function handler(req: any, res: any) {
     res.status(400).json({ error: "Please enter a valid email address" })
     return
   }
+
+  // Check for duplicate submission (24-hour window)
+  const lastSubmission = recentSubmissions.get(email)
+  const now = Date.now()
+  const TWENTY_FOUR_HOURS = 24 * 60 * 60 * 1000
+
+  if (lastSubmission && now - lastSubmission < TWENTY_FOUR_HOURS) {
+    res.status(429).json({ error: "You've already signed up recently. Please check your email or try again in 24 hours." })
+    return
+  }
+
+  // Record this submission
+  recentSubmissions.set(email, now)
 
   const apiKey = process.env.RESEND_API_KEY
   const notifyEmail = process.env.NOTIFY_EMAIL
@@ -155,7 +172,7 @@ export default async function handler(req: any, res: any) {
 
             <h1>Welcome to Elevate Opticians</h1>
 
-            <p class="welcome">You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place. 📖 Download the attached ABO Study Guide to get started — it covers essential concepts you'll need to master.</p>
+            <p class="welcome">You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place. 📖 Download the attached ABO Study Guide to get started.</p>
 
             <div class="footer">
               <p>Questions? Reach out to elevateopticians@gmail.com!</p>
