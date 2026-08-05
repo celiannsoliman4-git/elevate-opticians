@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react"
+import { JOIN_EMAIL } from "@/data/programs"
 
 export function Join() {
   const [email, setEmail] = useState("")
@@ -7,8 +8,15 @@ export function Join() {
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
     if (!email.trim()) return
+
+    const subject = encodeURIComponent("I want to join the study group")
+    const body = encodeURIComponent(
+      `Hi Elevate Opticians,\n\nPlease add me to the study group. My email is: ${email}`
+    )
+    window.location.href = `mailto:${JOIN_EMAIL}?subject=${subject}&body=${body}`
+
     setNote(
-      `Thanks! We'll send the schedule to ${email}. (Hook this form up to your email list provider — e.g. Mailchimp, Google Form, or a mailto link.)`
+      "Opening your email app with a message addressed to us — just hit send and we'll get you on the list!"
     )
     setEmail("")
   }
