@@ -64,7 +64,8 @@ export function Join() {
 
         {status === "success" && (
           <p className="mt-4 text-sm text-white/70">
-            Thanks! We got your email and will send the schedule soon.
+            Thanks! Check your inbox for this week's schedule, topics, and Zoom
+            link.
           </p>
         )}
         {status === "error" && (
