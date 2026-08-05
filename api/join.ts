@@ -1,4 +1,34 @@
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const RESEND_SANDBOX_FROM = "onboarding@resend.dev"
+
+// Resend only allows sending from verified domains — not gmail.com, yahoo.com, etc.
+const UNVERIFIABLE_FROM_DOMAINS = [
+  "gmail.com",
+  "googlemail.com",
+  "yahoo.com",
+  "hotmail.com",
+  "outlook.com",
+  "icloud.com",
+  "aol.com",
+]
+
+function resolveFromAddress(rawFrom: string | undefined) {
+  const fromEmail = rawFrom?.trim() || RESEND_SANDBOX_FROM
+  const domain = fromEmail.includes("<")
+    ? fromEmail.match(/<[^@]+@([^>]+)>/)?.[1]?.toLowerCase()
+    : fromEmail.split("@")[1]?.toLowerCase()
+
+  if (domain && UNVERIFIABLE_FROM_DOMAINS.includes(domain)) {
+    console.warn(
+      `FROM_EMAIL uses ${domain}, which Resend cannot send from. Falling back to ${RESEND_SANDBOX_FROM}. Verify your own domain at https://resend.com/domains for production.`,
+    )
+    return `Elevate Opticians <${RESEND_SANDBOX_FROM}>`
+  }
+
+  return fromEmail.includes("<")
+    ? fromEmail
+    : `Elevate Opticians <${fromEmail}>`
+}
 
 async function sendEmail(
   apiKey: string,
@@ -40,8 +70,8 @@ export default async function handler(req: any, res: any) {
 
   const apiKey = process.env.RESEND_API_KEY
   const notifyEmail = process.env.NOTIFY_EMAIL
-  const fromEmail = process.env.FROM_EMAIL || "onboarding@resend.dev"
   const zoomLink = process.env.ZOOM_LINK || "https://zoom.us/j/YOUR_MEETING_ID"
+  const from = resolveFromAddress(process.env.FROM_EMAIL)
 
   if (!apiKey) {
     res.status(500).json({ error: "Email service not configured" })
@@ -53,10 +83,6 @@ export default async function handler(req: any, res: any) {
     return
   }
 
-  const from = fromEmail.includes("<")
-    ? fromEmail
-    : `Elevate Opticians <${fromEmail}>`
-
   try {
     await sendEmail(apiKey, {
       from,
@@ -66,7 +92,13 @@ export default async function handler(req: any, res: any) {
       text: `Someone just joined the study group:\n\n${email}\n\nSent from the Elevate Opticians website.`,
       html: `<p>Someone just joined the study group:</p><p><strong>${email}</strong></p><p><em>Sent from the Elevate Opticians website.</em></p>`,
     })
+  } catch (err) {
+    console.error("Notify email failed:", err)
+    res.status(502).json({ error: "Failed to send email" })
+    return
+  }
 
+  try {
     await sendEmail(apiKey, {
       from,
       to: email,
@@ -99,10 +131,10 @@ export default async function handler(req: any, res: any) {
         <p>See you there!<br/>— The Elevate Opticians team</p>
       `,
     })
-
-    res.status(200).json({ ok: true })
   } catch (err) {
-    console.error("Join handler error:", err)
-    res.status(502).json({ error: "Failed to send email" })
+    // Signup is still recorded via the team notification above.
+    console.error("Welcome email failed:", err)
   }
+
+  res.status(200).json({ ok: true })
 }
