@@ -121,24 +121,15 @@ export default async function handler(req: any, res: any) {
     await sendEmail(apiKey, {
       from,
       to: email,
-      subject: "Welcome to Elevate Opticians — Your Study Group Awaits",
+      subject: "Welcome to Elevate Opticians",
       text: [
         "Welcome to Elevate Opticians!",
         "",
         "You're now part of a community dedicated to helping opticians succeed.",
         "",
-        "This week's session:",
-        "Session: ABO Optics Fundamentals",
-        "When: Every Tuesday · 7:00 PM PT",
-        "Where: Online via Zoom",
-        `Zoom link: ${zoomLink}`,
-        "",
-        "Topics rotate weekly — optics, anatomy, dispensing, and open Q&A.",
-        "",
         "Download the attached ABO study guide to get started.",
         "",
-        "See you there!",
-        "— The Elevate Opticians team",
+        "Questions? Reach out to elevateopticians@gmail.com!",
       ].join("\n"),
       html: `
         <!DOCTYPE html>
@@ -152,12 +143,8 @@ export default async function handler(req: any, res: any) {
             .logo img { max-width: 120px; height: auto; }
             h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; color: #0a0602; text-align: center; margin: 20px 0; }
             .welcome { font-size: 16px; color: #221206; text-align: center; margin-bottom: 30px; }
-            .session-box { background: #f3ead9; border-left: 4px solid #a26019; padding: 20px; margin: 20px 0; }
-            .session-box strong { color: #0a0602; }
-            .cta { text-align: center; margin: 30px 0; }
-            .cta a { background: #a26019; color: #fffeed; padding: 12px 30px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; }
-            .footer { text-align: center; color: #6b5a44; font-size: 14px; margin-top: 30px; }
             .guide-note { background: #fefdf7; padding: 15px; border-radius: 6px; margin: 20px 0; font-size: 14px; color: #221206; }
+            .footer { text-align: center; color: #6b5a44; font-size: 14px; margin-top: 30px; }
           </style>
         </head>
         <body>
@@ -168,30 +155,10 @@ export default async function handler(req: any, res: any) {
 
             <h1>Welcome to Elevate Opticians</h1>
 
-            <p class="welcome">You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place.</p>
-
-            <div class="session-box">
-              <p><strong>This Week's Session:</strong></p>
-              <p><strong>Topic:</strong> ABO Optics Fundamentals<br>
-              <strong>When:</strong> Every Tuesday · 7:00 PM PT<br>
-              <strong>Where:</strong> Online via Zoom<br>
-              <strong>Zoom link:</strong> <a href="${zoomLink}">${zoomLink}</a></p>
-              <p style="font-size: 14px; color: #6b5a44; margin-top: 10px;">Topics rotate weekly — optics, anatomy, dispensing, and open Q&A.</p>
-            </div>
-
-            <div class="guide-note">
-              <strong>📖 Attached: ABO Study Guide</strong><br>
-              Download the attached guide to start preparing. It covers essential concepts you'll need to master.
-            </div>
-
-            <div class="cta">
-              <a href="${zoomLink}">Join This Week's Session</a>
-            </div>
-
-            <p style="text-align: center; margin-top: 30px; color: #0a0602;">See you there!<br><strong>The Elevate Opticians team</strong></p>
+            <p class="welcome">You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place. 📖 Download the attached ABO Study Guide to get started — it covers essential concepts you'll need to master.</p>
 
             <div class="footer">
-              <p>Questions? Reply to this email or reach out to info@elevateopticians.org</p>
+              <p>Questions? Reach out to elevateopticians@gmail.com!</p>
             </div>
           </div>
         </body>
