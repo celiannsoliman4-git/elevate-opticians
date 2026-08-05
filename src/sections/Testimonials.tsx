@@ -40,9 +40,6 @@ export function Testimonials() {
           <p className="mt-6 font-display text-sm font-semibold text-ink">
             {t.name}
           </p>
-          <p className="text-xs uppercase tracking-wide text-foreground/50">
-            {t.detail}
-          </p>
         </div>
 
         <div className="mt-6 flex items-center justify-between gap-4">
