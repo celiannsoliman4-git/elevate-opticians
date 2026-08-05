@@ -2,15 +2,6 @@ import { founder, coordinator } from "@/data/team"
 import { JOIN_EMAIL } from "@/data/programs"
 import { Button } from "@/components/ui/button"
 
-function initials(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase()
-}
-
 function LinkedinIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden className={className}>
@@ -27,15 +18,15 @@ export function Founder() {
           Meet the Founder
         </p>
 
-        <div className="mt-6 flex flex-col items-start gap-6 border border-ink/10 bg-gold/15 p-8 sm:flex-row sm:items-center">
+        <div className="mt-6 flex flex-col items-start gap-8 border border-ink/10 bg-gold/15 p-10 sm:flex-row sm:items-center">
           <img
             src="/kiara.jpg"
             alt={founder.name}
-            className="h-36 w-28 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
+            className="h-56 w-44 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
           />
           <div>
-            <div className="flex items-center gap-2">
-              <p className="font-display text-2xl font-bold text-ink">
+            <div className="flex items-center gap-3">
+              <p className="font-display text-3xl font-bold text-ink sm:text-4xl">
                 {founder.name}
               </p>
               <a
@@ -45,20 +36,24 @@ export function Founder() {
                 aria-label={`${founder.name} on LinkedIn`}
                 className="text-ink/50 transition-colors hover:text-accent"
               >
-                <LinkedinIcon className="size-5" />
+                <LinkedinIcon className="size-6" />
               </a>
             </div>
-            <p className="text-xs font-medium uppercase tracking-wide text-accent">
+            <p className="text-sm font-medium uppercase tracking-wide text-accent">
               {founder.title}
             </p>
-            <p className="mt-2 text-foreground/70">{founder.bio}</p>
+            <p className="mt-3 max-w-md text-lg text-foreground/70">
+              {founder.bio}
+            </p>
           </div>
         </div>
 
         <div className="mt-4 flex flex-col items-start gap-4 border border-ink/10 bg-white p-6 sm:flex-row sm:items-center">
-          <div className="flex size-14 shrink-0 items-center justify-center bg-ink font-display text-sm font-bold text-white">
-            {initials(coordinator.name)}
-          </div>
+          <img
+            src="/lian.jpg"
+            alt={coordinator.name}
+            className="h-20 w-16 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
+          />
           <div>
             <div className="flex items-center gap-2">
               <p className="font-display text-lg font-bold text-ink">
