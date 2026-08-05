@@ -40,7 +40,7 @@ export const testimonials: Testimonial[] = [
   {
     quote:
       "Elevate Opticians has been an incredible source of guidance and support throughout my journey in opticianry. The sense of community kept me motivated and reminded me that I wasn't navigating the ABO exam process alone. I'm grateful for the resources, encouragement, and knowledge they shared, which gave me the tools and confidence to conquer the ABO and continue growing as an optician.",
-    name: "Aveena Chopra",
+    name: "Avena Chopra",
     detail: "ABO Certified",
   },
   {
@@ -54,6 +54,18 @@ export const testimonials: Testimonial[] = [
       "Hello, my name is Hassler Molina. I started as a sales associate at Target Optical in 2020. Then, I met Kiara Resplandor, she opened my eyes and gave me a rundown of what optical really means. I later became Licensed in November 2022. And now I am working as a Licensed Sales Dispenser at Kaiser Permanente.",
     name: "Hassler Molina",
     detail: "ABO Certified November 2022",
+  },
+  {
+    quote:
+      "I've been a licensed optician working at Target Optical for 3 years now. I was studying under Kiara for 1 month in April, and got my license right after on May 2022. Thanks to Kiara, I've been educating our guest with the perfect frame fit along with the best recommended lenses.",
+    name: "Armando Alvarez",
+    detail: "ABO Certified May 2022",
+  },
+  {
+    quote:
+      "For me, Elevate Opticians gave me the structure to study for my ABO test as well as actually understand the material, so that I can apply it in my day to day work. It improved how I helped customers and also changed the way I look at each problem that may arise when helping someone as an optician. Just plainly, passing the ABO test and becoming licensed made me not only confident in my work, but proud of my care and job choice.",
+    name: "Noah Resplandor",
+    detail: "ABO Certified",
   },
 ]
 
@@ -69,7 +81,7 @@ export const graduates: string[] = [
   "Noah Resplandor",
   "Armando Alvarez",
   "Will Htwe",
-  "Aveena Chopra",
+  "Avena Chopra",
   "Vincent Llorin",
   "Maureen Villanueva",
   "Charleen Go",
