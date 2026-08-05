@@ -6,6 +6,13 @@ export const founder = {
     "https://www.linkedin.com/in/mariechris-kiara-resplandor-aboc-abo-speaker-ldo-2ab55396/",
 }
 
+export const coordinator = {
+  name: "Lian Soliman",
+  title: "Coordinator",
+  bio: "Lian assists Kiara in coordinating study sessions and supporting the Elevate Opticians community.",
+  linkedin: "https://www.linkedin.com/in/celiannsoliman/",
+}
+
 export type Testimonial = {
   quote: string
   name: string

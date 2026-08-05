@@ -1,6 +1,15 @@
-import { founder } from "@/data/team"
+import { founder, coordinator } from "@/data/team"
 import { JOIN_EMAIL } from "@/data/programs"
 import { Button } from "@/components/ui/button"
+
+function initials(name: string) {
+  return name
+    .split(" ")
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase()
+}
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -43,6 +52,32 @@ export function Founder() {
               {founder.title}
             </p>
             <p className="mt-2 text-foreground/70">{founder.bio}</p>
+          </div>
+        </div>
+
+        <div className="mt-4 flex flex-col items-start gap-4 border border-ink/10 bg-white p-6 sm:flex-row sm:items-center">
+          <div className="flex size-14 shrink-0 items-center justify-center bg-ink font-display text-sm font-bold text-white">
+            {initials(coordinator.name)}
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <p className="font-display text-lg font-bold text-ink">
+                {coordinator.name}
+              </p>
+              <a
+                href={coordinator.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${coordinator.name} on LinkedIn`}
+                className="text-ink/50 transition-colors hover:text-accent"
+              >
+                <LinkedinIcon className="size-4" />
+              </a>
+            </div>
+            <p className="text-xs font-medium uppercase tracking-wide text-accent">
+              {coordinator.title}
+            </p>
+            <p className="mt-2 text-sm text-foreground/70">{coordinator.bio}</p>
           </div>
         </div>
 
