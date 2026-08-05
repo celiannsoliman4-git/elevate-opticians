@@ -44,19 +44,31 @@ export function Join() {
           <label htmlFor="join-email" className="sr-only">
             Email address
           </label>
-          <input
-            id="join-email"
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@email.com"
-            className="h-12 flex-1 rounded-md border border-white/20 bg-white/[0.08] px-4 text-sm text-white placeholder:text-white/40 focus:border-white/50 focus:outline-none"
-          />
+          <div className="relative flex-1">
+            <input
+              id="join-email"
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@email.com"
+              className="h-14 w-full rounded-md border border-white/20 bg-white/[0.08] px-4 pr-10 text-base text-white placeholder:text-white/40 focus:border-white/50 focus:outline-none sm:h-12 sm:text-sm"
+            />
+            {email && (
+              <button
+                type="button"
+                onClick={() => setEmail("")}
+                aria-label="Clear email"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors"
+              >
+                ✕
+              </button>
+            )}
+          </div>
           <button
             type="submit"
             disabled={status === "loading" || status === "success"}
-            className="h-12 rounded-md bg-white px-6 text-sm font-semibold text-ink transition-colors hover:bg-white/90 disabled:opacity-60"
+            className="h-14 rounded-md bg-white px-6 text-base font-semibold text-ink transition-colors hover:bg-white/90 disabled:opacity-60 sm:h-12 sm:text-sm"
           >
             {status === "loading" ? "Sending…" : status === "success" ? "Check your email!" : "Join the Study Group"}
           </button>
