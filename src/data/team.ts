@@ -2,7 +2,7 @@ export const founder = {
   name: "Kiara Resplandor",
   title: "Founder & Facilitator",
   tagline: "Leading with Kindness",
-  bio: "Kiara has founded Elevate Opticians in 2020 and has personally led every study session since.",
+  bio: "",
   linkedin:
     "https://www.linkedin.com/in/mariechris-kiara-resplandor-aboc-abo-speaker-ldo-2ab55396/",
 }
@@ -10,7 +10,7 @@ export const founder = {
 export const coordinator = {
   name: "Lian Soliman",
   title: "Coordinator",
-  bio: "After passing her ABO, Lian has always believed that if she could do it, anyone who wants it bad enough can too. She assists Kiara in any way she can to help support upcoming opticians as they prep.",
+  bio: "Passing the ABO inspired Lian to give back. She works alongside Kiara to help make Elevate Opticians a fun, supportive community for future opticians.",
   linkedin: "https://www.linkedin.com/in/celiannsoliman/",
 }
 
