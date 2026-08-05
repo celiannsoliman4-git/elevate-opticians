@@ -10,6 +10,7 @@ export type Testimonial = {
   quote: string
   name: string
   detail: string
+  linkedin?: string
 }
 
 export const testimonials: Testimonial[] = [
@@ -67,31 +68,45 @@ export const testimonials: Testimonial[] = [
     name: "Noah Resplandor",
     detail: "ABO Certified",
   },
+  {
+    quote:
+      "I started my optical journey in October of 2021. I had no background whatsoever in optical. I requested an internal transfer from another non-optical department for the company that I work for now.\n\nI did not start studying for the ABO until summer of 2024, so 3 years after I started working for optical. I passed the ABO September of 2024. I would study for a few hours every day for 2 to 3 months before I took the test.\n\nBeing a licensed optician is not just about getting that pay bump. It's also about that feeling of accomplishment for yourself. You will learn something new at work every day. As long as you have the dedication and the drive to learn, you will succeed.",
+    name: "Charlene Go",
+    detail: "ABO Certified September 2024",
+  },
 ]
 
-export const graduates: string[] = [
-  "Josue Dominguez",
-  "Opal Chiem",
-  "Jessica Handley",
-  "Hassler Molina",
-  "Lian Soliman",
-  "Carmyna Yu",
-  "Elizabeth H.",
-  "Leo Jan Resplandor",
-  "Noah Resplandor",
-  "Armando Alvarez",
-  "Will Htwe",
-  "Avena Chopra",
-  "Vincent Llorin",
-  "Maureen Villanueva",
-  "Charleen Go",
-  "Araceli Garcia",
-  "Jackie Garcia",
-  "Heba",
-  "Edgar",
-  "Christine",
-  "Cristina",
-  "Anonymous Graduate",
-  "Anonymous Graduate",
-  "Anonymous Graduate",
+export type Graduate = {
+  name: string
+  linkedin?: string
+}
+
+export const graduates: Graduate[] = [
+  {
+    name: "Josue Dominguez",
+    linkedin: "https://www.linkedin.com/in/josue-dominguez-b13260199/",
+  },
+  { name: "Opal Chiem" },
+  { name: "Jessica Handley" },
+  { name: "Hassler Molina" },
+  { name: "Lian Soliman" },
+  { name: "Carmyna Yu" },
+  { name: "Elizabeth H." },
+  { name: "Leo Jan Resplandor" },
+  { name: "Noah Resplandor" },
+  { name: "Armando Alvarez" },
+  { name: "Will Htwe" },
+  { name: "Avena Chopra" },
+  { name: "Vincent Llorin" },
+  { name: "Maureen Villanueva" },
+  { name: "Charlene Go" },
+  { name: "Araceli Garcia" },
+  { name: "Jackie Garcia" },
+  { name: "Heba" },
+  { name: "Edgar" },
+  { name: "Christine" },
+  { name: "Cristina" },
+  { name: "Jessica Vistan" },
+  { name: "Anonymous Graduate" },
+  { name: "Anonymous Graduate" },
 ]
