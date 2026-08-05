@@ -1,24 +1,29 @@
 import { useState, type FormEvent } from "react"
 import { JOIN_EMAIL } from "@/data/programs"
 
+type Status = "idle" | "loading" | "success" | "error"
+
 export function Join() {
   const [email, setEmail] = useState("")
-  const [note, setNote] = useState("")
+  const [status, setStatus] = useState<Status>("idle")
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault()
     if (!email.trim()) return
 
-    const subject = encodeURIComponent("I want to join the study group")
-    const body = encodeURIComponent(
-      `Hi Elevate Opticians,\n\nPlease add me to the study group. My email is: ${email}`
-    )
-    window.location.href = `mailto:${JOIN_EMAIL}?subject=${subject}&body=${body}`
-
-    setNote(
-      "Opening your email app with a message addressed to us — just hit send and we'll get you on the list!"
-    )
-    setEmail("")
+    setStatus("loading")
+    try {
+      const res = await fetch("/api/join", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      })
+      if (!res.ok) throw new Error("request failed")
+      setStatus("success")
+      setEmail("")
+    } catch {
+      setStatus("error")
+    }
   }
 
   return (
@@ -50,12 +55,30 @@ export function Join() {
           />
           <button
             type="submit"
-            className="h-12 rounded-md bg-white px-6 text-sm font-semibold text-ink transition-colors hover:bg-white/90"
+            disabled={status === "loading"}
+            className="h-12 rounded-md bg-white px-6 text-sm font-semibold text-ink transition-colors hover:bg-white/90 disabled:opacity-60"
           >
-            Join the Study Group
+            {status === "loading" ? "Sending…" : "Join the Study Group"}
           </button>
         </form>
-        {note && <p className="mt-4 text-sm text-white/70">{note}</p>}
+
+        {status === "success" && (
+          <p className="mt-4 text-sm text-white/70">
+            Thanks! We got your email and will send the schedule soon.
+          </p>
+        )}
+        {status === "error" && (
+          <p className="mt-4 text-sm text-white/70">
+            Something went wrong — email us directly at{" "}
+            <a
+              href={`mailto:${JOIN_EMAIL}`}
+              className="underline underline-offset-4 hover:text-white"
+            >
+              {JOIN_EMAIL}
+            </a>{" "}
+            instead.
+          </p>
+        )}
       </div>
     </section>
   )
