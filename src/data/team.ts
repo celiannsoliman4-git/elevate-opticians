@@ -9,7 +9,7 @@ export const founder = {
 export const coordinator = {
   name: "Lian Soliman",
   title: "Coordinator",
-  bio: "Passing the ABO inspired Lian to give back. She works alongside Kiara to help make Elevate Opticians a fun, supportive community for future opticians.",
+  bio: "After passing her ABO, Lian realized that if she could do it, so could others. She loves helping Kiara bring the Elevate Opticians community to life and cheering future opticians on every step of the way.",
   linkedin: "https://www.linkedin.com/in/celiannsoliman/",
 }
 
