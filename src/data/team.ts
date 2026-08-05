@@ -122,7 +122,7 @@ export const graduates: Graduate[] = [
   { name: "Araceli Garcia" },
   { name: "Jackie Garcia" },
   { name: "Jessica Vistan" },
-  { name: "Edgar" },
+  { name: "Edgard Baltodano" },
   { name: "Christine" },
   { name: "Cristina" },
   { name: "Heba" },
