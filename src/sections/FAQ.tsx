@@ -1,15 +1,39 @@
 const faqs = [
   {
     q: "Is Elevate Opticians really free?",
-    a: "Yes — completely. We're volunteer-run and don't charge dues, session fees, or membership costs of any kind.",
+    a: "Yes, completely. We're a volunteer-led community and never charge dues, membership fees, or study session costs. Our mission is to make mentorship and certification support accessible to every optician.",
   },
   {
     q: "Do I need experience to join?",
-    a: "No. We welcome apprentices just starting out, career-changers, and working opticians studying for the ABO for the first time or retaking it — wherever you work, whatever your background.",
+    a: "No. We welcome apprentices, career changers, working opticians, and anyone preparing for the ABO exam for the first time or a retake. Wherever you're starting from, you're welcome here.",
   },
   {
     q: "What's the time commitment?",
-    a: "Whatever works for you. Come to every session or drop in only when a topic is relevant to you — there's no attendance requirement.",
+    a: "Whatever works for you. Attend every session or join only when a topic is relevant to your goals. There's no attendance requirement and no minimum commitment.",
+  },
+  {
+    q: "Do I have to be studying for the ABO to join?",
+    a: "No. While many members are preparing for certification, others join to learn more about optics, connect with mentors, build confidence, and grow professionally. Everyone is welcome.",
+  },
+  {
+    q: "What happens during a study session?",
+    a: "Every session is a little different. Topics may include optics fundamentals, lens designs, troubleshooting, ABO review questions, test-taking strategies, and open discussion with mentors and fellow opticians.",
+  },
+  {
+    q: "What if I've already failed the ABO exam?",
+    a: "Then you've come to the right place. Elevate Opticians was built on the belief that a failed exam does not define your future. With support, persistence, and the right community, success is possible.",
+  },
+  {
+    q: "Is Elevate Opticians only for California residents?",
+    a: "No. Although Elevate Opticians was founded in California, our mission is to support opticians everywhere. We welcome participants from all locations, backgrounds, and experience levels.",
+  },
+  {
+    q: "Can I become a mentor or volunteer?",
+    a: "Absolutely. We are always looking for passionate opticians, certified professionals, trainers, and industry leaders who want to share their knowledge and help others succeed.",
+  },
+  {
+    q: "Does Elevate Opticians guarantee exam success?",
+    a: "No. We cannot guarantee exam results, but we are committed to providing educational support, mentorship, accountability, and encouragement to help you prepare with confidence.",
   },
 ]
 
