@@ -64,11 +64,11 @@ export function Hero() {
 
       <div className="relative border-t border-white/10 bg-ink/60">
         <div className="mx-auto flex max-w-7xl items-center gap-6 overflow-hidden px-6 py-4 text-xs uppercase tracking-[0.3em] text-white/50 lg:px-10">
-          <span className="text-gold">Six Years Running</span>
+          <span className="text-gold">✓ 6+ Years of Mentorship</span>
           <span className="h-1 w-1 rounded-full bg-white/30" />
-          <span>24+ Opticians</span>
+          <span>✓ 24+ ABO Certified Graduates</span>
           <span className="h-1 w-1 rounded-full bg-white/30" />
-          <span className="hidden sm:inline">Always Free</span>
+          <span className="hidden sm:inline">✓ Always Free</span>
         </div>
       </div>
     </section>

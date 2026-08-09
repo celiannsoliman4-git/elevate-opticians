@@ -104,10 +104,11 @@ export function Mission() {
             themselves and realize their full potential.
           </p>
 
-          <div className="[column-span:all] grid gap-6 border-y border-ink/10 py-8 sm:grid-cols-3">
-            <Stat label="Founded" value="2020" />
-            <Stat label="Opticians Certified" value="24+" />
-            <Stat label="Years Running" value="6+" />
+          <div className="[column-span:all] grid gap-6 border-y border-ink/10 py-8 sm:grid-cols-4">
+            <Stat label="ABO Certified Graduates" value="24+" />
+            <Stat label="Years of Mentorship" value="6+" />
+            <Stat label="Volunteer-Led" value="✓" />
+            <Stat label="Always Free" value="✓" />
           </div>
 
           <p>
