@@ -65,7 +65,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "I've been a licensed optician working at Target Optical for 3 years now. I was studying under Kiara for 1 month in April, and got my license right after on May 2022. Thanks to Kiara, I've been educating our guest with the perfect frame fit along with the best recommended lenses.",
+      "I've been a licensed optician working at a retail optical chain for 3 years now. I was studying under Kiara for 1 month in April, and got my license right after on May 2022. Thanks to Kiara, I've been educating our guest with the perfect frame fit along with the best recommended lenses.",
     name: "Armando Alvarez",
     detail: "ABO Certified May 2022",
   },
