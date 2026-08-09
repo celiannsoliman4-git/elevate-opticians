@@ -59,7 +59,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Hello, my name is Hassler Molina. I started as a sales associate at Target Optical in 2020. Then, I met Kiara Resplandor, she opened my eyes and gave me a rundown of what optical really means. I later became Licensed in November 2022. And now I am working as a Licensed Sales Dispenser at Kaiser Permanente.",
+      "Hello, my name is Hassler Molina. I started as a sales associate at Target Optical in 2020. Then, I met Kiara Resplandor, she opened my eyes and gave me a rundown of what optical really means. I later became Licensed in November 2022. And now I am working as a Licensed Sales Dispenser at Optical within Managed Care.",
     name: "Hassler Molina",
     detail: "ABO Certified November 2022",
   },
