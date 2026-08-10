@@ -12,9 +12,6 @@ export function Founder() {
   return (
     <section id="founder" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
-        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
-          Education Partners
-        </h2>
 
         <div className="mt-6 flex flex-col items-start gap-8 border border-ink/10 bg-gold/15 p-10 sm:flex-row sm:items-center">
           <img
