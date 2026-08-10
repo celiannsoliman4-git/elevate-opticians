@@ -27,7 +27,7 @@ export function EducationPartners() {
           {/* Content */}
           <div className="flex-1">
             <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
-              Education Partner
+              Education Partners
             </p>
             <h2 className="mt-3 font-display text-3xl font-bold text-ink sm:text-4xl">
               {partner.name}
