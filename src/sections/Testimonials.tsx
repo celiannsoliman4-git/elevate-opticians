@@ -20,7 +20,7 @@ export function Testimonials() {
               Testimonials
             </p>
             <h2 className="mt-6 font-display text-2xl font-bold text-ink sm:text-3xl">
-              What graduates say
+              What Graduates Say
             </h2>
           </div>
           <p className="text-xs font-medium uppercase tracking-wide text-ink/40">
