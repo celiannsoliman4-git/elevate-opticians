@@ -15,6 +15,8 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#mission", label: "Our Story", icon: Heart },
   { href: "#founder", label: "Founder", icon: Users2 },
   { href: "#education-partners", label: "Education Partners", icon: Users2 },
+  { href: "#why-abo", label: "Why ABO", icon: HelpCircle },
+  { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#testimonials", label: "Testimonials", icon: Quote },
   { href: "#graduates", label: "Graduates", icon: GraduationCap },
   { href: "#faq", label: "FAQ", icon: HelpCircle },
