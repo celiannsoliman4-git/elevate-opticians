@@ -1,7 +1,7 @@
 export const founder = {
   name: "Kiara Resplandor",
   title: "Founder & Facilitator",
-  bio: "Originally from Mindanao, Philippines, Kiara is an Optics Business Consultant with VSP Vision and an ABO Speaker Level II. She founded Elevate Opticians to mentor, educate, and empower optical professionals through community, leadership, and lifelong learning.",
+  bio: "Originally from a small town named Buug, in Mindanao, Philippines, Kiara is an Optics Business Consultant with VSP Vision and an ABO Speaker Level II. She founded Elevate Opticians to mentor, educate, and empower optical professionals through community, leadership, and lifelong learning.",
   linkedin:
     "https://www.linkedin.com/in/mariechris-kiara-resplandor-aboc-abo-speaker-ldo-2ab55396/",
 }
