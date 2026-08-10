@@ -17,7 +17,7 @@ export const educationPartners = [
   {
     name: "Dr. Najla Malak-Majdalani, OD",
     title: "Education Partner",
-    photo: "/drmalak.jpg",
+    photo: "/drmalak.png",
     bio: "I worked with Luxottica since 1992. Graduated from Illinois College of Optometry in 1989. Just before COVID, our office's optical manager Araceli Garcia and optician Jackie Garcia were worried about studying for ABO board certification. I offered my help but due to all of our work schedules studying did not go too far. Within a month, COVID hit and everything shut down. I realized it was a great opportunity to focus on studying. I designed a plan to go over weekly lessons and do practice questions daily. Dr. Betsy Shyu found out about our study group and decided to help teach. Before we knew it many opticians working for LUXOTTICA heard about our group and asked to join in. The interactions, the questions, the problem solving, the learning, the camaraderie, all made studying for the ABO easier, more focused, and rewarding. At the end eight people studied for the test and all passed except for one. She actually joined our group much too late and could not catch up. Overall it was a great idea and a great accomplishment by everyone involved.",
     linkedin: "",
   },
