@@ -35,7 +35,7 @@ export function WhyABOMatters() {
         </div>
 
         <p className="mt-12 text-base leading-relaxed text-foreground/70">
-          ABO certification is more than a credential — it's an investment in your career, your patients, and the optical profession. It demonstrates your commitment to excellence and opens doors to advancement, higher earning potential, and greater professional satisfaction.
+          American Board of Opticianry is more than a credential — it's an investment in your career, your patients, and the optical profession. It demonstrates your commitment to excellence and opens doors to advancement, higher earning potential, and greater professional satisfaction.
         </p>
       </div>
     </section>
