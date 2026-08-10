@@ -57,11 +57,34 @@ export const pathway = [
   },
 ]
 
-export const whoWeServe = [
-  "Apprentice Opticians",
-  "ABO Candidates",
-  "Working Opticians",
-  "Career Changers",
-  "Any Experience Level",
-  "Mentors & Volunteers",
-] as const
+export type Audience = {
+  title: string
+  description: string
+}
+
+export const whoWeServe: Audience[] = [
+  {
+    title: "Apprentice Opticians",
+    description: "Learn the fundamentals. Build confidence. Start your journey with support every step of the way.",
+  },
+  {
+    title: "ABO Candidates",
+    description: "Study smarter, stay accountable, and prepare to earn your certification with confidence.",
+  },
+  {
+    title: "Working Opticians",
+    description: "Continue growing your skills, expanding your knowledge, and elevating your career.",
+  },
+  {
+    title: "Career Changers",
+    description: "Discover a rewarding profession and gain the guidance needed to successfully transition into optical.",
+  },
+  {
+    title: "Any Experience Level",
+    description: "No matter where you are on your journey, you'll find education, encouragement, and community here.",
+  },
+  {
+    title: "Mentors & Volunteers",
+    description: "Give back to the profession by helping others learn, grow, and achieve their goals.",
+  },
+]
