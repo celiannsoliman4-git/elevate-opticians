@@ -3,6 +3,7 @@ import { Hero } from "@/sections/Hero"
 import { Mission } from "@/sections/Mission"
 import { Founder } from "@/sections/Founder"
 import { EducationPartners } from "@/sections/EducationPartners"
+import { WhyABOMatters } from "@/sections/WhyABOMatters"
 import { WhoItsFor } from "@/sections/WhoItsFor"
 import { Testimonials } from "@/sections/Testimonials"
 import { Graduates } from "@/sections/Graduates"
@@ -21,6 +22,7 @@ function App() {
           <Mission />
           <Founder />
           <EducationPartners />
+          <WhyABOMatters />
           <WhoItsFor />
           <Testimonials />
           <Graduates />
