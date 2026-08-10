@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button"
 
 const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#mission", label: "Our Story", icon: Heart },
-  { href: "#founder", label: "Our Team", icon: Users2 },
+  { href: "#founder", label: "Founders", icon: Users2 },
   { href: "#testimonials", label: "Testimonials", icon: Quote },
   { href: "#graduates", label: "Graduates", icon: GraduationCap },
   { href: "#faq", label: "FAQ", icon: HelpCircle },
