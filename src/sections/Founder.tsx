@@ -1,4 +1,4 @@
-import { founder, coordinator } from "@/data/team"
+import { founder, coordinator, educationPartner } from "@/data/team"
 
 function LinkedinIcon({ className }: { className?: string }) {
   return (
@@ -12,9 +12,9 @@ export function Founder() {
   return (
     <section id="founder" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
-        <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
-          Meet the Founder
-        </p>
+        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
+          Education Partners
+        </h2>
 
         <div className="mt-6 flex flex-col items-start gap-8 border border-ink/10 bg-gold/15 p-10 sm:flex-row sm:items-center">
           <img
@@ -71,6 +71,36 @@ export function Founder() {
               {coordinator.title}
             </p>
             <p className="mt-2 text-sm text-foreground/70">{coordinator.bio}</p>
+          </div>
+        </div>
+
+        <div className="mt-4 flex flex-col items-start gap-4 border border-ink/10 bg-white p-6 sm:flex-row sm:items-center">
+          <img
+            src="/drmalak.jpg"
+            alt={educationPartner.name}
+            className="h-20 w-16 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
+          />
+          <div>
+            <div className="flex items-center gap-2">
+              <p className="font-display text-lg font-bold text-ink">
+                {educationPartner.name}
+              </p>
+              {educationPartner.linkedin && (
+                <a
+                  href={educationPartner.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${educationPartner.name} on LinkedIn`}
+                  className="text-ink/50 transition-colors hover:text-accent"
+                >
+                  <LinkedinIcon className="size-4" />
+                </a>
+              )}
+            </div>
+            <p className="text-xs font-medium uppercase tracking-wide text-accent">
+              {educationPartner.title}
+            </p>
+            <p className="mt-2 text-sm text-foreground/70">{educationPartner.bio}</p>
           </div>
         </div>
       </div>

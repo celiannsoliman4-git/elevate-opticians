@@ -13,6 +13,13 @@ export const coordinator = {
   linkedin: "https://www.linkedin.com/in/celiannsoliman/",
 }
 
+export const educationPartner = {
+  name: "Dr. Najla Malak-Majdalani, OD",
+  title: "Education Partner",
+  bio: "A graduate of Illinois College of Optometry (1989) with 30+ years of experience at Luxottica, Dr. Najla envisioned a collaborative study approach during the early pandemic. Her structured weekly lessons and daily practice questions, along with her mentorship and that of Dr. Betsy Shyu, transformed our study group into a thriving community where eight opticians studied together and seven passed their ABO certification.",
+  linkedin: "",
+}
+
 export type Testimonial = {
   quote: string
   name: string
