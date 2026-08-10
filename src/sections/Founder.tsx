@@ -50,7 +50,7 @@ export function Founder() {
           <img
             src="/lian.jpg"
             alt={coordinator.name}
-            className="h-20 w-16 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
+            className="h-32 w-24 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
           />
           <div>
             <div className="flex items-center gap-2">
