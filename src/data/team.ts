@@ -20,6 +20,13 @@ export const educationPartner = {
   linkedin: "",
 }
 
+export const educationPartner2 = {
+  name: "Carissa",
+  title: "Education Partner",
+  bio: "Starting at a LensCrafters in 2010, Carissa recognized the knowledge and skill needed to excel as an optician. Driven by her commitment to provide excellent patient care, she studied diligently and passed her ABO in 2011. Over the years, she generously shared her resources with 24 peers who all successfully passed their ABO certification, embodying her passion for uplifting the optical community.",
+  linkedin: "",
+}
+
 export type Testimonial = {
   quote: string
   name: string
