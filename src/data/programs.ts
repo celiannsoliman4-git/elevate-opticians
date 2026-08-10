@@ -38,7 +38,7 @@ export const pathway = [
   {
     step: "01",
     title: "Study",
-    description: "Join weekly peer sessions covering everything on the ABO (American Board of Opticianry) blueprint.",
+    description: "Join weekly peer sessions covering everything on the American Board of Opticianry (ABO) blueprint.",
   },
   {
     step: "02",
@@ -68,7 +68,7 @@ export const whoWeServe: Audience[] = [
     description: "Learn the fundamentals. Build confidence. Start your journey with support every step of the way.",
   },
   {
-    title: "ABO Candidates",
+    title: "American Board of Opticianry (ABO) Candidates",
     description: "Study smarter, stay accountable, and prepare to earn your certification with confidence.",
   },
   {

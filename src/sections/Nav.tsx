@@ -15,7 +15,7 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#mission", label: "Our Story", icon: Heart },
   { href: "#founder", label: "Founder", icon: Users2 },
   { href: "#education-partners", label: "Education Partners", icon: Users2 },
-  { href: "#why-abo", label: "Why ABO", icon: HelpCircle },
+  { href: "#why-abo", label: "Why American Board of Opticianry (ABO)", icon: HelpCircle },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#testimonials", label: "Testimonials", icon: Quote },
   { href: "#graduates", label: "Graduates", icon: GraduationCap },
@@ -68,7 +68,7 @@ export function Nav() {
         </nav>
         <div className="space-y-4 border-t border-white/10 pt-5">
           <p className="px-1 text-xs leading-relaxed text-white/50">
-            100% Free · Open to Anyone Pursuing Their ABO
+            100% Free · Open to Anyone Pursuing Their American Board of Opticianry (ABO)
           </p>
           <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
             <a href="#join">Join Free</a>

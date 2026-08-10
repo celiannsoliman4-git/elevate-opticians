@@ -12,15 +12,15 @@ const faqs = [
     a: "Whatever works for you. Attend every session or drop in when topics are relevant. No minimum.",
   },
   {
-    q: "Do I have to be studying for the ABO?",
+    q: "Do I have to be studying for the American Board of Opticianry (ABO)?",
     a: "No. Join to learn optics, connect with mentors, build confidence, or grow professionally.",
   },
   {
     q: "What happens during a study session?",
-    a: "Topics vary: optics fundamentals, lens designs, ABO review, test strategies, and mentor discussions.",
+    a: "Topics vary: optics fundamentals, lens designs, American Board of Opticianry (ABO) review, test strategies, and mentor discussions.",
   },
   {
-    q: "What if I've failed the ABO?",
+    q: "What if I've failed the American Board of Opticianry (ABO)?",
     a: "You've come to the right place. We believe a failed exam doesn't define your future.",
   },
   {

@@ -25,23 +25,23 @@ export function Mission() {
           <p>
             Elevate Opticians was born during one of the most challenging
             times in recent history, the COVID-19 pandemic in 2020. What
-            began as a small ABO study group would eventually grow into a
+            began as a small American Board of Opticianry (ABO) study group would eventually grow into a
             volunteer-led mentorship community dedicated to helping
             opticians achieve certification, build confidence, and advance
             their careers.
           </p>
           <p>
             The journey started when Araceli Garcia, an aspiring
-            ABO-certified optician, expressed her desire to prepare for the
-            ABO exam. Recognizing her dedication, Dr. Najla Malak-Majdalani
+            American Board of Opticianry (ABO)-certified optician, expressed her desire to prepare for the
+            American Board of Opticianry (ABO) exam. Recognizing her dedication, Dr. Najla Malak-Majdalani
             offered to help guide her studies. Soon after, Dr. Betsy Shyu, who practiced in
             the same office, joined the effort. Together, they formed a
             study group that included six additional opticians who shared
-            the same goal of becoming ABO certified.
+            the same goal of becoming American Board of Opticianry (ABO) certified.
           </p>
           <p>
             The results were remarkable. Nearly everyone in the group passed
-            the ABO exam. However, one person did not: Kiara Resplandor.
+            the American Board of Opticianry (ABO) exam. However, one person did not: Kiara Resplandor.
           </p>
           <p>
             While disappointing at the time, that setback became the
@@ -52,14 +52,14 @@ export function Mission() {
             succeed. Determined to overcome the challenge, she gathered two
             more opticians for a focused self-review study group. Together,
             they committed themselves to the process, and all three
-            successfully passed the ABO exam.
+            successfully passed the American Board of Opticianry (ABO) exam.
           </p>
           <p>
             For many, earning certification would have marked the end of
             the journey. For Kiara, it was only the beginning.
           </p>
           <p>
-            She saw firsthand how ABO certification could transform careers
+            She saw firsthand how American Board of Opticianry (ABO) certification could transform careers
             by increasing professional credibility, creating job security,
             opening opportunities for higher pay, and strengthening
             confidence in patient care. She believed every optician
@@ -68,7 +68,7 @@ export function Mission() {
           <p>
             Driven by this vision, Kiara continued organizing study
             sessions and inviting more opticians to participate. Many of
-            the original ABO graduates volunteered their time to help
+            the original American Board of Opticianry (ABO) graduates volunteered their time to help
             future candidates whenever possible. However, as their careers
             advanced and they became busy managing practices and leading
             teams, it became clear that the need for mentorship could not
@@ -84,7 +84,7 @@ export function Mission() {
             one optician succeeds, the entire profession becomes stronger.
             The commitment was significant. Study sessions were often held
             twice a week. Members met in person, shared meals, reviewed
-            challenging concepts together, and participated in ABO exam
+            challenging concepts together, and participated in American Board of Opticianry (ABO) exam
             marathons designed to build confidence and improve first-time
             pass rates.
           </p>
@@ -96,7 +96,7 @@ export function Mission() {
           </p>
           <p>
             Today, more than six years later, Elevate Opticians has helped
-            24 opticians achieve ABO certification, with many going on to
+            24 opticians achieve American Board of Opticianry (ABO) certification, with many going on to
             become leaders, trainers, managers, business consultants, and
             respected professionals within the optical industry. While
             certification remains an important milestone, the true impact
@@ -105,7 +105,7 @@ export function Mission() {
           </p>
 
           <div className="[column-span:all] grid gap-6 border-y border-ink/10 py-8 sm:grid-cols-4">
-            <Stat label="ABO Certified Graduates" value="24+" />
+            <Stat label="American Board of Opticianry (ABO) Certified Graduates" value="24+" />
             <Stat label="Years of Mentorship" value="6+" />
             <Stat label="Volunteer-Led" value="✓" />
             <Stat label="Always Free" value="✓" />

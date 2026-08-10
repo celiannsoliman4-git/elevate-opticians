@@ -16,7 +16,7 @@ export function WhyABOMatters() {
         </p>
 
         <h2 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
-          Why Earn ABO Certification?
+          Why Earn American Board of Opticianry (ABO) Certification?
         </h2>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -35,7 +35,7 @@ export function WhyABOMatters() {
         </div>
 
         <p className="mt-12 text-base leading-relaxed text-foreground/70">
-          American Board of Opticianry is more than a credential — it's an investment in your career, your patients, and the optical profession. It demonstrates your commitment to excellence and opens doors to advancement, higher earning potential, and greater professional satisfaction.
+          American Board of Opticianry (ABO) is more than a credential — it's an investment in your career, your patients, and the optical profession. It demonstrates your commitment to excellence and opens doors to advancement, higher earning potential, and greater professional satisfaction.
         </p>
       </div>
     </section>
