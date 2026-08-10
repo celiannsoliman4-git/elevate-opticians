@@ -13,19 +13,22 @@ export const coordinator = {
   linkedin: "https://www.linkedin.com/in/celiannsoliman/",
 }
 
-export const educationPartner = {
-  name: "Dr. Najla Malak-Majdalani, OD",
-  title: "Education Partner",
-  bio: "A graduate of Illinois College of Optometry (1989) with 30+ years of experience at Luxottica, Dr. Najla envisioned a collaborative study approach during the early pandemic. Her structured weekly lessons and daily practice questions, along with her mentorship and that of Dr. Betsy Shyu, transformed our study group into a thriving community where eight opticians studied together and seven passed their ABO certification.",
-  linkedin: "",
-}
-
-export const educationPartner2 = {
-  name: "Carissa",
-  title: "Education Partner",
-  bio: "Starting at a LensCrafters in 2010, Carissa recognized the knowledge and skill needed to excel as an optician. Driven by her commitment to provide excellent patient care, she studied diligently and passed her ABO in 2011. Over the years, she generously shared her resources with 24 peers who all successfully passed their ABO certification, embodying her passion for uplifting the optical community.",
-  linkedin: "",
-}
+export const educationPartners = [
+  {
+    name: "Dr. Najla Malak-Majdalani, OD",
+    title: "Education Partner",
+    photo: "/drmalak.jpg",
+    bio: "I worked with Luxottica since 1992. Graduated from Illinois College of Optometry in 1989. Just before COVID, our office's optical manager Araceli Garcia and optician Jackie Garcia were worried about studying for ABO board certification. I offered my help but due to all of our work schedules studying did not go too far. Within a month, COVID hit and everything shut down. I realized it was a great opportunity to focus on studying. I designed a plan to go over weekly lessons and do practice questions daily. Dr. Betsy Shyu found out about our study group and decided to help teach. Before we knew it many opticians working for LUXOTTICA heard about our group and asked to join in. The interactions, the questions, the problem solving, the learning, the camaraderie, all made studying for the ABO easier, more focused, and rewarding. At the end eight people studied for the test and all passed except for one. She actually joined our group much too late and could not catch up. Overall it was a great idea and a great accomplishment by everyone involved.",
+    linkedin: "",
+  },
+  {
+    name: "Carissa",
+    title: "Education Partner",
+    photo: "/carissa.jpg",
+    bio: "I started in the Optical Industry at a LensCrafters in 2010. I quickly realized that an Optician needs a lot of knowledge and skill (that I didn't have yet) in order to perform their job well. I wanted to be of the best service to my patients. So I decided to study for the ABO. I gathered all the materials I could get my hands on from my company and from other opticians. I sought out hands-on learning from the lens lab technicians. I studied SO much! And was so relieved and excited when I passed my ABO in 2011! Over the next couple years, I had many peers ask me for resources when they wanted to study for the ABO. I'm proud to say that 24 Opticians have studied with those materials and passed their ABO too! The Optical Industry is full of caring and hard-working people, and I'm honored to contribute to this community.",
+    linkedin: "",
+  },
+]
 
 export type Testimonial = {
   quote: string

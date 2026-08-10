@@ -2,6 +2,7 @@ import { Nav } from "@/sections/Nav"
 import { Hero } from "@/sections/Hero"
 import { Mission } from "@/sections/Mission"
 import { Founder } from "@/sections/Founder"
+import { EducationPartners } from "@/sections/EducationPartners"
 import { WhoItsFor } from "@/sections/WhoItsFor"
 import { Testimonials } from "@/sections/Testimonials"
 import { Graduates } from "@/sections/Graduates"
@@ -19,6 +20,7 @@ function App() {
           <Hero />
           <Mission />
           <Founder />
+          <EducationPartners />
           <WhoItsFor />
           <Testimonials />
           <Graduates />
