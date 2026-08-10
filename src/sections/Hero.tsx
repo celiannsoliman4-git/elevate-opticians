@@ -24,7 +24,7 @@ export function Hero() {
           <h1 className="font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
             You don't have to
             <br />
-            study for the <span className="italic text-gold">ABO</span>
+            study for the <span className="italic text-gold">American Board of Opticianry</span>
             <br />
             alone.
           </h1>
