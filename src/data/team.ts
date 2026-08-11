@@ -28,6 +28,13 @@ export const educationPartners = [
     bio: "I started in the Optical Industry at an Optical Retail Chain in 2010. I quickly realized that an Optician needs a lot of knowledge and skill (that I didn't have yet) in order to perform their job well. I wanted to be of the best service to my patients. So I decided to study for the American Board of Opticianry (ABO). I gathered all the materials I could get my hands on from my company and from other opticians. I sought out hands-on learning from the lens lab technicians. I studied SO much! And was so relieved and excited when I passed my American Board of Opticianry (ABO) in 2011! Over the next couple years, I had many peers ask me for resources when they wanted to study for the American Board of Opticianry (ABO). I'm proud to say that 24 Opticians have studied with those materials and passed their American Board of Opticianry (ABO) too! The Optical Industry is full of caring and hard-working people, and I'm honored to contribute to this community.",
     linkedin: "",
   },
+  {
+    name: "Karen Langseth, ABOP, ABOC",
+    title: "Education Partner",
+    photo: "/karen.jpg",
+    bio: "I began my career in optical more than 30 years ago and have been fortunate to work in nearly every area of the industry, including dispensing, laboratory operations, practice development, sales, provider consulting, and optical education. Today, I serve as an Account Executive and Ophthalmic Business Consultant with VSP Optics Group, where I work alongside eye care professionals to identify growth opportunities, improve patient experiences, and support practice success. Throughout my career, I have been passionate about helping others learn, grow, and build confidence in their optical knowledge and skills. I hold active ABOC and ABOP certifications and am an ABO Ophthalmic Level II Speaker. Education and mentorship have always been important to me, whether I'm training staff, speaking at events, supporting certification efforts, or helping someone navigate the next step in their career. I believe our profession is strongest when we support one another, share knowledge, and invest in the next generation of optical professionals. I'm honored to be part of the Elevate Opticians community and look forward to connecting, learning, and growing together.",
+    linkedin: "",
+  },
 ]
 
 export type Testimonial = {
