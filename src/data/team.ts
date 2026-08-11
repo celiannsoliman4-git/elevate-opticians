@@ -15,10 +15,10 @@ export const coordinator = {
 
 export const educationPartners = [
   {
-    name: "Dr. Najla Malak-Majdalani, OD",
+    name: "Karen Langseth, ABOP, ABOC",
     title: "Education Partner",
-    photo: "/drmalak.png",
-    bio: "I worked with Luxottica since 1992. Graduated from Illinois College of Optometry in 1989. Just before COVID, our office's optical manager Araceli Garcia and optician Jackie Garcia were worried about studying for American Board of Opticianry (ABO) board certification. I offered my help but due to all of our work schedules studying did not go too far. Within a month, COVID hit and everything shut down. I realized it was a great opportunity to focus on studying. I designed a plan to go over weekly lessons and do practice questions daily. Dr. Betsy Shyu found out about our study group and decided to help teach. Before we knew it many opticians working for Luxottica heard about our group and asked to join in. The interactions, the questions, the problem solving, the learning, the camaraderie, all made studying for the American Board of Opticianry (ABO) easier, more focused, and rewarding. At the end eight people studied for the test and all passed except for one. She actually joined our group much too late and could not catch up. Overall it was a great idea and a great accomplishment by everyone involved.",
+    photo: "/karen.jpg",
+    bio: "I began my career in optical more than 30 years ago and have been fortunate to work in nearly every area of the industry, including dispensing, laboratory operations, practice development, sales, provider consulting, and optical education. Today, I serve as an Account Executive and Ophthalmic Business Consultant with VSP Optics Group, where I work alongside eye care professionals to identify growth opportunities, improve patient experiences, and support practice success. Throughout my career, I have been passionate about helping others learn, grow, and build confidence in their optical knowledge and skills. I hold active ABOC and ABOP certifications and am an ABO Ophthalmic Level II Speaker. Education and mentorship have always been important to me, whether I'm training staff, speaking at events, supporting certification efforts, or helping someone navigate the next step in their career. I believe our profession is strongest when we support one another, share knowledge, and invest in the next generation of optical professionals. I'm honored to be part of the Elevate Opticians community and look forward to connecting, learning, and growing together.",
     linkedin: "",
   },
   {
@@ -29,10 +29,10 @@ export const educationPartners = [
     linkedin: "",
   },
   {
-    name: "Karen Langseth, ABOP, ABOC",
+    name: "Dr. Najla Malak-Majdalani, OD",
     title: "Education Partner",
-    photo: "/karen.jpg",
-    bio: "I began my career in optical more than 30 years ago and have been fortunate to work in nearly every area of the industry, including dispensing, laboratory operations, practice development, sales, provider consulting, and optical education. Today, I serve as an Account Executive and Ophthalmic Business Consultant with VSP Optics Group, where I work alongside eye care professionals to identify growth opportunities, improve patient experiences, and support practice success. Throughout my career, I have been passionate about helping others learn, grow, and build confidence in their optical knowledge and skills. I hold active ABOC and ABOP certifications and am an ABO Ophthalmic Level II Speaker. Education and mentorship have always been important to me, whether I'm training staff, speaking at events, supporting certification efforts, or helping someone navigate the next step in their career. I believe our profession is strongest when we support one another, share knowledge, and invest in the next generation of optical professionals. I'm honored to be part of the Elevate Opticians community and look forward to connecting, learning, and growing together.",
+    photo: "/drmalak.png",
+    bio: "I worked with Luxottica since 1992. Graduated from Illinois College of Optometry in 1989. Just before COVID, our office's optical manager Araceli Garcia and optician Jackie Garcia were worried about studying for American Board of Opticianry (ABO) board certification. I offered my help but due to all of our work schedules studying did not go too far. Within a month, COVID hit and everything shut down. I realized it was a great opportunity to focus on studying. I designed a plan to go over weekly lessons and do practice questions daily. Dr. Betsy Shyu found out about our study group and decided to help teach. Before we knew it many opticians working for Luxottica heard about our group and asked to join in. The interactions, the questions, the problem solving, the learning, the camaraderie, all made studying for the American Board of Opticianry (ABO) easier, more focused, and rewarding. At the end eight people studied for the test and all passed except for one. She actually joined our group much too late and could not catch up. Overall it was a great idea and a great accomplishment by everyone involved.",
     linkedin: "",
   },
 ]
