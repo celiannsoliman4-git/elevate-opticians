@@ -35,6 +35,16 @@ export function EducationPartners() {
             <p className="mt-2 text-sm font-medium uppercase tracking-wide text-accent">
               {partner.title}
             </p>
+            {"website" in partner && partner.website && (
+              <a
+                href={partner.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 inline-block text-sm text-ink/60 underline-offset-4 hover:text-accent hover:underline"
+              >
+                {partner.website.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+              </a>
+            )}
 
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/75">
               {partner.bio}
