@@ -20,7 +20,7 @@ export function EducationPartners() {
             <img
               src={partner.photo}
               alt={partner.name}
-              className="aspect-square w-full rounded-lg object-cover ring-2 ring-bronze/40"
+              className="aspect-square w-full rounded-lg object-cover object-top ring-2 ring-bronze/40"
             />
           </div>
 
