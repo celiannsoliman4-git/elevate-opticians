@@ -16,8 +16,17 @@ function InstagramIcon({ className }: { className?: string }) {
   )
 }
 
+function LinkedinIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden className={className}>
+      <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .78 23.2 0 22.22 0z" />
+    </svg>
+  )
+}
+
 const socialLinks = [
   { href: "https://www.instagram.com/elevateopticians/", label: "Instagram", icon: InstagramIcon },
+  { href: "https://www.linkedin.com/in/elevate-opticians-428b84426/", label: "LinkedIn", icon: LinkedinIcon },
 ]
 
 export function Footer() {
@@ -45,7 +54,7 @@ export function Footer() {
         <div className="mt-10 flex flex-col gap-4 border-t border-white/15 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Elevate Opticians · Founded in the Bay Area · {JOIN_EMAIL}</p>
           <div className="flex items-center gap-3">
-            <span className="text-white/70">Follow us on Instagram</span>
+            <span className="text-white/70">Follow us</span>
             {socialLinks.map((link) => {
               const Icon = link.icon
               return (
