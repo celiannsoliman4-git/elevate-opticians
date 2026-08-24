@@ -35,12 +35,31 @@ export function Footer() {
     <footer className="bg-ink text-white">
       <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
-          <a href="#top" className="flex items-center gap-3">
-            <img src="/seal.png" alt="" className="h-10 w-10 rounded-full" />
-            <span className="font-display text-base font-bold text-white">
-              Elevate Opticians
-            </span>
-          </a>
+          <div>
+            <a href="#top" className="flex items-center gap-3">
+              <img src="/seal.png" alt="" className="h-10 w-10 rounded-full" />
+              <span className="font-display text-base font-bold text-white">
+                Elevate Opticians
+              </span>
+            </a>
+            <div className="mt-4 flex items-center gap-3">
+              {socialLinks.map((link) => {
+                const Icon = link.icon
+                return (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={link.label}
+                    className="text-white/70 transition-colors hover:text-white"
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                )
+              })}
+            </div>
+          </div>
 
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/70">
             {links.map((l) => (
@@ -51,26 +70,8 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t border-white/15 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 border-t border-white/15 pt-6 text-xs text-white/50">
           <p>© {year} Elevate Opticians · Founded in the Bay Area · {JOIN_EMAIL}</p>
-          <div className="flex items-center gap-3">
-            <span className="text-white/70">Follow us</span>
-            {socialLinks.map((link) => {
-              const Icon = link.icon
-              return (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.label}
-                  className="text-white/70 transition-colors hover:text-white"
-                >
-                  <Icon className="h-5 w-5" />
-                </a>
-              )
-            })}
-          </div>
         </div>
       </div>
     </footer>
