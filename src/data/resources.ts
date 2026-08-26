@@ -5,4 +5,10 @@ export type Resource = {
 }
 
 // Add new resources here — name, url, and a short description.
-export const resources: Resource[] = []
+export const resources: Resource[] = [
+  {
+    name: "Acing the ABO with Andrew Bruce",
+    url: "https://www.uuniversity.com/AcingtheABO.html",
+    description: "A free 7-week live ABO exam prep course led by nationally recognized instructor Andrew Bruce, covering ocular anatomy, optics, lens design, prism calculations, and dispensing standards.",
+  },
+]
