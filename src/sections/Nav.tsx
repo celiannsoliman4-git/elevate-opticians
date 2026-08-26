@@ -61,6 +61,8 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#mission", label: "Our Story", icon: Heart },
   { href: "#founder", label: "Founder", icon: Users2 },
   { href: "#education-partners", label: "Education Partners", icon: Users2 },
+  { href: "/resources", label: "Education Resources", icon: BookOpen },
+  { href: "/calendar", label: "Class & Event Calendar", icon: CalendarDays },
   { href: "#why-abo", label: "Why American Board of Opticianry (ABO)", icon: HelpCircle },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#testimonials", label: "Testimonials", icon: Quote },
@@ -68,42 +70,33 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#faq", label: "FAQ", icon: HelpCircle },
 ]
 
-const pageLinks: { href: string; label: string; icon: LucideIcon }[] = [
-  { href: "/resources", label: "Education Resources", icon: BookOpen },
-  { href: "/calendar", label: "Class & Event Calendar", icon: CalendarDays },
-]
-
 function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   return (
     <ul className="space-y-1">
       {links.map((l) => {
         const Icon = l.icon
+        const isPage = l.href.startsWith("/")
         return (
           <li key={l.href}>
-            <a
-              href={`/${l.href}`}
-              onClick={onNavigate}
-              className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
-            >
-              <Icon className="size-4" strokeWidth={1.75} />
-              {l.label}
-            </a>
-          </li>
-        )
-      })}
-      <li className="my-2 border-t border-white/10" />
-      {pageLinks.map((l) => {
-        const Icon = l.icon
-        return (
-          <li key={l.href}>
-            <Link
-              to={l.href}
-              onClick={onNavigate}
-              className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
-            >
-              <Icon className="size-4" strokeWidth={1.75} />
-              {l.label}
-            </Link>
+            {isPage ? (
+              <Link
+                to={l.href}
+                onClick={onNavigate}
+                className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+              >
+                <Icon className="size-4" strokeWidth={1.75} />
+                {l.label}
+              </Link>
+            ) : (
+              <a
+                href={`/${l.href}`}
+                onClick={onNavigate}
+                className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+              >
+                <Icon className="size-4" strokeWidth={1.75} />
+                {l.label}
+              </a>
+            )}
           </li>
         )
       })}
