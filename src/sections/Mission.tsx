@@ -96,7 +96,7 @@ export function Mission() {
           </p>
           <p>
             Today, more than six years later, Elevate Opticians has helped
-            24 opticians achieve American Board of Opticianry (ABO) certification, with many going on to
+            25 opticians achieve American Board of Opticianry (ABO) certification, with many going on to
             become leaders, trainers, managers, business consultants, and
             respected professionals within the optical industry. While
             certification remains an important milestone, the true impact
@@ -105,7 +105,7 @@ export function Mission() {
           </p>
 
           <div className="[column-span:all] grid gap-6 border-y border-ink/10 py-8 sm:grid-cols-4">
-            <Stat label="American Board of Opticianry (ABO) Certified Graduates" value="24+" />
+            <Stat label="American Board of Opticianry (ABO) Certified Graduates" value="25+" />
             <Stat label="Years of Mentorship" value="6+" />
             <Stat label="Volunteer-Led" value="✓" />
             <Stat label="Always Free" value="✓" />
