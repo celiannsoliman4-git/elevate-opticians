@@ -124,7 +124,7 @@ export function Nav() {
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col overflow-y-auto bg-ink px-5 py-7 lg:flex">
         <Logo />
         <SocialLinks />
-        <nav className="mt-10 flex-1">
+        <nav className="mt-5 flex-1">
           <NavLinks />
         </nav>
         <div className="space-y-4 border-t border-white/10 pt-5">
@@ -174,7 +174,7 @@ export function Nav() {
               </button>
             </div>
             <SocialLinks />
-            <nav className="mt-8 flex-1">
+            <nav className="mt-5 flex-1">
               <NavLinks onNavigate={() => setOpen(false)} />
             </nav>
             <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
