@@ -62,7 +62,7 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#founder", label: "Founder", icon: Users2 },
   { href: "#education-partners", label: "Education Partners", icon: Users2 },
   { href: "/resources", label: "Education Resources", icon: BookOpen },
-  { href: "/calendar", label: "Class & Event Calendar", icon: CalendarDays },
+  { href: "/calendar", label: "Calendar", icon: CalendarDays },
   { href: "#why-abo", label: "Why American Board of Opticianry (ABO)", icon: HelpCircle },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#testimonials", label: "Testimonials", icon: Quote },

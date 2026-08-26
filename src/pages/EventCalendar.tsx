@@ -1,5 +1,6 @@
 import { Calendar, Clock } from "lucide-react"
 import { events } from "@/data/events"
+import { MonthCalendar } from "@/components/MonthCalendar"
 
 export function EventCalendar() {
   return (
@@ -9,24 +10,18 @@ export function EventCalendar() {
           Mark Your Calendar
         </p>
         <h1 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
-          Class &amp; Event Calendar
+          Calendar
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/70">
           Upcoming study sessions, practice exam nights, and special events. Every session is free and open to anyone pursuing their American Board of Opticianry (ABO).
         </p>
 
-        {events.length === 0 ? (
-          <div className="mt-12 rounded-lg border border-dashed border-ink/20 bg-gold/10 p-10 text-center">
-            <p className="text-sm text-foreground/60">
-              No upcoming events posted yet. Check back shortly, or{" "}
-              <a href="#join" className="text-ink underline underline-offset-4 hover:text-accent">
-                join our list
-              </a>{" "}
-              to be notified.
-            </p>
-          </div>
-        ) : (
-          <div className="mt-12 space-y-4">
+        <div className="mt-12">
+          <MonthCalendar events={events} initialYear={2026} initialMonth={8} />
+        </div>
+
+        {events.length > 0 && (
+          <div className="mt-8 space-y-4">
             {events.map((event, i) => (
               <div
                 key={i}

@@ -1,6 +1,6 @@
 export type Event = {
   title: string
-  date: string // e.g. "September 14, 2026"
+  date: string // ISO format, e.g. "2026-09-14"
   time?: string // e.g. "6:00 PM PT"
   description: string
   link?: string // e.g. Zoom link or signup link
