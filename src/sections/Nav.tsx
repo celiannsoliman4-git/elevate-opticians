@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import {
   Menu,
   X,
@@ -7,6 +8,8 @@ import {
   Quote,
   GraduationCap,
   HelpCircle,
+  BookOpen,
+  CalendarDays,
   type LucideIcon,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -65,6 +68,11 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#faq", label: "FAQ", icon: HelpCircle },
 ]
 
+const pageLinks: { href: string; label: string; icon: LucideIcon }[] = [
+  { href: "/resources", label: "Education Resources", icon: BookOpen },
+  { href: "/calendar", label: "Class & Event Calendar", icon: CalendarDays },
+]
+
 function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   return (
     <ul className="space-y-1">
@@ -73,7 +81,7 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
         return (
           <li key={l.href}>
             <a
-              href={l.href}
+              href={`/${l.href}`}
               onClick={onNavigate}
               className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
             >
@@ -83,13 +91,29 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
           </li>
         )
       })}
+      <li className="my-2 border-t border-white/10" />
+      {pageLinks.map((l) => {
+        const Icon = l.icon
+        return (
+          <li key={l.href}>
+            <Link
+              to={l.href}
+              onClick={onNavigate}
+              className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+            >
+              <Icon className="size-4" strokeWidth={1.75} />
+              {l.label}
+            </Link>
+          </li>
+        )
+      })}
     </ul>
   )
 }
 
 function Logo() {
   return (
-    <a href="#top" className="flex items-center gap-2.5">
+    <a href="/#top" className="flex items-center gap-2.5">
       <img src="/seal.png" alt="Elevate Opticians seal" className="h-10 w-10 rounded-full" />
       <span className="font-display text-base font-bold text-white">
         Elevate Opticians
@@ -115,7 +139,7 @@ export function Nav() {
             100% Free · Open to Anyone Pursuing Their American Board of Opticianry (ABO)
           </p>
           <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
-            <a href="#join">Join Free</a>
+            <a href="/#join">Join Free</a>
           </Button>
         </div>
       </aside>
@@ -161,7 +185,7 @@ export function Nav() {
               <NavLinks onNavigate={() => setOpen(false)} />
             </nav>
             <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
-              <a href="#join" onClick={() => setOpen(false)}>
+              <a href="/#join" onClick={() => setOpen(false)}>
                 Join Free
               </a>
             </Button>

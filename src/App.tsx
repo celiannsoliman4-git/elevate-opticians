@@ -1,16 +1,9 @@
+import { Routes, Route } from "react-router-dom"
 import { Nav } from "@/sections/Nav"
-import { Hero } from "@/sections/Hero"
-import { Mission } from "@/sections/Mission"
-import { Founder } from "@/sections/Founder"
-import { EducationPartners } from "@/sections/EducationPartners"
-import { WhyABOMatters } from "@/sections/WhyABOMatters"
-import { WhoItsFor } from "@/sections/WhoItsFor"
-import { Testimonials } from "@/sections/Testimonials"
-import { Graduates } from "@/sections/Graduates"
-import { FAQ } from "@/sections/FAQ"
-import { Join } from "@/sections/Join"
-import { Legal } from "@/sections/Legal"
 import { Footer } from "@/sections/Footer"
+import { Home } from "@/pages/Home"
+import { EducationResources } from "@/pages/EducationResources"
+import { EventCalendar } from "@/pages/EventCalendar"
 
 function App() {
   return (
@@ -18,17 +11,11 @@ function App() {
       <Nav />
       <div className="lg:pl-64">
         <main>
-          <Hero />
-          <Mission />
-          <Founder />
-          <EducationPartners />
-          <WhyABOMatters />
-          <WhoItsFor />
-          <Testimonials />
-          <Graduates />
-          <FAQ />
-          <Join />
-          <Legal />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/resources" element={<EducationResources />} />
+            <Route path="/calendar" element={<EventCalendar />} />
+          </Routes>
         </main>
         <Footer />
       </div>
