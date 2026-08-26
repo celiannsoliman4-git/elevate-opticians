@@ -174,7 +174,7 @@ export function Nav() {
               </button>
             </div>
             <SocialLinks />
-            <nav className="mt-5 flex-1">
+            <nav className="mt-3 flex-1">
               <NavLinks onNavigate={() => setOpen(false)} />
             </nav>
             <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
