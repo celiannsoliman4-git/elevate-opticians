@@ -29,17 +29,26 @@ export function EducationResources() {
                 href={resource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col gap-2 rounded-lg border border-ink/10 bg-gold/15 p-6 transition-colors hover:border-accent"
+                className="group flex flex-col gap-4 rounded-lg border border-ink/10 bg-gold/15 p-6 transition-colors hover:border-accent sm:flex-row sm:items-start"
               >
-                <div className="flex items-center justify-between gap-2">
-                  <h3 className="font-display text-base font-bold text-ink">
-                    {resource.name}
-                  </h3>
-                  <ExternalLink className="size-4 shrink-0 text-ink/40 transition-colors group-hover:text-accent" />
+                {resource.image && (
+                  <img
+                    src={resource.image}
+                    alt=""
+                    className="h-20 w-20 shrink-0 rounded-lg object-cover object-top ring-2 ring-bronze/40"
+                  />
+                )}
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="font-display text-base font-bold text-ink">
+                      {resource.name}
+                    </h3>
+                    <ExternalLink className="size-4 shrink-0 text-ink/40 transition-colors group-hover:text-accent" />
+                  </div>
+                  <p className="text-sm leading-relaxed text-foreground/70">
+                    {resource.description}
+                  </p>
                 </div>
-                <p className="text-sm leading-relaxed text-foreground/70">
-                  {resource.description}
-                </p>
               </a>
             ))}
           </div>
