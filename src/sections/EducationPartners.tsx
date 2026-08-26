@@ -16,13 +16,15 @@ export function EducationPartners() {
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:gap-12">
           {/* Image */}
-          <div className="shrink-0 sm:w-64">
-            <img
-              src={partner.photo}
-              alt={partner.name}
-              className="aspect-square w-full rounded-lg object-cover object-top ring-2 ring-bronze/40"
-            />
-          </div>
+          {partner.photo && (
+            <div className="shrink-0 sm:w-64">
+              <img
+                src={partner.photo}
+                alt={partner.name}
+                className="aspect-square w-full rounded-lg object-cover object-top ring-2 ring-bronze/40"
+              />
+            </div>
+          )}
 
           {/* Content */}
           <div className="flex-1">
