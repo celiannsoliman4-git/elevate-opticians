@@ -67,7 +67,14 @@ export type Testimonial = {
   linkedin?: string
 }
 
+// Newest testimonials go at the FRONT of this array.
 export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "One of the things I appreciate most about Elevate Opticians is the people I've been surrounded by throughout this journey. Everyone has always been supportive, encouraging, and willing to give me honest feedback that helped me improve.\n\nWhat makes Elevate different is that it was never just about teaching me how to pass the ABO exam. Of course, they helped me understand the material and prepare for the test, but the experience went far beyond that. We talked about what it is actually like working in the optical field, shared real experiences, learned from mistakes, and discussed situations that you cannot always learn from a study guide.\n\nFor me, Elevate became more than just exam preparation. It became mentorship. I learned things that will help me not only as an optician, but as a person. The guidance, conversations, and lessons I received taught me how to approach my career, learn from mistakes, communicate with people, and continue growing.\n\nPassing my ABO was an amazing accomplishment for me, but what I gained from Elevate means much more than just passing a test. Whether or not I end up being an optician for the rest of my life, the mentorship and lessons I received are things I know I'll carry with me wherever I go.",
+    name: "Win Phone Hein",
+    detail: "ABO Certified",
+  },
   {
     quote:
       "My name is Maureen Villanueva and I highly recommend Kiara's ABO study program!\n\nMy friend Avena and I passed our ABO Optician Exam on May 31, 2026, and I truly believe her program played a huge role in our success. We dedicated a month to driving to Antioch every Sunday, studying together, and memorizing our ANSI standards every day.\n\nThe journey wasn't easy, but it was absolutely worth it. Kiara's practice exams were even harder than the actual ABO exam, which made me feel confident and well-prepared on exam day. She really pushes you to learn the material and sets you up for success.\n\nI'm now a Licensed Optician working part-time at two different private practices, and I'm very grateful for everything I learned through her program. Thank you, Kiara!",
