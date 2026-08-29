@@ -16,6 +16,13 @@ export const coordinator = {
 // Newest Education Partner additions go at the FRONT of this array.
 export const educationPartners = [
   {
+    name: "Donna Hatch",
+    title: "Education Partner",
+    photo: "/donna.jpg",
+    bio: "Donna Hatch is a Licensed Dispensing Optician and the CEO of D&D Management Services LLC, bringing over 40 years of extensive experience to the optical industry. Throughout her distinguished career, Donna has served in key leadership roles, including managing large-scale operations and working closely with opticians and non-profit boards as an Executive Director. Driven by a passion for strengthening the industry, her mission is to build robust state organizations one state at a time. Through D&D Management Services, Donna successfully spearheaded the launch of 9 new state associations in 2023 and an additional 4 in 2024, focusing her strategic vision on developing strong memberships, creating vital educational opportunities, and driving operational excellence nationwide.",
+    linkedin: "",
+  },
+  {
     name: "Julie Preston",
     title: "Education Partner",
     photo: "/julie.jpg",
