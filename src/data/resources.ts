@@ -13,6 +13,6 @@ export const resources: Resource[] = [
     url: "https://www.uuniversity.com/AcingtheABO.html",
     description: "A free 7-week live ABO exam prep course led by nationally recognized instructor Andrew Bruce, covering ocular anatomy, optics, lens design, prism calculations, and dispensing standards.",
     image: "/andrew.png",
-    provider: "UUniversity by VSP",
+    provider: "UUniversity",
   },
 ]
