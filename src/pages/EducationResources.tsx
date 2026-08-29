@@ -15,14 +15,6 @@ export function EducationResources() {
           A curated list of external sites, organizations, and materials to support your American Board of Opticianry (ABO) preparation and ongoing optical education.
         </p>
 
-        <div className="mt-8 max-w-2xl border-l-4 border-bronze bg-gold/15 px-6 py-5">
-          <p className="text-sm leading-relaxed text-foreground/80">
-            We are grateful to <span className="font-semibold text-ink">VSP</span> for
-            supporting our community and making these educational resources available to
-            opticians pursuing certification.
-          </p>
-        </div>
-
         {resources.length === 0 ? (
           <div className="mt-12 rounded-lg border border-dashed border-ink/20 bg-gold/10 p-10 text-center">
             <p className="text-sm text-foreground/60">
