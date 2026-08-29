@@ -60,7 +60,7 @@ function SocialLinks() {
 const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#mission", label: "Our Story", icon: Heart },
   { href: "#founder", label: "Founder", icon: Users2 },
-  { href: "#education-partners", label: "Education Partners", icon: Users2 },
+  { href: "#education-partners", label: "Partners", icon: Users2 },
   { href: "/resources", label: "Education Resources", icon: BookOpen },
   { href: "/calendar", label: "Calendar", icon: CalendarDays },
   { href: "#why-abo", label: "Why American Board of Opticianry (ABO)", icon: HelpCircle },

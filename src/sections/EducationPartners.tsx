@@ -11,10 +11,10 @@ export function EducationPartners() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
-            Education Partners
+            Partners
           </p>
           <h2 className="mt-6 font-display text-4xl font-bold leading-tight text-ink sm:text-5xl">
-            Meet our education partners
+            Meet our partners
           </h2>
           <p className="mt-6 text-lg text-foreground/70">
             Industry leaders, educators, and mentors who share their knowledge to
