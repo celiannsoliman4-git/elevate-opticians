@@ -155,7 +155,7 @@ export default async function handler(req: any, res: any) {
         <body>
           <div class="container">
             <div class="logo">
-              <img src="https://elevate-opticians.vercel.app/seal.png" alt="Elevate Opticians">
+              <img src="https://elevateopticians.org/seal-email.png" alt="Elevate Opticians" width="120" style="max-width:120px;height:auto;display:block;margin:0 auto;">
             </div>
 
             <h1>Welcome to Elevate Opticians</h1>
