@@ -1,6 +1,10 @@
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const RESEND_SANDBOX_FROM = "onboarding@resend.dev"
 
+// Intake form linked in the welcome email. Update here to change it everywhere.
+const FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeay-TQZqwniI2zYLWUu9-7aTki-fx0qeJs5NxIkIz-Q3BsZw/viewform?usp=header"
+
 // Simple in-memory cache for duplicate detection (24-hour window)
 // Note: Resets on deployment; for persistent tracking, use a database
 const recentSubmissions = new Map<string, number>()
@@ -123,7 +127,10 @@ export default async function handler(req: any, res: any) {
       text: [
         "Welcome to Elevate Opticians!",
         "",
-        "You're now part of a community dedicated to helping opticians succeed.",
+        "You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place.",
+        "",
+        "Before we get started, please fill out this form:",
+        FORM_URL,
         "",
         "Questions? Reach out to elevateopticians@gmail.com!",
       ].join("\n"),
@@ -139,7 +146,10 @@ export default async function handler(req: any, res: any) {
             .logo img { max-width: 120px; height: auto; }
             h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 32px; color: #0a0602; text-align: center; margin: 20px 0; }
             .welcome { font-size: 16px; color: #221206; text-align: center; margin-bottom: 30px; }
-            .guide-note { background: #fefdf7; padding: 15px; border-radius: 6px; margin: 20px 0; font-size: 14px; color: #221206; }
+            .cta-note { font-size: 16px; color: #221206; text-align: center; margin: 0 0 18px; }
+            .cta-wrap { text-align: center; margin-bottom: 30px; }
+            .cta { display: inline-block; background: #a26019; color: #ffffff; font-family: 'Lora', Georgia, serif; font-size: 16px; font-weight: 600; text-decoration: none; padding: 14px 28px; border-radius: 6px; }
+            .cta-fallback { font-size: 12px; color: #6b5a44; text-align: center; word-break: break-all; margin-bottom: 30px; }
             .footer { text-align: center; color: #6b5a44; font-size: 14px; margin-top: 30px; }
           </style>
         </head>
@@ -152,6 +162,12 @@ export default async function handler(req: any, res: any) {
             <h1>Welcome to Elevate Opticians</h1>
 
             <p class="welcome">You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place.</p>
+
+            <p class="cta-note">Before we get started, please fill out this form:</p>
+            <div class="cta-wrap">
+              <a class="cta" href="${FORM_URL}">Fill Out the Form</a>
+            </div>
+            <p class="cta-fallback">If the button doesn't work, copy this link:<br>${FORM_URL}</p>
 
             <div class="footer">
               <p>Questions? Reach out to elevateopticians@gmail.com!</p>
