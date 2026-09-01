@@ -107,9 +107,11 @@ export function EducationPartners() {
                     <X className="size-4" />
                   </button>
                 </div>
-                <p className="mt-6 text-base leading-relaxed text-foreground/75">
-                  {partner.bio}
-                </p>
+                <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/75">
+                  {partner.bio.split("\n\n").map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
