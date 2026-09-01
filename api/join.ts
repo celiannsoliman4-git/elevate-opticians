@@ -2,8 +2,7 @@ const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const RESEND_SANDBOX_FROM = "onboarding@resend.dev"
 
 // Intake form linked in the welcome email. Update here to change it everywhere.
-const FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSeay-TQZqwniI2zYLWUu9-7aTki-fx0qeJs5NxIkIz-Q3BsZw/viewform?usp=header"
+const FORM_URL = "https://forms.gle/YUTkVYGXsCujNJ95A"
 
 // Simple in-memory cache for duplicate detection (24-hour window)
 // Note: Resets on deployment; for persistent tracking, use a database
