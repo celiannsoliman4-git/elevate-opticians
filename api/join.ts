@@ -1,6 +1,3 @@
-import { readFileSync } from "fs"
-import { join } from "path"
-
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const RESEND_SANDBOX_FROM = "onboarding@resend.dev"
 
@@ -46,7 +43,6 @@ async function sendEmail(
     text: string
     html?: string
     reply_to?: string
-    attachments?: { filename: string; content: string; content_type: string }[]
   },
 ) {
   const res = await fetch("https://api.resend.com/emails", {
@@ -120,21 +116,6 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    let attachments: { filename: string; content: string; content_type: string }[] = []
-    try {
-      const pdfPath = join(process.cwd(), "public", "abo-study-guide.pdf")
-      const pdfBuffer = readFileSync(pdfPath)
-      attachments = [
-        {
-          filename: "ABO-Study-Guide.pdf",
-          content: pdfBuffer.toString("base64"),
-          content_type: "application/pdf",
-        },
-      ]
-    } catch (err) {
-      console.warn("Could not attach study guide:", err)
-    }
-
     await sendEmail(apiKey, {
       from,
       to: email,
@@ -143,8 +124,6 @@ export default async function handler(req: any, res: any) {
         "Welcome to Elevate Opticians!",
         "",
         "You're now part of a community dedicated to helping opticians succeed.",
-        "",
-        "Download the attached ABO study guide to get started.",
         "",
         "Questions? Reach out to elevateopticians@gmail.com!",
       ].join("\n"),
@@ -172,7 +151,7 @@ export default async function handler(req: any, res: any) {
 
             <h1>Welcome to Elevate Opticians</h1>
 
-            <p class="welcome">You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place. 📖 Download the attached ABO Study Guide to get started.</p>
+            <p class="welcome">You're now part of a community dedicated to helping opticians succeed. Whether you're studying for the ABO or supporting others, you're in the right place.</p>
 
             <div class="footer">
               <p>Questions? Reach out to elevateopticians@gmail.com!</p>
@@ -181,7 +160,6 @@ export default async function handler(req: any, res: any) {
         </body>
         </html>
       `,
-      attachments,
     })
   } catch (err) {
     // Signup is still recorded via the team notification above.
