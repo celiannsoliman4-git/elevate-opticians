@@ -47,7 +47,8 @@ export function EducationPartners() {
                     {p.name
                       .split(",")[0]
                       .split(" ")
-                      .filter((w) => /^[A-Za-z]/.test(w))
+                      // drop honorifics and middle initials ("Dr.", "J.")
+                      .filter((w) => /^[A-Za-z]/.test(w) && !w.endsWith("."))
                       .slice(0, 2)
                       .map((w) => w[0])
                       .join("")}
