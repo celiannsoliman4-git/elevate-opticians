@@ -2,6 +2,8 @@ import { Hero } from "@/sections/Hero"
 import { Mission } from "@/sections/Mission"
 import { Founder } from "@/sections/Founder"
 import { EducationPartners } from "@/sections/EducationPartners"
+import { EducationResources } from "@/pages/EducationResources"
+import { EventCalendar } from "@/pages/EventCalendar"
 import { WhyABOMatters } from "@/sections/WhyABOMatters"
 import { WhoItsFor } from "@/sections/WhoItsFor"
 import { Testimonials } from "@/sections/Testimonials"
@@ -17,6 +19,8 @@ export function Home() {
       <Mission />
       <Founder />
       <EducationPartners />
+      <EducationResources />
+      <EventCalendar />
       <WhyABOMatters />
       <WhoItsFor />
       <Testimonials />

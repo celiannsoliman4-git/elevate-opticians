@@ -17,14 +17,14 @@ function formatDate(iso: string) {
 
 export function EventCalendar() {
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <section id="calendar" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-10">
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
           Mark Your Calendar
         </p>
-        <h1 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
+        <h2 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
           Calendar
-        </h1>
+        </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/70">
           Upcoming study sessions, practice exam nights, and special events. Every session is free and open to anyone pursuing their American Board of Opticianry (ABO).
         </p>

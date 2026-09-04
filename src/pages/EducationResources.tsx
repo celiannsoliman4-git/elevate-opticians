@@ -3,14 +3,14 @@ import { resources } from "@/data/resources"
 
 export function EducationResources() {
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <section id="resources" className="bg-gold/15 py-20 sm:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-10">
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
           Keep Learning
         </p>
-        <h1 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
+        <h2 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
           Education Resources
-        </h1>
+        </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground/70">
           A curated list of external sites, organizations, and materials to support your American Board of Opticianry (ABO) preparation and ongoing optical education.
         </p>
