@@ -81,28 +81,22 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
 
 function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   return (
-    <ul className="space-y-1">
+    <ul className="space-y-0.5">
       {links.map((l) => {
         const Icon = l.icon
         const isPage = l.href.startsWith("/")
+        const linkClass =
+          "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
         return (
           <li key={l.href}>
             {isPage ? (
-              <Link
-                to={l.href}
-                onClick={onNavigate}
-                className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
-              >
-                <Icon className="size-4" strokeWidth={1.75} />
+              <Link to={l.href} onClick={onNavigate} className={linkClass}>
+                <Icon className="size-4 shrink-0" strokeWidth={1.75} />
                 {l.label}
               </Link>
             ) : (
-              <a
-                href={`/${l.href}`}
-                onClick={onNavigate}
-                className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
-              >
-                <Icon className="size-4" strokeWidth={1.75} />
+              <a href={`/${l.href}`} onClick={onNavigate} className={linkClass}>
+                <Icon className="size-4 shrink-0" strokeWidth={1.75} />
                 {l.label}
               </a>
             )}
@@ -130,14 +124,18 @@ export function Nav() {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col overflow-y-auto bg-ink px-5 py-7 lg:flex">
-        <Logo />
-        <SocialLinks />
-        <nav className="mt-5 flex-1">
+      <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col overflow-hidden bg-ink px-5 py-5 lg:flex">
+        <div className="shrink-0">
+          <Logo />
+          <SocialLinks />
+        </div>
+        {/* min-h-0 lets this shrink below its content, so on short screens the
+            nav scrolls internally instead of pushing the CTA off-screen */}
+        <nav className="mt-3 min-h-0 flex-1 overflow-y-auto">
           <NavLinks />
         </nav>
-        <div className="space-y-4 border-t border-white/10 pt-5">
-          <p className="px-1 text-xs leading-relaxed text-white/50">
+        <div className="shrink-0 space-y-3 border-t border-white/10 pt-4">
+          <p className="px-1 text-xs leading-relaxed text-white/50 [@media(max-height:780px)]:hidden">
             100% Free · Open to Anyone Pursuing Their American Board of Opticianry (ABO)
           </p>
           <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
