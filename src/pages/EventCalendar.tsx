@@ -1,4 +1,4 @@
-import { Calendar, Clock } from "lucide-react"
+import { Calendar, Clock, ExternalLink } from "lucide-react"
 import { events } from "@/data/events"
 import { MonthCalendar } from "@/components/MonthCalendar"
 
@@ -38,36 +38,35 @@ export function EventCalendar() {
             {events.map((event, i) => (
               <div
                 key={i}
-                className="flex flex-col gap-3 rounded-lg border border-ink/10 bg-gold/15 p-6 sm:flex-row sm:items-start sm:justify-between"
+                className="rounded-lg border border-ink/10 bg-gold/15 p-6"
               >
-                <div>
-                  <h3 className="font-display text-lg font-bold text-ink">
-                    {event.title}
-                  </h3>
-                  <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink/60">
+                <h3 className="font-display text-lg font-bold text-ink">
+                  {event.title}
+                </h3>
+                <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink/60">
+                  <span className="flex items-center gap-1.5">
+                    <Calendar className="size-4" />
+                    {formatDate(event.date)}
+                  </span>
+                  {event.time && (
                     <span className="flex items-center gap-1.5">
-                      <Calendar className="size-4" />
-                      {formatDate(event.date)}
+                      <Clock className="size-4" />
+                      {event.time}
                     </span>
-                    {event.time && (
-                      <span className="flex items-center gap-1.5">
-                        <Clock className="size-4" />
-                        {event.time}
-                      </span>
-                    )}
-                  </div>
-                  <p className="mt-3 text-sm leading-relaxed text-foreground/70">
-                    {event.description}
-                  </p>
+                  )}
                 </div>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/70">
+                  {event.description}
+                </p>
                 {event.link && (
                   <a
                     href={event.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="shrink-0 rounded-md border border-ink/20 px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-accent hover:text-accent"
+                    className="mt-3 inline-flex items-center gap-1.5 break-all text-sm font-medium text-ink underline underline-offset-4 transition-colors hover:text-accent"
                   >
-                    Details
+                    <ExternalLink className="size-4 shrink-0" />
+                    {event.link.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
                   </a>
                 )}
               </div>

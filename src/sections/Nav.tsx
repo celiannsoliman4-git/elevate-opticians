@@ -10,6 +10,7 @@ import {
   HelpCircle,
   BookOpen,
   CalendarDays,
+  ShoppingBag,
   type LucideIcon,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -72,6 +73,7 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#education-partners", label: "Partners", icon: Users2 },
   { href: "#resources", label: "Education Resources", icon: BookOpen },
   { href: "#calendar", label: "Calendar", icon: CalendarDays },
+  { href: "#shop", label: "Shop", icon: ShoppingBag },
   { href: "#why-abo", label: "Why American Board of Opticianry (ABO)", icon: HelpCircle },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#testimonials", label: "Testimonials", icon: Quote },

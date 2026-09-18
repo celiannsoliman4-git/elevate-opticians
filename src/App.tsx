@@ -4,6 +4,7 @@ import { Footer } from "@/sections/Footer"
 import { Home } from "@/pages/Home"
 import { EducationResources } from "@/pages/EducationResources"
 import { EventCalendar } from "@/pages/EventCalendar"
+import { Shop } from "@/pages/Shop"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/resources" element={<EducationResources />} />
             <Route path="/calendar" element={<EventCalendar />} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
         </main>
         <Footer />
