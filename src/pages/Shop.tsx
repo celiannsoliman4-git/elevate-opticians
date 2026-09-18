@@ -1,5 +1,10 @@
 import { ExternalLink, ShoppingBag } from "lucide-react"
-import { products, shopNote } from "@/data/products"
+import {
+  products,
+  shopNote,
+  storeHighlights,
+  STORE_URL,
+} from "@/data/products"
 
 export function Shop() {
   return (
@@ -17,28 +22,66 @@ export function Shop() {
           </p>
         )}
 
-        {products.length === 0 ? (
-          <div className="mt-12 rounded-lg border border-dashed border-ink/25 bg-white p-10 text-center">
-            <ShoppingBag
-              className="mx-auto size-8 text-ink/30"
-              strokeWidth={1.5}
-            />
-            <p className="mt-4 font-display text-lg font-bold text-ink">
-              Merchandise coming soon
-            </p>
-            <p className="mx-auto mt-2 max-w-md text-sm text-foreground/60">
-              We're putting the first pieces together. Check back shortly, or
-              join our list to hear when it drops.
-            </p>
-            <a
-              href="#join"
-              className="mt-6 inline-block rounded-md bg-bronze px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-ink"
-            >
-              Notify Me
-            </a>
+        {/* Storefront panel */}
+        <div className="mt-12 overflow-hidden rounded-2xl border border-ink/10 bg-white">
+          <div className="flex flex-col gap-10 p-8 sm:p-10 lg:flex-row lg:items-center">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 text-accent">
+                <ShoppingBag className="size-5" strokeWidth={1.75} />
+                <span className="text-xs font-medium uppercase tracking-[0.2em]">
+                  Official Store
+                </span>
+              </div>
+              <h3 className="mt-4 font-display text-2xl font-bold text-ink sm:text-3xl">
+                Elevate Opticians merch
+              </h3>
+              <p className="mt-3 max-w-md text-base leading-relaxed text-foreground/70">
+                Our logo design on hoodies, tees, mugs, and more. Printed and
+                shipped by Spreadshop — browse the full range and check out
+                securely on their site.
+              </p>
+
+              <a
+                href={STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-7 inline-flex items-center gap-2 rounded-md bg-bronze px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink"
+              >
+                Visit the Shop
+                <ExternalLink className="size-4" />
+              </a>
+            </div>
+
+            {/* Item list */}
+            {storeHighlights.length > 0 && (
+              <div className="w-full lg:w-72">
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-ink/40">
+                  In the shop
+                </p>
+                <ul className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
+                  {storeHighlights.map((h) => (
+                    <li
+                      key={h.item}
+                      className="flex items-baseline justify-between gap-4 py-2.5"
+                    >
+                      <span className="text-sm text-ink">{h.item}</span>
+                      <span className="text-sm font-medium tabular-nums text-accent">
+                        {h.price}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-3 text-xs text-ink/40">
+                  Prices may vary by size and color.
+                </p>
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        </div>
+
+        {/* Optional featured products with self-hosted photos */}
+        {products.length > 0 && (
+          <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((product) => (
               <div
                 key={product.name}
@@ -74,9 +117,9 @@ export function Shop() {
                     <span className="mt-5 inline-block rounded-md border border-ink/15 px-4 py-2 text-center text-sm font-medium text-ink/40">
                       Sold Out
                     </span>
-                  ) : product.url ? (
+                  ) : (
                     <a
-                      href={product.url}
+                      href={product.url || STORE_URL}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-5 inline-flex items-center justify-center gap-2 rounded-md bg-bronze px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-ink"
@@ -84,7 +127,7 @@ export function Shop() {
                       Buy Now
                       <ExternalLink className="size-4" />
                     </a>
-                  ) : null}
+                  )}
                 </div>
               </div>
             ))}
