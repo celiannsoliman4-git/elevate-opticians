@@ -1,4 +1,6 @@
+import { ShoppingBag } from "lucide-react"
 import { JOIN_EMAIL } from "@/data/programs"
+import { STORE_URL } from "@/data/products"
 
 const links = [
   { href: "#mission", label: "Our Story" },
@@ -36,6 +38,7 @@ const socialLinks = [
   { href: "https://www.instagram.com/elevateopticians/", label: "Instagram", icon: InstagramIcon },
   { href: "https://www.facebook.com/groups/1562739018915548/", label: "Facebook", icon: FacebookIcon },
   { href: "https://www.linkedin.com/in/elevate-opticians-428b84426/", label: "LinkedIn", icon: LinkedinIcon },
+  { href: STORE_URL, label: "Shop", icon: ShoppingBag },
 ]
 
 export function Footer() {

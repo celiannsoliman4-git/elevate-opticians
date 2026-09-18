@@ -14,6 +14,7 @@ import {
   type LucideIcon,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { STORE_URL } from "@/data/products"
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -43,6 +44,7 @@ const socialLinks = [
   { href: "https://www.instagram.com/elevateopticians/", label: "Instagram", icon: InstagramIcon },
   { href: "https://www.facebook.com/groups/1562739018915548/", label: "Facebook", icon: FacebookIcon },
   { href: "https://www.linkedin.com/in/elevate-opticians-428b84426/", label: "LinkedIn", icon: LinkedinIcon },
+  { href: STORE_URL, label: "Shop", icon: ShoppingBag },
 ]
 
 function SocialLinks() {
