@@ -33,7 +33,7 @@ export function Shop() {
                 </span>
               </div>
               <h3 className="mt-4 font-display text-2xl font-bold text-ink sm:text-3xl">
-                Elevate Opticians merch
+                Elevate Opticians merchandise
               </h3>
               <p className="mt-3 max-w-md text-base leading-relaxed text-foreground/70">
                 Our logo design on hoodies, tees, mugs, and more. Printed and
