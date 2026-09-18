@@ -22,9 +22,9 @@ export function Home() {
       <EducationPartners />
       <EducationResources />
       <EventCalendar />
-      <Shop />
       <WhyABOMatters />
       <WhoItsFor />
+      <Shop />
       <Testimonials />
       <Graduates />
       <FAQ />
