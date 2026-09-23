@@ -208,6 +208,5 @@ export const graduates: Graduate[] = [
   { name: "Christina Chavez" },
   { name: "Heba Schindech-Baltodano" },
   { name: "Win Phone Hein" },
-  { name: "Anonymous Graduate" },
-  { name: "Anonymous Graduate" },
+  { name: "Mary" },
 ]
