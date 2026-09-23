@@ -105,7 +105,7 @@ export function Mission() {
           </p>
 
           <div className="[column-span:all] grid gap-6 border-y border-ink/10 py-8 sm:grid-cols-4">
-            <Stat label="American Board of Opticianry (ABO) Certified Graduates" value="25+" />
+            <Stat label="American Board of Opticianry (ABO) Certified Graduates" value="25 and counting" />
             <Stat label="Years of Mentorship" value="6+" />
             <Stat label="Volunteer-Led" value="✓" />
             <Stat label="Always Free" value="✓" />
