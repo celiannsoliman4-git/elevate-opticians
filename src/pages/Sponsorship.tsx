@@ -56,6 +56,9 @@ export function Sponsorship() {
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-foreground/75">
               {donations.summary}
             </p>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink/60">
+              {donations.taxNote}
+            </p>
           </div>
         </div>
 

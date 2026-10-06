@@ -74,6 +74,10 @@ export const donations = {
   title: "Make a donation",
   summary:
     "Prefer to give directly? A one-time or recurring donation helps keep our study sessions free, puts preparation materials in the hands of opticians who need them, and sustains the mentorship that holds this community together. Any amount makes a difference.",
+  // Standard wording — deductibility depends on the donor's circumstances,
+  // so this says "may be" rather than promising a deduction.
+  taxNote:
+    "Elevate Opticians is a registered 501(c)(3) nonprofit organization. Donations may be tax-deductible to the extent allowed by law.",
 }
 
 export const valueProps: { title: string; description: string }[] = [
