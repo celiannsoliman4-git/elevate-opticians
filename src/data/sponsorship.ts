@@ -70,6 +70,28 @@ export const sponsorAnOptician = {
   ],
 }
 
+// Organizations we work with. Logos live in public/partners/.
+// Heading is deliberately "Partners & Supporters" rather than "Sponsors" —
+// change `partnersHeading` if a formal sponsorship is in place.
+export const partnersHeading = "Partners & supporters"
+
+export const partnerLogos: { name: string; logo: string; url?: string }[] = [
+  {
+    name: "UUniversity",
+    logo: "/partners/uuniversity.png",
+    url: "https://www.uuniversity.com/",
+  },
+  {
+    name: "ASB Opticianry Education Services",
+    logo: "/partners/asb.png",
+    url: "https://www.asbopticianry.com/",
+  },
+  {
+    name: "D&D Management Services",
+    logo: "/partners/dd-management.png",
+  },
+]
+
 export const donations = {
   title: "Make a donation",
   summary:
