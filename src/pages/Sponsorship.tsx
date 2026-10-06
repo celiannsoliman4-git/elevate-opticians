@@ -1,4 +1,4 @@
-import { Check, Mail, HeartHandshake } from "lucide-react"
+import { Mail, HeartHandshake } from "lucide-react"
 import {
   tiers,
   sponsorAnOptician,
@@ -47,23 +47,12 @@ export function Sponsorship() {
               </p>
             </div>
 
-            <div className="w-full lg:w-80">
-              <ul className="space-y-3">
-                {sponsorAnOptician.points.map((p) => (
-                  <li key={p} className="flex gap-2.5 text-sm text-foreground/80">
-                    <Check
-                      className="mt-0.5 size-4 shrink-0 text-accent"
-                      strokeWidth={2.5}
-                    />
-                    <span>{p}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="w-full shrink-0 lg:w-72">
               <a
                 href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
                   "Sponsor an optician — more details",
                 )}`}
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-bronze px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-bronze px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink"
               >
                 Reach out for details
               </a>
@@ -111,21 +100,9 @@ export function Sponsorship() {
               <h3 className="font-display text-2xl font-bold text-ink">
                 {tier.name}
               </h3>
-              <p className="mt-4 text-sm leading-relaxed text-foreground/70">
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/70">
                 {tier.summary}
               </p>
-
-              <ul className="mt-6 flex-1 space-y-3 border-t border-ink/10 pt-6">
-                {tier.benefits.map((b) => (
-                  <li key={b} className="flex gap-2.5 text-sm text-foreground/80">
-                    <Check
-                      className="mt-0.5 size-4 shrink-0 text-accent"
-                      strokeWidth={2.5}
-                    />
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
 
               <a
                 href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
