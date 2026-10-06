@@ -18,7 +18,7 @@ export function Sponsorship() {
             Partner With Us
           </p>
           <h2 className="mt-6 font-display text-3xl font-bold leading-tight text-ink sm:text-4xl">
-            Corporate sponsorship
+            Invest in the next generation of opticians
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/75">
             Elevate Opticians advances the profession through continuous
