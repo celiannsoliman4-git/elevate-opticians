@@ -98,15 +98,10 @@ export function Sponsorship() {
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/75">
             {becomeASponsor.body}
           </p>
-          <a
-            href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
-              "Becoming a sponsor",
-            )}`}
-            className="mt-8 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold"
-          >
-            <Mail className="size-4" />
+          <p className="mt-8 inline-flex items-center gap-2 font-display text-lg font-bold text-gold sm:text-xl">
+            <Mail className="size-5" strokeWidth={1.75} />
             {JOIN_EMAIL}
-          </a>
+          </p>
         </div>
       </div>
     </section>
