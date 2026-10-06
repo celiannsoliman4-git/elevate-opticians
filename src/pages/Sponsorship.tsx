@@ -4,7 +4,6 @@ import {
   sponsorAnOptician,
   becomeASponsor,
   valueProps,
-  activationSteps,
 } from "@/data/sponsorship"
 import { JOIN_EMAIL } from "@/data/programs"
 
@@ -117,34 +116,6 @@ export function Sponsorship() {
               </a>
             </div>
           ))}
-        </div>
-
-        {/* Next steps */}
-        <div className="mt-16">
-          <div>
-            <h3 className="font-display text-base font-bold text-ink">
-              How to get started
-            </h3>
-            <ol className="mt-4 space-y-3">
-              {activationSteps.map((step, i) => (
-                <li key={step} className="flex gap-3 text-sm text-foreground/75">
-                  <span className="font-display text-sm font-bold text-ink/30">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span>{step}</span>
-                </li>
-              ))}
-            </ol>
-            <a
-              href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
-                "Sponsorship inquiry",
-              )}`}
-              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-ink underline underline-offset-4 transition-colors hover:text-accent"
-            >
-              <Mail className="size-4" />
-              {JOIN_EMAIL}
-            </a>
-          </div>
         </div>
 
         {/* Closing call to action */}
