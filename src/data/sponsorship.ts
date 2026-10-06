@@ -57,6 +57,19 @@ export const tiers: Tier[] = [
   },
 ]
 
+// Individual-giving program. Levels exist (Gold / Silver / Bronze) but the
+// amounts are intentionally not published — sponsors are asked to get in touch.
+export const sponsorAnOptician = {
+  title: "Sponsor an optician",
+  summary:
+    "Not every optician can afford the path to certification. A sponsorship directly supports someone working toward their American Board of Opticianry (ABO) credential — helping cover what stands between them and a licensed career.",
+  points: [
+    "Support an optician on their way to becoming ABO certified",
+    "Back a volunteer-led community that mentors and educates at no cost",
+    "Several giving levels are available, including Gold, Silver, and Bronze",
+  ],
+}
+
 export const valueProps: { title: string; description: string }[] = [
   {
     title: "Industry-Wide Authority & Goodwill",

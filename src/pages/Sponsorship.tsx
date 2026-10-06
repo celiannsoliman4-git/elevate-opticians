@@ -1,6 +1,7 @@
-import { Check, Mail } from "lucide-react"
+import { Check, Mail, HeartHandshake } from "lucide-react"
 import {
   tiers,
+  sponsorAnOptician,
   valueProps,
   activationSteps,
   neutralityNote,
@@ -27,8 +28,56 @@ export function Sponsorship() {
           </p>
         </div>
 
+        {/* Sponsor an optician */}
+        <div className="mt-12 rounded-2xl border border-ink/10 bg-gold/15 p-8 sm:p-10">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 text-accent">
+                <HeartHandshake className="size-5" strokeWidth={1.75} />
+                <span className="text-xs font-medium uppercase tracking-[0.2em]">
+                  For Individuals
+                </span>
+              </div>
+              <h3 className="mt-4 font-display text-2xl font-bold text-ink sm:text-3xl">
+                {sponsorAnOptician.title}
+              </h3>
+              <p className="mt-3 max-w-xl text-base leading-relaxed text-foreground/75">
+                {sponsorAnOptician.summary}
+              </p>
+            </div>
+
+            <div className="w-full lg:w-80">
+              <ul className="space-y-3">
+                {sponsorAnOptician.points.map((p) => (
+                  <li key={p} className="flex gap-2.5 text-sm text-foreground/80">
+                    <Check
+                      className="mt-0.5 size-4 shrink-0 text-accent"
+                      strokeWidth={2.5}
+                    />
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
+                  "Sponsor an optician — more details",
+                )}`}
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-bronze px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink"
+              >
+                Reach out for details
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Why sponsor */}
-        <div className="mt-14 grid gap-8 sm:grid-cols-3">
+        <p className="mt-20 text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
+          For Companies
+        </p>
+        <h3 className="mt-5 font-display text-2xl font-bold text-ink sm:text-3xl">
+          Corporate partnership
+        </h3>
+        <div className="mt-10 grid gap-8 sm:grid-cols-3">
           {valueProps.map((v) => (
             <div key={v.title}>
               <h3 className="font-display text-base font-bold text-ink">
@@ -87,7 +136,7 @@ export function Sponsorship() {
                     : "border border-ink/20 text-ink hover:border-accent hover:text-accent"
                 }`}
               >
-                Request {tier.name.replace(" Partner", "")} details
+                Reach out about {tier.name.replace(" Partner", "")}
               </a>
             </div>
           ))}
