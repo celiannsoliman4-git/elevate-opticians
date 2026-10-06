@@ -70,6 +70,12 @@ export const sponsorAnOptician = {
   ],
 }
 
+export const donations = {
+  title: "Make a donation",
+  summary:
+    "Prefer to give directly? A one-time or recurring donation helps keep our study sessions free, puts preparation materials in the hands of opticians who need them, and sustains the mentorship that holds this community together. Any amount makes a difference.",
+}
+
 export const valueProps: { title: string; description: string }[] = [
   {
     title: "Industry-Wide Authority & Goodwill",

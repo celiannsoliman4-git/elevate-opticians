@@ -1,7 +1,8 @@
-import { Mail, HeartHandshake } from "lucide-react"
+import { Mail, HeartHandshake, Gift } from "lucide-react"
 import {
   tiers,
   sponsorAnOptician,
+  donations,
   becomeASponsor,
   valueProps,
 } from "@/data/sponsorship"
@@ -41,6 +42,21 @@ export function Sponsorship() {
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-foreground/75">
             {sponsorAnOptician.summary}
           </p>
+
+          <div className="mt-8 border-t border-ink/15 pt-8">
+            <div className="flex items-center gap-2 text-accent">
+              <Gift className="size-5" strokeWidth={1.75} />
+              <span className="text-xs font-medium uppercase tracking-[0.2em]">
+                Donations
+              </span>
+            </div>
+            <h3 className="mt-4 font-display text-2xl font-bold text-ink sm:text-3xl">
+              {donations.title}
+            </h3>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-foreground/75">
+              {donations.summary}
+            </p>
+          </div>
         </div>
 
         {/* Why sponsor */}
