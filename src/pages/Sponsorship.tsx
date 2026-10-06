@@ -1,4 +1,4 @@
-import { Mail, HeartHandshake, Gift } from "lucide-react"
+import { Mail, HeartHandshake, Gift, ExternalLink } from "lucide-react"
 import {
   tiers,
   sponsorAnOptician,
@@ -56,7 +56,16 @@ export function Sponsorship() {
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-foreground/75">
               {donations.summary}
             </p>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-ink/60">
+            <a
+              href={donations.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-md bg-bronze px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink"
+            >
+              Donate now
+              <ExternalLink className="size-4" />
+            </a>
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-ink/60">
               {donations.taxNote}
             </p>
           </div>

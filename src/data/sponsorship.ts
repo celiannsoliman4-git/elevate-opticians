@@ -60,9 +60,9 @@ export const tiers: Tier[] = [
 // Individual-giving program. Levels exist (Gold / Silver / Bronze) but the
 // amounts are intentionally not published — sponsors are asked to get in touch.
 export const sponsorAnOptician = {
-  title: "Sponsor an optician",
+  title: "Sponsor Elevate Opticians",
   summary:
-    "Not every optician can afford the path to certification. A sponsorship directly supports someone working toward their American Board of Opticianry (ABO) credential — helping cover what stands between them and a licensed career.",
+    "Sponsor Elevate Opticians and help elevate the profession. Your support keeps our study sessions free, funds American Board of Opticianry (ABO) exam preparation, and sustains the mentorship that helps opticians everywhere earn their credentials and build lasting careers.",
   points: [
     "Support an optician on their way to becoming ABO certified",
     "Back a volunteer-led community that mentors and educates at no cost",
@@ -78,6 +78,7 @@ export const donations = {
   // so this says "may be" rather than promising a deduction.
   taxNote:
     "Elevate Opticians is a registered 501(c)(3) nonprofit organization. Donations may be tax-deductible to the extent allowed by law.",
+  url: "https://www.zeffy.com/en-US/donation-form/elevate-opticians-education-donations",
 }
 
 export const valueProps: { title: string; description: string }[] = [
