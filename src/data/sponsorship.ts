@@ -94,5 +94,10 @@ export const activationSteps: string[] = [
   "Schedule your educational webcast and member spotlight dates.",
 ]
 
+export const becomeASponsor = {
+  title: "Become a sponsor",
+  body: "As a sponsor of Elevate Opticians, you have the opportunity to make a real difference in the lives of the opticians we serve. Your support helps us expand our programs, reach more professionals working toward certification, and strengthen the profession for everyone who comes next. Contact us today to learn more about becoming a sponsor.",
+}
+
 export const neutralityNote =
   "Elevate Opticians is committed to maintaining an open, inclusive educational platform. Every sponsorship is structured as a non-exclusive partnership, welcoming leading brands across the entire optical spectrum."

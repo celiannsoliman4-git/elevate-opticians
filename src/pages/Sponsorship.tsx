@@ -2,6 +2,7 @@ import { Check, Mail, HeartHandshake } from "lucide-react"
 import {
   tiers,
   sponsorAnOptician,
+  becomeASponsor,
   valueProps,
   activationSteps,
   neutralityNote,
@@ -177,6 +178,25 @@ export function Sponsorship() {
               {JOIN_EMAIL}
             </a>
           </div>
+        </div>
+
+        {/* Closing call to action */}
+        <div className="mt-16 rounded-2xl bg-ink px-8 py-12 text-center sm:px-12">
+          <h3 className="font-display text-2xl font-bold text-white sm:text-3xl">
+            {becomeASponsor.title}
+          </h3>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/75">
+            {becomeASponsor.body}
+          </p>
+          <a
+            href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
+              "Becoming a sponsor",
+            )}`}
+            className="mt-8 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold"
+          >
+            <Mail className="size-4" />
+            Contact us about sponsorship
+          </a>
         </div>
       </div>
     </section>
