@@ -18,11 +18,12 @@ export function MonthCalendar({
   initialMonth,
 }: {
   events: Event[]
-  initialYear: number
-  initialMonth: number // 0-indexed
+  initialYear?: number
+  initialMonth?: number // 0-indexed; defaults to the current month
 }) {
-  const [year, setYear] = useState(initialYear)
-  const [month, setMonth] = useState(initialMonth)
+  const today = new Date()
+  const [year, setYear] = useState(initialYear ?? today.getFullYear())
+  const [month, setMonth] = useState(initialMonth ?? today.getMonth())
 
   // Expand weekly repeats so every session date gets marked.
   const eventsByDate = new Map<string, Event[]>()
@@ -42,7 +43,6 @@ export function MonthCalendar({
   for (let i = 0; i < startWeekday; i++) cells.push(null)
   for (let d = 1; d <= daysInMonth; d++) cells.push(new Date(year, month, d))
 
-  const today = new Date()
   const todayKey = toDateKey(today)
 
   function goToPrevMonth() {

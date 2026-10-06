@@ -1,5 +1,6 @@
+import { useState } from "react"
 import { Calendar, Clock, ExternalLink } from "lucide-react"
-import { events, eventDates, type Event } from "@/data/events"
+import { events, eventDates, isPastEvent, type Event } from "@/data/events"
 import { MonthCalendar } from "@/components/MonthCalendar"
 
 // Parse as a local date. `new Date("2026-09-15")` is treated as UTC, which
@@ -34,6 +35,11 @@ function formatSchedule(event: Event) {
 }
 
 export function EventCalendar() {
+  const [tab, setTab] = useState<"upcoming" | "past">("upcoming")
+  const past = events.filter((e) => isPastEvent(e))
+  const upcoming = events.filter((e) => !isPastEvent(e))
+  const shown = tab === "upcoming" ? upcoming : past
+
   return (
     <section id="calendar" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-10">
@@ -48,12 +54,40 @@ export function EventCalendar() {
         </p>
 
         <div className="mt-12">
-          <MonthCalendar events={events} initialYear={2026} initialMonth={8} />
+          <MonthCalendar events={events} />
         </div>
 
-        {events.length > 0 && (
+        {/* Upcoming / Past toggle */}
+        <div className="mt-10 flex gap-2 border-b border-ink/10">
+          {(["upcoming", "past"] as const).map((t) => {
+            const count = t === "upcoming" ? upcoming.length : past.length
+            const active = tab === t
+            return (
+              <button
+                key={t}
+                onClick={() => setTab(t)}
+                className={`-mb-px border-b-2 px-4 py-2.5 text-sm font-medium capitalize transition-colors ${
+                  active
+                    ? "border-bronze text-ink"
+                    : "border-transparent text-ink/50 hover:text-ink"
+                }`}
+              >
+                {t} events
+                <span className="ml-1.5 text-xs text-ink/40">({count})</span>
+              </button>
+            )
+          })}
+        </div>
+
+        {shown.length === 0 ? (
+          <p className="mt-8 rounded-lg border border-dashed border-ink/20 bg-gold/10 p-8 text-center text-sm text-foreground/60">
+            {tab === "upcoming"
+              ? "No upcoming events posted yet. Check back shortly."
+              : "No past events to show yet."}
+          </p>
+        ) : (
           <div className="mt-8 space-y-4">
-            {events.map((event, i) => (
+            {shown.map((event, i) => (
               <div
                 key={i}
                 className="rounded-lg border border-ink/10 bg-gold/15 p-6"
