@@ -21,7 +21,7 @@ export const tiers: Tier[] = [
       "Dedicated educational session or co-host slot",
       "Top-tier logo placement across digital, web, and event signage",
       "Two dedicated member spotlights per year",
-      "Four all-access passes to Elevate events",
+      "Four all-access passes to Elevate Opticians events",
       "Featured premier profile in the partner directory",
       "Official Platinum Partner digital badge",
       "Non-exclusive alignment",
@@ -79,17 +79,17 @@ export const valueProps: { title: string; description: string }[] = [
   {
     title: "Targeted Audience Access",
     description:
-      "Put your products and technologies in front of dedicated eyecare professionals and practice leaders actively seeking modern optical solutions.",
+      "Put your brand in front of dedicated eyecare professionals and practice leaders actively seeking modern optical solutions.",
   },
   {
     title: "Multichannel Brand Presence",
     description:
-      "Consistent placement across Elevate's web assets, event programming, and community communications.",
+      "Consistent placement across Elevate Opticians' web assets, event programming, and community communications.",
   },
 ]
 
 export const activationSteps: string[] = [
-  "Reach out to the Elevate partnerships team for a tailored proposal and investment details.",
+  "Reach out to the Elevate Opticians partnerships team for a tailored proposal and investment details.",
   "Provide high-resolution vector logo files and brand usage guidelines.",
   "Schedule your educational webcast and member spotlight dates.",
 ]
