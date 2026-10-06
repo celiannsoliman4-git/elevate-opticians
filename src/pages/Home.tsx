@@ -2,6 +2,7 @@ import { Hero } from "@/sections/Hero"
 import { Mission } from "@/sections/Mission"
 import { Founder } from "@/sections/Founder"
 import { EducationPartners } from "@/sections/EducationPartners"
+import { PartnerLogos } from "@/sections/PartnerLogos"
 import { EducationResources } from "@/pages/EducationResources"
 import { EventCalendar } from "@/pages/EventCalendar"
 import { Shop } from "@/pages/Shop"
@@ -21,6 +22,7 @@ export function Home() {
       <Mission />
       <Founder />
       <EducationPartners />
+      <PartnerLogos />
       <EducationResources />
       <EventCalendar />
       <WhyABOMatters />
