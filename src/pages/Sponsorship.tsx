@@ -5,7 +5,6 @@ import {
   becomeASponsor,
   valueProps,
   activationSteps,
-  neutralityNote,
 } from "@/data/sponsorship"
 import { JOIN_EMAIL } from "@/data/programs"
 
@@ -120,17 +119,8 @@ export function Sponsorship() {
           ))}
         </div>
 
-        {/* Neutrality + next steps */}
-        <div className="mt-16 grid gap-10 lg:grid-cols-2">
-          <div className="border-l-4 border-bronze bg-gold/15 px-6 py-5">
-            <h3 className="font-display text-base font-bold text-ink">
-              Open collaboration &amp; neutrality
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-foreground/75">
-              {neutralityNote}
-            </p>
-          </div>
-
+        {/* Next steps */}
+        <div className="mt-16">
           <div>
             <h3 className="font-display text-base font-bold text-ink">
               How to get started
