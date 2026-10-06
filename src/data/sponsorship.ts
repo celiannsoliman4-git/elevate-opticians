@@ -90,6 +90,11 @@ export const partnerLogos: { name: string; logo: string; url?: string }[] = [
     name: "D&D Management Services",
     logo: "/partners/dd-management.png",
   },
+  {
+    name: "Buhay Photography",
+    logo: "/partners/buhay-photography.png",
+    url: "https://www.buhayphotography.com/",
+  },
 ]
 
 export const donations = {

@@ -8,7 +8,7 @@ export const founder = {
 
 export const coordinator = {
   name: "Lian Soliman",
-  title: "Coordinator",
+  title: "Creative Director",
   bio: "After building broad experience across the optical industry and passing her American Board of Opticianry (ABO), Lian now serves as an Account Executive at Altair Eyewear, a VSP company. She realized that if she could do it, so could others — and she loves helping Kiara bring the Elevate Opticians community to life, cheering future opticians on every step of the way.",
   linkedin: "https://www.linkedin.com/in/celiannsoliman/",
 }
