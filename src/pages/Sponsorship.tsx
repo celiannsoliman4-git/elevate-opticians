@@ -29,33 +29,18 @@ export function Sponsorship() {
 
         {/* Sponsor an optician */}
         <div className="mt-12 rounded-2xl border border-ink/10 bg-gold/15 p-8 sm:p-10">
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
-            <div className="flex-1">
-              <div className="flex items-center gap-2 text-accent">
-                <HeartHandshake className="size-5" strokeWidth={1.75} />
-                <span className="text-xs font-medium uppercase tracking-[0.2em]">
-                  For Individuals
-                </span>
-              </div>
-              <h3 className="mt-4 font-display text-2xl font-bold text-ink sm:text-3xl">
-                {sponsorAnOptician.title}
-              </h3>
-              <p className="mt-3 max-w-xl text-base leading-relaxed text-foreground/75">
-                {sponsorAnOptician.summary}
-              </p>
-            </div>
-
-            <div className="w-full shrink-0 lg:w-72">
-              <a
-                href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
-                  "Sponsor an optician — more details",
-                )}`}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-bronze px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink"
-              >
-                Reach out for details
-              </a>
-            </div>
+          <div className="flex items-center gap-2 text-accent">
+            <HeartHandshake className="size-5" strokeWidth={1.75} />
+            <span className="text-xs font-medium uppercase tracking-[0.2em]">
+              For Individuals
+            </span>
           </div>
+          <h3 className="mt-4 font-display text-2xl font-bold text-ink sm:text-3xl">
+            {sponsorAnOptician.title}
+          </h3>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-foreground/75">
+            {sponsorAnOptician.summary}
+          </p>
         </div>
 
         {/* Why sponsor */}
@@ -98,22 +83,9 @@ export function Sponsorship() {
               <h3 className="font-display text-2xl font-bold text-ink">
                 {tier.name}
               </h3>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground/70">
+              <p className="mt-4 text-sm leading-relaxed text-foreground/70">
                 {tier.summary}
               </p>
-
-              <a
-                href={`mailto:${JOIN_EMAIL}?subject=${encodeURIComponent(
-                  `${tier.name} sponsorship inquiry`,
-                )}`}
-                className={`mt-8 inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition-colors ${
-                  tier.featured
-                    ? "bg-bronze text-white hover:bg-ink"
-                    : "border border-ink/20 text-ink hover:border-accent hover:text-accent"
-                }`}
-              >
-                Reach out about {tier.name.replace(" Partner", "")}
-              </a>
             </div>
           ))}
         </div>
