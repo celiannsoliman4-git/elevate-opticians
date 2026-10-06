@@ -5,6 +5,7 @@ import { Home } from "@/pages/Home"
 import { EducationResources } from "@/pages/EducationResources"
 import { EventCalendar } from "@/pages/EventCalendar"
 import { Shop } from "@/pages/Shop"
+import { Sponsorship } from "@/pages/Sponsorship"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/resources" element={<EducationResources />} />
             <Route path="/calendar" element={<EventCalendar />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/sponsorship" element={<Sponsorship />} />
           </Routes>
         </main>
         <Footer />
