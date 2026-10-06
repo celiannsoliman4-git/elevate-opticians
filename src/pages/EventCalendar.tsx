@@ -1,18 +1,36 @@
 import { Calendar, Clock, ExternalLink } from "lucide-react"
-import { events } from "@/data/events"
+import { events, eventDates, type Event } from "@/data/events"
 import { MonthCalendar } from "@/components/MonthCalendar"
 
 // Parse as a local date. `new Date("2026-09-15")` is treated as UTC, which
 // renders as the previous day in US timezones.
+function toLocalDate(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number)
+  return new Date(y, m - 1, d)
+}
+
 function formatDate(iso: string) {
   const [y, m, d] = iso.split("-").map(Number)
   if (!y || !m || !d) return iso
-  return new Date(y, m - 1, d).toLocaleDateString("en-US", {
+  return toLocalDate(iso).toLocaleDateString("en-US", {
     weekday: "long",
     month: "long",
     day: "numeric",
     year: "numeric",
   })
+}
+
+// Single date, or "Tuesdays · Sept 15 – Oct 27, 2026" for a weekly series.
+function formatSchedule(event: Event) {
+  const dates = eventDates(event)
+  if (dates.length < 2) return formatDate(event.date)
+
+  const first = toLocalDate(dates[0])
+  const last = toLocalDate(dates[dates.length - 1])
+  const weekday = first.toLocaleDateString("en-US", { weekday: "long" }) + "s"
+  const short = (d: Date) =>
+    d.toLocaleDateString("en-US", { month: "short", day: "numeric" })
+  return `${weekday} · ${short(first)} – ${short(last)}, ${last.getFullYear()}`
 }
 
 export function EventCalendar() {
@@ -46,7 +64,7 @@ export function EventCalendar() {
                 <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink/60">
                   <span className="flex items-center gap-1.5">
                     <Calendar className="size-4" />
-                    {formatDate(event.date)}
+                    {formatSchedule(event)}
                   </span>
                   {event.time && (
                     <span className="flex items-center gap-1.5">

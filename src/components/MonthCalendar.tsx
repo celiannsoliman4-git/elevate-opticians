@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import type { Event } from "@/data/events"
+import { eventDates, type Event } from "@/data/events"
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 const MONTH_NAMES = [
@@ -24,11 +24,14 @@ export function MonthCalendar({
   const [year, setYear] = useState(initialYear)
   const [month, setMonth] = useState(initialMonth)
 
+  // Expand weekly repeats so every session date gets marked.
   const eventsByDate = new Map<string, Event[]>()
   for (const event of events) {
-    const list = eventsByDate.get(event.date) ?? []
-    list.push(event)
-    eventsByDate.set(event.date, list)
+    for (const date of eventDates(event)) {
+      const list = eventsByDate.get(date) ?? []
+      list.push(event)
+      eventsByDate.set(date, list)
+    }
   }
 
   const firstOfMonth = new Date(year, month, 1)
