@@ -5,6 +5,8 @@ export type Event = {
   weeks?: number // number of weekly sessions; omit or 1 for a single date
   description: string
   link?: string // e.g. Zoom link or signup link
+  flyer?: string // e.g. "/events/round-table.jpg" — put files in public/events/
+  flyerAlt?: string
 }
 
 // Add new classes/events here — newest or soonest first.
@@ -15,6 +17,9 @@ export const events: Event[] = [
     time: "5:30 PM PT",
     description:
       "Hosted by D&D Management Services and featuring Kiara Resplandor of Elevate Opticians, this round table covered our story, our mentorship mission, and the partners we collaborate with — part of an ongoing effort to help states build and strengthen their optician associations.",
+    flyer: "/events/state-society-round-table.jpg",
+    flyerAlt:
+      "State Society Round Table flyer featuring Kiara Resplandor, October 1, 2026",
   },
   {
     title: "Acing the ABO with Andrew Bruce — Tuesday sessions",

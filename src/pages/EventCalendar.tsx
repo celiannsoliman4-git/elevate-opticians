@@ -90,8 +90,31 @@ export function EventCalendar() {
             {shown.map((event, i) => (
               <div
                 key={i}
-                className="rounded-lg border border-ink/10 bg-gold/15 p-6"
+                className="flex flex-col gap-6 rounded-lg border border-ink/10 bg-gold/15 p-6 sm:flex-row-reverse sm:items-start"
               >
+                {event.flyer && (
+                  <a
+                    href={event.flyer}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full shrink-0 sm:w-44"
+                    aria-label={`View the ${event.title} flyer full size`}
+                  >
+                    <img
+                      src={event.flyer}
+                      alt={event.flyerAlt || `${event.title} flyer`}
+                      className="w-full rounded-md border border-ink/10 shadow-sm transition-opacity hover:opacity-90"
+                      // If the flyer file isn't present, hide the whole link
+                      // rather than showing a broken image.
+                      onError={(e) => {
+                        const link = e.currentTarget.closest("a")
+                        if (link) link.style.display = "none"
+                      }}
+                    />
+                  </a>
+                )}
+
+                <div className="flex-1">
                 <h3 className="font-display text-lg font-bold text-ink">
                   {event.title}
                 </h3>
@@ -121,6 +144,7 @@ export function EventCalendar() {
                     {event.link.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
                   </a>
                 )}
+                </div>
               </div>
             ))}
           </div>
