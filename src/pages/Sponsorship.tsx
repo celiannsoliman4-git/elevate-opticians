@@ -133,7 +133,7 @@ export function Sponsorship() {
             className="mt-8 inline-flex items-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold"
           >
             <Mail className="size-4" />
-            Contact us about sponsorship
+            {JOIN_EMAIL}
           </a>
         </div>
       </div>
