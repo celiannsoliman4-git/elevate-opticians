@@ -73,7 +73,7 @@ export const sponsorAnOptician = {
 export const donations = {
   title: "Make a donation",
   summary:
-    "Prefer to give directly? A one-time or recurring donation helps keep our study sessions free, puts preparation materials in the hands of opticians who need them, and sustains the mentorship that holds this community together. Any amount makes a difference.",
+    "Give once, or set up a recurring gift — whatever amount works for you. Elevate Opticians is volunteer-led, so what you give goes straight into the work of getting opticians certified and keeping this community open to everyone.",
   // Standard wording — deductibility depends on the donor's circumstances,
   // so this says "may be" rather than promising a deduction.
   taxNote:
