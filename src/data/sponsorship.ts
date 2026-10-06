@@ -1,7 +1,9 @@
 export type Tier = {
   name: string
-  price: string
-  cadence: string
+  // price/cadence are kept for reference only — they are intentionally NOT
+  // shown on the site. Sponsors are asked to contact us for pricing.
+  price?: string
+  cadence?: string
   summary: string
   benefits: string[]
   featured?: boolean
@@ -74,7 +76,7 @@ export const valueProps: { title: string; description: string }[] = [
 ]
 
 export const activationSteps: string[] = [
-  "Review and confirm agreement details with the Elevate partnerships team.",
+  "Reach out to the Elevate partnerships team for a tailored proposal and investment details.",
   "Provide high-resolution vector logo files and brand usage guidelines.",
   "Schedule your educational webcast and member spotlight dates.",
 ]

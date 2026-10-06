@@ -58,15 +58,9 @@ export function Sponsorship() {
                 </span>
               )}
 
-              <h3 className="font-display text-xl font-bold text-ink">
+              <h3 className="font-display text-2xl font-bold text-ink">
                 {tier.name}
               </h3>
-              <p className="mt-3 flex items-baseline gap-1.5">
-                <span className="font-display text-3xl font-bold text-ink">
-                  {tier.price}
-                </span>
-                <span className="text-sm text-ink/50">{tier.cadence}</span>
-              </p>
               <p className="mt-4 text-sm leading-relaxed text-foreground/70">
                 {tier.summary}
               </p>
@@ -93,7 +87,7 @@ export function Sponsorship() {
                     : "border border-ink/20 text-ink hover:border-accent hover:text-accent"
                 }`}
               >
-                Become a {tier.name.replace(" Partner", "")} Partner
+                Request {tier.name.replace(" Partner", "")} details
               </a>
             </div>
           ))}
