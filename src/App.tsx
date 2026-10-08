@@ -6,6 +6,7 @@ import { EducationResources } from "@/pages/EducationResources"
 import { EventCalendar } from "@/pages/EventCalendar"
 import { Shop } from "@/pages/Shop"
 import { Sponsorship } from "@/pages/Sponsorship"
+import { NewsAndCalendar } from "@/pages/News"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/calendar" element={<EventCalendar />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/sponsorship" element={<Sponsorship />} />
+            <Route path="/news" element={<NewsAndCalendar />} />
           </Routes>
         </main>
         <Footer />
