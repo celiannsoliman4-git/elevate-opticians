@@ -19,6 +19,7 @@ export const products: Product[] = [
   { name: "Premium Sweatshirt", price: "$41.99", category: "Apparel" },
   { name: "Women's V-Neck T-Shirt", price: "$26.49", category: "Apparel" },
   { name: "Classic T-Shirt", price: "$23.49", category: "Apparel" },
+  { name: "Unisex Tri-Blend T-Shirt", price: "$28.49", category: "Apparel" },
   { name: "Snapback Baseball Cap", price: "$22.49", category: "Headwear" },
   { name: "Bucket Hat", price: "$20.99", category: "Headwear" },
   { name: "Travel Toiletry Bag", price: "$20.99", category: "Accessories" },

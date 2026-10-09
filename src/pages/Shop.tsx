@@ -74,7 +74,29 @@ export function Shop() {
           </a>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
+        {/* Storefront preview */}
+        <a
+          href={STORE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group mt-16 block overflow-hidden rounded-2xl ring-1 ring-white/15 transition-all hover:ring-gold/50"
+        >
+          <img
+            src="/merch/shop-preview.jpg"
+            alt="A selection of Elevate Opticians merchandise from the shop"
+            className="w-full"
+            onError={(e) => {
+              const link = e.currentTarget.closest("a")
+              if (link) link.style.display = "none"
+            }}
+          />
+          <span className="flex items-center justify-center gap-2 bg-white/5 px-4 py-3 text-xs font-medium uppercase tracking-[0.2em] text-white/60 transition-colors group-hover:text-gold">
+            A look inside the shop
+            <ExternalLink className="size-3.5" />
+          </span>
+        </a>
+
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
           {products.map((p) => (
             <ProductCard key={p.name} product={p} />
           ))}
