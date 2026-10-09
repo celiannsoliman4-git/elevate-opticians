@@ -2,32 +2,33 @@
 // happen on their side.
 export const STORE_URL = "https://elevateopticians.myspreadshop.com"
 
-// Item types carried in the shop, shown as a preview on the site.
-// Spreadshop's image CDN blocks hotlinking, so these are text only. To show
-// real photos here, download them from Spreadshop into public/merch/ and
-// fill in the `products` array below.
-export const storeHighlights: { item: string; price: string }[] = [
-  { item: "Hoodie", price: "$45.99" },
-  { item: "Sweatshirt", price: "$41.99" },
-  { item: "Ringer T-Shirt", price: "$27.99" },
-  { item: "T-Shirt", price: "$24.99" },
-  { item: "Coffee/Tea Mug", price: "$16.99" },
-  { item: "Buttons (5-pack)", price: "$7.99" },
-]
-
 export type Product = {
   name: string
   price: string
-  description: string
-  image?: string // e.g. "/merch/tote.jpg" — put files in public/merch/
-  url?: string // link to the item's Spreadshop listing
-  soldOut?: boolean
+  category: "Apparel" | "Headwear" | "Accessories"
+  // Spreadshirt's image CDN blocks off-site requests, so product photos have
+  // to be self-hosted. Download from Spreadshop into public/merch/ and set
+  // the path here — cards fall back to a branded tile until then.
+  image?: string
+  url?: string // defaults to the store front
 }
 
-// Optional: feature specific items with your own photos. Leave empty to show
-// just the storefront preview above.
-export const products: Product[] = []
+// Prices are the lowest listed for each item; size and color can change them.
+export const products: Product[] = [
+  { name: "Premium Hoodie", price: "$40.99", category: "Apparel" },
+  { name: "Premium Sweatshirt", price: "$41.99", category: "Apparel" },
+  { name: "Women's V-Neck T-Shirt", price: "$26.49", category: "Apparel" },
+  { name: "Classic T-Shirt", price: "$23.49", category: "Apparel" },
+  { name: "Snapback Baseball Cap", price: "$22.49", category: "Headwear" },
+  { name: "Bucket Hat", price: "$20.99", category: "Headwear" },
+  { name: "Travel Toiletry Bag", price: "$20.99", category: "Accessories" },
+  { name: "Gaming Mousepad", price: "$19.99", category: "Accessories" },
+  { name: "Round Keychain", price: "$15.99", category: "Accessories" },
+  { name: "Tennis Socks", price: "$12.99", category: "Accessories" },
+  { name: "Rectangle Magnet", price: "$6.99", category: "Accessories" },
+]
 
-// Shown above the shop. Set to "" to hide it.
-export const shopNote =
-  "Every purchase helps keep our study sessions free and open to every optician."
+export const shopHeadline = "Wear the mission"
+
+export const shopIntro =
+  "Our logo on hoodies, tees, caps, and more — printed and shipped by Spreadshop. Every purchase helps keep our study sessions free and open to every optician."
