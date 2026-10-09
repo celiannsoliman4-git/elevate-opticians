@@ -36,13 +36,13 @@ function ProductCard({ product }: { product: Product }) {
         </div>
       )}
 
-      <div className="flex items-baseline justify-between gap-3 px-4 py-4 sm:px-5">
-        <span className="font-display text-sm font-bold leading-snug text-ink sm:text-base">
+      <div className="px-4 py-4 sm:px-5">
+        <p className="font-display text-sm font-bold leading-snug text-ink sm:text-base">
           {product.name}
-        </span>
-        <span className="shrink-0 text-sm font-medium tabular-nums text-accent">
+        </p>
+        <p className="mt-1 text-sm font-medium tabular-nums text-accent">
           From {product.price}
-        </span>
+        </p>
       </div>
     </a>
   )
