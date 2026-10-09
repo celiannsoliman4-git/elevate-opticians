@@ -74,12 +74,12 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#mission", label: "Our Story", icon: Heart },
   { href: "#founder", label: "Founder", icon: Users2 },
   { href: "#education-partners", label: "Partners", icon: Users2 },
-  { href: "#resources", label: "Education Resources", icon: BookOpen },
+  { href: "#resources", label: "Resources", icon: BookOpen },
   { href: "#news", label: "News & Calendar", icon: Newspaper },
-  { href: "#why-abo", label: "Why American Board of Opticianry (ABO)", icon: HelpCircle },
+  { href: "#why-abo", label: "Why Certify", icon: HelpCircle },
   { href: "#who", label: "Who It's For", icon: Users2 },
   { href: "#shop", label: "Shop", icon: ShoppingBag },
-  { href: "#sponsorship", label: "Sponsorship & Donations", icon: Handshake },
+  { href: "#sponsorship", label: "Support Us", icon: Handshake },
   { href: "#testimonials", label: "Testimonials", icon: Quote },
   { href: "#graduates", label: "Graduates", icon: GraduationCap },
   { href: "#faq", label: "FAQ", icon: HelpCircle },
@@ -142,7 +142,7 @@ export function Nav() {
         </nav>
         <div className="shrink-0 space-y-3 border-t border-white/10 pt-4">
           <p className="px-1 text-xs leading-relaxed text-white/50 [@media(max-height:780px)]:hidden">
-            100% Free · Open to Anyone Pursuing Their American Board of Opticianry (ABO)
+            100% Free · Open to Everyone
           </p>
           <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
             <a href="/#join">Join Free</a>
