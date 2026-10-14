@@ -37,6 +37,22 @@ export function WhyABOMatters() {
         <p className="mt-12 text-base leading-relaxed text-foreground/70">
           American Board of Opticianry (ABO) is more than a credential — it's an investment in your career, your patients, and the optical profession. It demonstrates your commitment to excellence and opens doors to advancement, higher earning potential, and greater professional satisfaction.
         </p>
+
+        <p className="mt-6 text-sm leading-relaxed text-ink/60">
+          Certification is administered by the American Board of Opticianry and
+          the National Contact Lens Examiners. For official exam requirements,
+          dates, and registration, visit{" "}
+          <a
+            href="https://www.abo-ncle.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-ink underline underline-offset-4 transition-colors hover:text-accent"
+          >
+            abo-ncle.org
+          </a>
+          . Elevate Opticians is an independent study community and is not
+          affiliated with ABO-NCLE.
+        </p>
       </div>
     </section>
   )
