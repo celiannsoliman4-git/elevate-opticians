@@ -40,9 +40,6 @@ export function Hero() {
             <Button asChild size="lg" variant="bronze">
               <a href="#join">Join a Study Session</a>
             </Button>
-            <Button asChild size="lg" variant="outlineLight">
-              <a href="#mission">Our Story</a>
-            </Button>
           </div>
 
           <p className="mt-8 font-display text-sm italic tracking-wide text-white/50">
