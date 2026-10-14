@@ -9,6 +9,7 @@ import {
   HelpCircle,
   BookOpen,
   Newspaper,
+  Scale,
   Map,
   PanelLeftClose,
   PanelLeftOpen,
@@ -84,6 +85,7 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#shop", label: "Shop", icon: ShoppingBag },
   { href: "#our-opticians", label: "Our Opticians", icon: GraduationCap },
   { href: "#faq", label: "FAQ", icon: HelpCircle },
+  { href: "#legal", label: "Legal", icon: Scale },
 ]
 
 function NavLinks({

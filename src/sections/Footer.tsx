@@ -2,12 +2,32 @@ import { ShoppingBag } from "lucide-react"
 import { JOIN_EMAIL } from "@/data/programs"
 import { STORE_URL } from "@/data/products"
 
-const links = [
-  { href: "#mission", label: "Our Story" },
-  { href: "#founder", label: "Founder" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#graduates", label: "Graduates" },
-  { href: "#legal", label: "Legal" },
+const linkGroups: { heading: string; links: { href: string; label: string }[] }[] = [
+  {
+    heading: "About",
+    links: [
+      { href: "/#mission", label: "Our Story" },
+      { href: "/#education-partners", label: "Partners" },
+      { href: "/#our-opticians", label: "Our Opticians" },
+    ],
+  },
+  {
+    heading: "Get Started",
+    links: [
+      { href: "/#certification", label: "Get Certified" },
+      { href: "/#resources", label: "Resources" },
+      { href: "/#news", label: "News & Calendar" },
+      { href: "/#faq", label: "FAQ" },
+    ],
+  },
+  {
+    heading: "Support Us",
+    links: [
+      { href: "/#state-associations", label: "For Associations" },
+      { href: "/#sponsorship", label: "Sponsorship & Donations" },
+      { href: "/#shop", label: "Shop" },
+    ],
+  },
 ]
 
 function InstagramIcon({ className }: { className?: string }) {
@@ -46,15 +66,19 @@ export function Footer() {
   return (
     <footer className="bg-ink text-white">
       <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
-        <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
-            <a href="#top" className="flex items-center gap-3">
+            <a href="/#top" className="flex items-center gap-3">
               <img src="/seal.png" alt="" className="h-10 w-10 rounded-full" />
               <span className="font-display text-base font-bold text-white">
                 Elevate Opticians
               </span>
             </a>
-            <div className="mt-4 flex items-center gap-3">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/55">
+              A volunteer-led mentorship community helping opticians across the
+              country earn their certification — so no one studies alone.
+            </p>
+            <div className="mt-5 flex items-center gap-3">
               {socialLinks.map((link) => {
                 const Icon = link.icon
                 return (
@@ -73,17 +97,42 @@ export function Footer() {
             </div>
           </div>
 
-          <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/70">
-            {links.map((l) => (
-              <a key={l.href} href={l.href} className="hover:text-white">
-                {l.label}
-              </a>
+          <nav className="grid gap-10 sm:grid-cols-3">
+            {linkGroups.map((group) => (
+              <div key={group.heading}>
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-gold">
+                  {group.heading}
+                </p>
+                <ul className="mt-4 space-y-2.5">
+                  {group.links.map((l) => (
+                    <li key={l.href}>
+                      <a
+                        href={l.href}
+                        className="text-sm text-white/65 transition-colors hover:text-white"
+                      >
+                        {l.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </nav>
         </div>
 
-        <div className="mt-10 border-t border-white/15 pt-6 text-xs text-white/50">
-          <p>© {year} Elevate Opticians · Founded in the Bay Area · {JOIN_EMAIL}</p>
+        <div className="mt-12 flex flex-col gap-3 border-t border-white/15 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {year} Elevate Opticians · Founded 2020</p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <a
+              href={`mailto:${JOIN_EMAIL}`}
+              className="transition-colors hover:text-white"
+            >
+              {JOIN_EMAIL}
+            </a>
+            <a href="/#legal" className="transition-colors hover:text-white">
+              Legal &amp; Privacy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
