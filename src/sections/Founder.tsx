@@ -8,72 +8,60 @@ function LinkedinIcon({ className }: { className?: string }) {
   )
 }
 
+type Person = {
+  name: string
+  title: string
+  bio: string
+  linkedin?: string
+}
+
+function PersonCard({ person, photo }: { person: Person; photo: string }) {
+  return (
+    <div className="flex h-full flex-col rounded-2xl border border-ink/10 bg-gold/15 p-8">
+      <img
+        src={photo}
+        alt={person.name}
+        className="h-56 w-44 self-center rounded-lg object-cover object-top ring-2 ring-bronze/40 sm:self-start"
+      />
+      <div className="mt-6 flex items-center gap-3">
+        <p className="font-display text-2xl font-bold text-ink">
+          {person.name}
+        </p>
+        {person.linkedin && (
+          <a
+            href={person.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${person.name} on LinkedIn`}
+            className="text-ink/50 transition-colors hover:text-accent"
+          >
+            <LinkedinIcon className="size-5" />
+          </a>
+        )}
+      </div>
+      <p className="mt-1 text-sm font-medium uppercase tracking-wide text-accent">
+        {person.title}
+      </p>
+      <p className="mt-4 text-base leading-relaxed text-foreground/70">
+        {person.bio}
+      </p>
+    </div>
+  )
+}
+
+// Rendered as the closing part of the Our Story section.
 export function Founder() {
   return (
-    <section id="founder" className="bg-white py-20 sm:py-24">
+    <section className="bg-white pb-20 sm:pb-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
-          Meet the Founder
+          The People Behind It
         </p>
 
-        <div className="mt-6 flex flex-col items-start gap-8 border border-ink/10 bg-gold/15 p-10 sm:flex-row sm:items-center">
-          <img
-            src="/kiara.jpg"
-            alt={founder.name}
-            className="h-56 w-44 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
-          />
-          <div>
-            <div className="flex items-center gap-3">
-              <p className="font-display text-3xl font-bold text-ink sm:text-4xl">
-                {founder.name}
-              </p>
-              <a
-                href={founder.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${founder.name} on LinkedIn`}
-                className="text-ink/50 transition-colors hover:text-accent"
-              >
-                <LinkedinIcon className="size-6" />
-              </a>
-            </div>
-            <p className="text-sm font-medium uppercase tracking-wide text-accent">
-              {founder.title}
-            </p>
-            <p className="mt-3 max-w-md text-lg text-foreground/70">
-              {founder.bio}
-            </p>
-          </div>
+        <div className="mt-8 grid items-stretch gap-6 sm:grid-cols-2">
+          <PersonCard person={founder} photo="/kiara.jpg" />
+          <PersonCard person={coordinator} photo="/lian.jpg" />
         </div>
-
-        <div className="mt-4 flex flex-col items-start gap-4 border border-ink/10 bg-white p-6 sm:flex-row sm:items-center">
-          <img
-            src="/lian.jpg"
-            alt={coordinator.name}
-            className="h-32 w-24 shrink-0 rounded-lg object-cover ring-2 ring-bronze/40"
-          />
-          <div>
-            <div className="flex items-center gap-2">
-              <p className="font-display text-lg font-bold text-ink">
-                {coordinator.name}
-              </p>
-              <a
-                href={coordinator.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${coordinator.name} on LinkedIn`}
-                className="text-ink/50 transition-colors hover:text-accent"
-              >
-                <LinkedinIcon className="size-4" />
-              </a>
-            </div>
-            <p className="text-xs font-medium uppercase tracking-wide text-accent">
-              {coordinator.title}
-            </p>
-            <p className="mt-2 text-sm text-foreground/70">{coordinator.bio}</p>
-          </div>
-        </div>
-
       </div>
     </section>
   )

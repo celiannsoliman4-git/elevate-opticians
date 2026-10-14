@@ -11,7 +11,7 @@ function Stat({ label, value }: { label: string; value: string }) {
 
 export function Mission() {
   return (
-    <section id="mission" className="bg-white py-24 sm:py-32">
+    <section id="mission" className="bg-white pb-12 pt-24 sm:pb-16 sm:pt-32">
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
           Our Story

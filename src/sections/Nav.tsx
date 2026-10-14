@@ -76,7 +76,6 @@ function SocialLinks() {
 
 const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#mission", label: "Our Story", icon: Heart },
-  { href: "#founder", label: "Founder", icon: Users2 },
   { href: "#education-partners", label: "Partners", icon: Users2 },
   { href: "#resources", label: "Resources", icon: BookOpen },
   { href: "#news", label: "News & Calendar", icon: Newspaper },
