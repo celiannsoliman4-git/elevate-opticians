@@ -17,34 +17,36 @@ type Person = {
 
 function PersonCard({ person, photo }: { person: Person; photo: string }) {
   return (
-    <div className="flex h-full flex-col rounded-2xl border border-ink/10 bg-gold/15 p-8">
+    <div className="flex flex-col gap-8 rounded-2xl border border-ink/10 bg-gold/15 p-8 sm:flex-row sm:items-start sm:p-10">
       <img
         src={photo}
         alt={person.name}
-        className="h-56 w-44 self-center rounded-lg object-cover object-top ring-2 ring-bronze/40 sm:self-start"
+        className="h-56 w-44 shrink-0 self-center rounded-lg object-cover object-top ring-2 ring-bronze/40 sm:self-start"
       />
-      <div className="mt-6 flex items-center gap-3">
-        <p className="font-display text-2xl font-bold text-ink">
-          {person.name}
+      <div className="flex-1">
+        <div className="flex items-center gap-3">
+          <p className="font-display text-2xl font-bold text-ink sm:text-3xl">
+            {person.name}
+          </p>
+          {person.linkedin && (
+            <a
+              href={person.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${person.name} on LinkedIn`}
+              className="text-ink/50 transition-colors hover:text-accent"
+            >
+              <LinkedinIcon className="size-5" />
+            </a>
+          )}
+        </div>
+        <p className="mt-1 text-sm font-medium uppercase tracking-wide text-accent">
+          {person.title}
         </p>
-        {person.linkedin && (
-          <a
-            href={person.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${person.name} on LinkedIn`}
-            className="text-ink/50 transition-colors hover:text-accent"
-          >
-            <LinkedinIcon className="size-5" />
-          </a>
-        )}
+        <p className="mt-4 text-base leading-relaxed text-foreground/70">
+          {person.bio}
+        </p>
       </div>
-      <p className="mt-1 text-sm font-medium uppercase tracking-wide text-accent">
-        {person.title}
-      </p>
-      <p className="mt-4 text-base leading-relaxed text-foreground/70">
-        {person.bio}
-      </p>
     </div>
   )
 }
@@ -58,7 +60,7 @@ export function Founder() {
           The People Behind It
         </p>
 
-        <div className="mt-8 grid items-stretch gap-6 sm:grid-cols-2">
+        <div className="mt-8 space-y-6">
           <PersonCard person={founder} photo="/kiara.jpg" />
           <PersonCard person={coordinator} photo="/lian.jpg" />
         </div>
