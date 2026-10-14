@@ -30,11 +30,12 @@ export function Join() {
     <section id="join" className="bg-ink py-20 sm:py-24">
       <div className="mx-auto max-w-2xl px-6 text-center lg:px-10">
         <h2 className="font-display text-2xl font-bold text-white sm:text-3xl">
-          No dues. No gatekeeping. Just show up.
+          You don't have to do this alone.
         </h2>
         <p className="mt-3 text-white/70">
-          Drop your email and we'll send you the weekly schedule, topics,
-          and the Zoom link.
+          No dues, no gatekeeping — wherever you are in the country. Drop your
+          email and we'll send you the weekly schedule, topics, and the Zoom
+          link.
         </p>
 
         <form

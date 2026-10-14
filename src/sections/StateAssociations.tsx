@@ -1,21 +1,24 @@
-import { Map, Users, BookOpen, Handshake } from "lucide-react"
+import { Map, HeartHandshake, GraduationCap, Users } from "lucide-react"
 import { JOIN_EMAIL } from "@/data/programs"
 
-const offerings = [
+const pipeline = [
   {
-    icon: BookOpen,
-    title: "A proven study model",
-    body: "Six years of weekly sessions, practice exams, and ANSI drills — a format aspiring licensed opticians can run from day one instead of building it from scratch.",
+    icon: HeartHandshake,
+    step: "01",
+    title: "No one studies alone",
+    body: "Too many aspiring opticians in your state are preparing for certification by themselves, with no mentor and no one to ask. We give them a community, weekly sessions, and people who have already walked the path.",
+  },
+  {
+    icon: GraduationCap,
+    step: "02",
+    title: "They earn their certification",
+    body: "Six years of weekly study sessions, practice exams, and ANSI drills — a proven format, free to every participant, that turns determined candidates into certified opticians.",
   },
   {
     icon: Users,
-    title: "Mentors who've done it",
-    body: "Certified opticians, educators, and industry leaders who volunteer their time to coach candidates through the exam and beyond.",
-  },
-  {
-    icon: Handshake,
-    title: "Partnership, not competition",
-    body: "We don't replace your association — we strengthen it. Your members get support, your organization gets stronger retention and a reason to join.",
+    step: "03",
+    title: "They become your members",
+    body: "Newly certified opticians are the most invested people in the profession, and we actively encourage them to join the association representing their state. Every optician we help certify is a future member for you.",
   },
 ]
 
@@ -31,27 +34,33 @@ export function StateAssociations() {
             </span>
           </div>
           <h2 className="mt-6 font-display text-3xl font-bold leading-tight sm:text-4xl">
-            Bring certification support to your state
+            Your future members are studying right now
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-white/75">
-            What began as one study group in California now reaches opticians
-            across the country. We work with state associations to bring
-            mentorship, exam preparation, and a culture of lifting each other up
-            to their members — wherever they practice.
+            Partner with us to bring Elevate Opticians to your state. We support
+            aspiring licensed opticians through certification — and send them
+            toward the association that represents them. You gain members who
+            are already certified, already engaged, and already in the habit of
+            showing up for their profession.
           </p>
         </div>
 
         <div className="mt-14 grid gap-10 sm:grid-cols-3">
-          {offerings.map((o) => {
-            const Icon = o.icon
+          {pipeline.map((p) => {
+            const Icon = p.icon
             return (
-              <div key={o.title}>
-                <Icon className="size-6 text-gold" strokeWidth={1.5} />
+              <div key={p.title}>
+                <div className="flex items-center gap-3">
+                  <Icon className="size-6 text-gold" strokeWidth={1.5} />
+                  <span className="font-display text-sm font-bold text-white/25">
+                    {p.step}
+                  </span>
+                </div>
                 <h3 className="mt-4 font-display text-lg font-bold text-white">
-                  {o.title}
+                  {p.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/65">
-                  {o.body}
+                  {p.body}
                 </p>
               </div>
             )
@@ -59,8 +68,10 @@ export function StateAssociations() {
         </div>
 
         <div className="mt-14 border-t border-white/15 pt-8">
-          <p className="text-base text-white/75">
-            Leading an association and want to talk?{" "}
+          <p className="text-base leading-relaxed text-white/75">
+            We never charge opticians, and we don't compete for your members —
+            we help build them. If you lead an association and want Elevate in
+            your state, reach out at{" "}
             <span className="font-medium text-gold">{JOIN_EMAIL}</span>
           </p>
         </div>
