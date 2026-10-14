@@ -11,8 +11,6 @@ import {
   Newspaper,
   Scale,
   Map,
-  PanelLeftClose,
-  PanelLeftOpen,
   UserPlus,
   ShoppingBag,
   Handshake,
@@ -174,7 +172,31 @@ export function Nav({
         }`}
       >
         <div className="shrink-0">
-          <Logo collapsed={collapsed} />
+          <div
+            className={`flex items-center ${
+              collapsed ? "justify-center" : "justify-between gap-2"
+            }`}
+          >
+            {!collapsed && <Logo collapsed={collapsed} />}
+            <button
+              onClick={onToggleCollapse}
+              title={collapsed ? "Expand menu" : "Collapse menu"}
+              aria-label={collapsed ? "Expand menu" : "Collapse menu"}
+              aria-expanded={!collapsed}
+              className="text-white/80 transition-colors hover:text-gold"
+            >
+              <Menu className="size-6" />
+            </button>
+          </div>
+          {collapsed && (
+            <a href="/#top" title="Elevate Opticians" className="mt-4 flex justify-center">
+              <img
+                src="/seal.png"
+                alt="Elevate Opticians seal"
+                className="h-10 w-10 rounded-full"
+              />
+            </a>
+          )}
           {!collapsed && <SocialLinks />}
         </div>
         {/* min-h-0 lets this shrink below its content, so on short screens the
@@ -202,24 +224,6 @@ export function Nav({
               <a href="/#join">Join Free</a>
             </Button>
           )}
-          <button
-            onClick={onToggleCollapse}
-            title={collapsed ? "Expand menu" : "Collapse menu"}
-            aria-label={collapsed ? "Expand menu" : "Collapse menu"}
-            aria-expanded={!collapsed}
-            className={`flex w-full items-center gap-2 rounded-md py-2 text-xs font-medium text-white/45 transition-colors hover:bg-white/10 hover:text-white ${
-              collapsed ? "justify-center px-2" : "px-3"
-            }`}
-          >
-            {collapsed ? (
-              <PanelLeftOpen className="size-4 shrink-0" strokeWidth={1.75} />
-            ) : (
-              <>
-                <PanelLeftClose className="size-4 shrink-0" strokeWidth={1.75} />
-                Collapse
-              </>
-            )}
-          </button>
         </div>
       </aside>
 
