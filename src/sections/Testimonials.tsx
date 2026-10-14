@@ -12,23 +12,20 @@ export function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="bg-gold/15 py-20 sm:py-24">
+    <section className="bg-white pb-20 sm:pb-24">
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
-              Testimonials
-            </p>
-            <h2 className="mt-6 font-display text-2xl font-bold text-ink sm:text-3xl">
-              What Graduates Say
-            </h2>
+            <h3 className="font-display text-xl font-bold text-ink">
+              What graduates say
+            </h3>
           </div>
           <p className="text-xs font-medium uppercase tracking-wide text-ink/40">
             {index + 1} of {total}
           </p>
         </div>
 
-        <div className="mt-8 border border-ink/10 bg-white p-8">
+        <div className="mt-6 rounded-lg border border-ink/10 bg-gold/15 p-8">
           {t.quote.split("\n\n").map((paragraph, i) => (
             <p
               key={i}

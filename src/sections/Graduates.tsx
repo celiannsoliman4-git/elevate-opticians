@@ -10,13 +10,19 @@ function LinkedinIcon({ className }: { className?: string }) {
 
 export function Graduates() {
   return (
-    <section id="graduates" className="bg-white py-20 sm:py-24">
+    <section id="our-opticians" className="bg-white pb-12 pt-20 sm:pb-16 sm:pt-24">
       <div className="mx-auto max-w-5xl px-6 lg:px-10">
-        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
-          Our graduates
+        <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
+          Our Opticians
+        </p>
+        <h2 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
+          25 certified — and counting
         </h2>
+        <h3 className="mt-10 font-display text-xl font-bold text-ink">
+          Our graduates
+        </h3>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-6 grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {graduates.map((grad, i) =>
             grad.linkedin ? (
               <a

@@ -29,10 +29,10 @@ export function Home() {
       <WhyABOMatters />
       <WhoItsFor />
       <StateAssociations />
-      <Shop />
       <Sponsorship />
-      <Testimonials />
+      <Shop />
       <Graduates />
+      <Testimonials />
       <FAQ />
       <Join />
       <Legal />

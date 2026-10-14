@@ -5,7 +5,6 @@ import {
   X,
   Heart,
   Users2,
-  Quote,
   GraduationCap,
   HelpCircle,
   BookOpen,
@@ -81,10 +80,9 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#news", label: "News & Calendar", icon: Newspaper },
   { href: "#certification", label: "Why Certify", icon: HelpCircle },
   { href: "#state-associations", label: "For Associations", icon: Map },
-  { href: "#shop", label: "Shop", icon: ShoppingBag },
   { href: "#sponsorship", label: "Support Us", icon: Handshake },
-  { href: "#testimonials", label: "Testimonials", icon: Quote },
-  { href: "#graduates", label: "Graduates", icon: GraduationCap },
+  { href: "#shop", label: "Shop", icon: ShoppingBag },
+  { href: "#our-opticians", label: "Our Opticians", icon: GraduationCap },
   { href: "#faq", label: "FAQ", icon: HelpCircle },
 ]
 
