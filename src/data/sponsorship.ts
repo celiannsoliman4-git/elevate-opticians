@@ -95,6 +95,11 @@ export const partnerLogos: { name: string; logo: string; url?: string }[] = [
     logo: "/partners/buhay-photography.png",
     url: "https://www.buhayphotography.com/",
   },
+  {
+    name: "Cooley LLP",
+    logo: "/partners/cooley.png",
+    url: "https://www.cooley.com/",
+  },
 ]
 
 export const donations = {

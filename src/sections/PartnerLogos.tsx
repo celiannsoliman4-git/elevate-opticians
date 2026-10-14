@@ -17,7 +17,9 @@ export function PartnerLogos() {
                   src={p.logo}
                   alt={p.name}
                   title={p.name}
-                  className="h-12 w-auto max-w-[180px] object-contain opacity-70 transition-opacity hover:opacity-100 sm:h-14"
+                  // Full opacity: several of these are trademarked marks whose
+                  // guidelines don't permit altering their appearance.
+                  className="h-12 w-auto max-w-[180px] object-contain transition-transform hover:scale-105 sm:h-14"
                 />
               )
               return p.url ? (
