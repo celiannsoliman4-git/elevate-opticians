@@ -5,7 +5,7 @@ const offerings = [
   {
     icon: BookOpen,
     title: "A proven study model",
-    body: "Six years of weekly sessions, practice exams, and ANSI drills — a format your members can run from day one instead of building it from scratch.",
+    body: "Six years of weekly sessions, practice exams, and ANSI drills — a format aspiring licensed opticians can run from day one instead of building it from scratch.",
   },
   {
     icon: Users,
