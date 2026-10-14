@@ -9,14 +9,14 @@ export function WhyABOMatters() {
   ]
 
   return (
-    <section id="why-abo" className="bg-gold/15 py-20 sm:py-24">
+    <section id="certification" className="bg-gold/15 pb-12 pt-20 sm:pb-16 sm:pt-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-10">
         <p className="text-xs font-medium uppercase tracking-[0.32em] text-ink/60">
-          The Value of Certification
+          Certification &amp; Community
         </p>
 
         <h2 className="mt-6 font-display text-3xl font-bold text-ink sm:text-4xl">
-          Why Earn American Board of Opticianry (ABO) Certification?
+          Why certify — and who it's for
         </h2>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
