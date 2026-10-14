@@ -78,7 +78,7 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#education-partners", label: "Partners", icon: Users2 },
   { href: "#resources", label: "Resources", icon: BookOpen },
   { href: "#news", label: "News & Calendar", icon: Newspaper },
-  { href: "#certification", label: "Why Certify", icon: HelpCircle },
+  { href: "#certification", label: "Get Certified", icon: GraduationCap },
   { href: "#state-associations", label: "For Associations", icon: Map },
   { href: "#sponsorship", label: "Support Us", icon: Handshake },
   { href: "#shop", label: "Shop", icon: ShoppingBag },
