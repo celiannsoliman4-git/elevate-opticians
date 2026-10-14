@@ -11,14 +11,14 @@ const pipeline = [
   {
     icon: GraduationCap,
     step: "02",
-    title: "They earn their certification",
-    body: "Six years of weekly study sessions, practice exams, and ANSI drills — a proven format, free to every participant, that turns determined candidates into certified opticians.",
+    title: "They prepare with people who've done it",
+    body: "Six years of weekly study sessions, practice exams, and ANSI drills, free to every participant — led by certified opticians, educators, and industry professionals who volunteer their time.",
   },
   {
     icon: Users,
     step: "03",
-    title: "They become your members",
-    body: "Newly certified opticians are the most invested people in the profession, and we actively encourage them to join the association representing their state. Every optician we help certify is a future member for you.",
+    title: "We point them toward you",
+    body: "Opticians who have just earned their certification tend to be deeply invested in the profession. We encourage every graduate to connect with the association representing their state — the people best placed to support whatever comes next.",
   },
 ]
 
@@ -34,14 +34,13 @@ export function StateAssociations() {
             </span>
           </div>
           <h2 className="mt-6 font-display text-3xl font-bold leading-tight sm:text-4xl">
-            Your future members are studying right now
+            Growing the profession in your state
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-white/75">
-            Partner with us to bring Elevate Opticians to your state. We support
-            aspiring licensed opticians through certification — and send them
-            toward the association that represents them. You gain members who
-            are already certified, already engaged, and already in the habit of
-            showing up for their profession.
+            Partner with us to bring Elevate Opticians to your state. We help
+            aspiring licensed opticians prepare for certification at no cost to
+            them, and we encourage everyone who comes through our sessions to
+            get involved with the association that represents them.
           </p>
         </div>
 
@@ -69,9 +68,9 @@ export function StateAssociations() {
 
         <div className="mt-14 border-t border-white/15 pt-8">
           <p className="text-base leading-relaxed text-white/75">
-            We never charge opticians, and we don't compete for your members —
-            we help build them. If you lead an association and want Elevate in
-            your state, reach out at{" "}
+            We never charge opticians, and we're not competing for your
+            members. If you lead an association and want Elevate in your state,
+            reach out at{" "}
             <span className="font-medium text-gold">{JOIN_EMAIL}</span>
           </p>
         </div>
