@@ -69,8 +69,8 @@ export function StateAssociations() {
         <div className="mt-14 border-t border-white/15 pt-8">
           <p className="text-base leading-relaxed text-white/75">
             We never charge opticians, and we're not competing for your
-            members. If you lead an association and want Elevate in your state,
-            reach out at{" "}
+            members. If you lead an association and want Elevate Opticians in
+            your state, reach out at{" "}
             <span className="font-medium text-gold">{JOIN_EMAIL}</span>
           </p>
         </div>
