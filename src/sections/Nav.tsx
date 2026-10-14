@@ -10,6 +10,9 @@ import {
   HelpCircle,
   BookOpen,
   Newspaper,
+  PanelLeftClose,
+  PanelLeftOpen,
+  UserPlus,
   ShoppingBag,
   Handshake,
   type LucideIcon,
@@ -85,25 +88,48 @@ const links: { href: string; label: string; icon: LucideIcon }[] = [
   { href: "#faq", label: "FAQ", icon: HelpCircle },
 ]
 
-function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
+function NavLinks({
+  onNavigate,
+  collapsed = false,
+}: {
+  onNavigate?: () => void
+  collapsed?: boolean
+}) {
   return (
     <ul className="space-y-0.5">
       {links.map((l) => {
         const Icon = l.icon
         const isPage = l.href.startsWith("/")
-        const linkClass =
-          "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+        const linkClass = collapsed
+          ? "flex items-center justify-center rounded-md px-2 py-2.5 text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+          : "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+        const inner = (
+          <>
+            <Icon className="size-4 shrink-0" strokeWidth={1.75} />
+            {!collapsed && l.label}
+          </>
+        )
         return (
           <li key={l.href}>
             {isPage ? (
-              <Link to={l.href} onClick={onNavigate} className={linkClass}>
-                <Icon className="size-4 shrink-0" strokeWidth={1.75} />
-                {l.label}
+              <Link
+                to={l.href}
+                onClick={onNavigate}
+                className={linkClass}
+                title={collapsed ? l.label : undefined}
+                aria-label={collapsed ? l.label : undefined}
+              >
+                {inner}
               </Link>
             ) : (
-              <a href={`/${l.href}`} onClick={onNavigate} className={linkClass}>
-                <Icon className="size-4 shrink-0" strokeWidth={1.75} />
-                {l.label}
+              <a
+                href={`/${l.href}`}
+                onClick={onNavigate}
+                className={linkClass}
+                title={collapsed ? l.label : undefined}
+                aria-label={collapsed ? l.label : undefined}
+              >
+                {inner}
               </a>
             )}
           </li>
@@ -113,40 +139,87 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   )
 }
 
-function Logo() {
+function Logo({ collapsed = false }: { collapsed?: boolean }) {
   return (
-    <a href="/#top" className="flex items-center gap-2.5">
+    <a
+      href="/#top"
+      className={collapsed ? "flex justify-center" : "flex items-center gap-2.5"}
+      title={collapsed ? "Elevate Opticians" : undefined}
+    >
       <img src="/seal.png" alt="Elevate Opticians seal" className="h-10 w-10 rounded-full" />
-      <span className="font-display text-base font-bold text-white">
-        Elevate Opticians
-      </span>
+      {!collapsed && (
+        <span className="font-display text-base font-bold text-white">
+          Elevate Opticians
+        </span>
+      )}
     </a>
   )
 }
 
-export function Nav() {
+export function Nav({
+  collapsed = false,
+  onToggleCollapse,
+}: {
+  collapsed?: boolean
+  onToggleCollapse?: () => void
+}) {
   const [open, setOpen] = useState(false)
 
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col overflow-hidden bg-ink px-5 py-5 lg:flex">
+      <aside
+        className={`fixed inset-y-0 left-0 z-40 hidden flex-col overflow-hidden bg-ink py-5 transition-[width] duration-200 lg:flex ${
+          collapsed ? "w-[72px] px-3" : "w-64 px-5"
+        }`}
+      >
         <div className="shrink-0">
-          <Logo />
-          <SocialLinks />
+          <Logo collapsed={collapsed} />
+          {!collapsed && <SocialLinks />}
         </div>
         {/* min-h-0 lets this shrink below its content, so on short screens the
             nav scrolls internally instead of pushing the CTA off-screen */}
         <nav className="mt-3 min-h-0 flex-1 overflow-y-auto">
-          <NavLinks />
+          <NavLinks collapsed={collapsed} />
         </nav>
         <div className="shrink-0 space-y-3 border-t border-white/10 pt-4">
-          <p className="px-1 text-xs leading-relaxed text-white/50 [@media(max-height:780px)]:hidden">
-            100% Free · Open to Everyone
-          </p>
-          <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
-            <a href="/#join">Join Free</a>
-          </Button>
+          {!collapsed && (
+            <p className="px-1 text-xs leading-relaxed text-white/50 [@media(max-height:780px)]:hidden">
+              100% Free · Open to Everyone
+            </p>
+          )}
+          {collapsed ? (
+            <a
+              href="/#join"
+              title="Join Free"
+              aria-label="Join Free"
+              className="flex items-center justify-center rounded-md bg-white px-2 py-2.5 text-ink transition-colors hover:bg-gold"
+            >
+              <UserPlus className="size-4" strokeWidth={1.75} />
+            </a>
+          ) : (
+            <Button asChild className="w-full bg-white text-ink hover:bg-white/90">
+              <a href="/#join">Join Free</a>
+            </Button>
+          )}
+          <button
+            onClick={onToggleCollapse}
+            title={collapsed ? "Expand menu" : "Collapse menu"}
+            aria-label={collapsed ? "Expand menu" : "Collapse menu"}
+            aria-expanded={!collapsed}
+            className={`flex w-full items-center gap-2 rounded-md py-2 text-xs font-medium text-white/45 transition-colors hover:bg-white/10 hover:text-white ${
+              collapsed ? "justify-center px-2" : "px-3"
+            }`}
+          >
+            {collapsed ? (
+              <PanelLeftOpen className="size-4 shrink-0" strokeWidth={1.75} />
+            ) : (
+              <>
+                <PanelLeftClose className="size-4 shrink-0" strokeWidth={1.75} />
+                Collapse
+              </>
+            )}
+          </button>
         </div>
       </aside>
 
