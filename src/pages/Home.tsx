@@ -9,6 +9,7 @@ import { Shop } from "@/pages/Shop"
 import { Sponsorship } from "@/pages/Sponsorship"
 import { WhyABOMatters } from "@/sections/WhyABOMatters"
 import { WhoItsFor } from "@/sections/WhoItsFor"
+import { StateAssociations } from "@/sections/StateAssociations"
 import { Testimonials } from "@/sections/Testimonials"
 import { Graduates } from "@/sections/Graduates"
 import { FAQ } from "@/sections/FAQ"
@@ -27,6 +28,7 @@ export function Home() {
       <NewsAndCalendar />
       <WhyABOMatters />
       <WhoItsFor />
+      <StateAssociations />
       <Shop />
       <Sponsorship />
       <Testimonials />

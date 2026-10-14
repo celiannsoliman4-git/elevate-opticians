@@ -18,7 +18,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl gap-16 px-6 pb-20 pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:px-10 lg:pb-28 lg:pt-24">
         <div>
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.32em] text-gold">
-            Founded 2020 · Bay Area, California
+            Founded 2020 · Serving Opticians Nationwide
           </p>
 
           <h1 className="font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
@@ -30,9 +30,10 @@ export function Hero() {
           </h1>
 
           <p className="mt-8 max-w-xl text-lg text-white/80">
-            Elevate Opticians is a free, volunteer-run mentorship community
-            helping opticians everywhere pass the American Board of Opticianry (ABO) exam — no matter where
-            you work or your experience level.
+            Elevate Opticians is a volunteer-led mentorship community helping
+            opticians across the country earn their American Board of Opticianry (ABO)
+            certification — and partnering with state associations to build that
+            support everywhere.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">

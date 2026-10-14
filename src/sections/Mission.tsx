@@ -112,12 +112,15 @@ export function Mission() {
           </div>
 
           <p>
-            As Elevate Opticians continues to grow, so does its vision. The
-            organization remains committed to fostering a culture of
-            kindness, inclusion, mentorship, and professional excellence.
-            The goal is not only to help more opticians pass an exam but
-            also to build a community where no one feels alone in their
-            journey.
+            As Elevate Opticians continues to grow, so does its vision. What
+            started with a handful of opticians in one California office now
+            reaches professionals across the country, and we work alongside
+            state associations and industry partners to bring that same support
+            to their members. The organization remains committed to fostering a
+            culture of kindness, inclusion, mentorship, and professional
+            excellence. The goal is not only to help more opticians pass an exam
+            but also to build a community where no one feels alone in their
+            journey — in any state.
           </p>
           <p className="font-medium text-ink">
             This is only the beginning.

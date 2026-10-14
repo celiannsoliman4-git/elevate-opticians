@@ -84,6 +84,10 @@ export const whoWeServe: Audience[] = [
     description: "No matter where you are on your journey, you'll find education, encouragement, and community here.",
   },
   {
+    title: "State Associations",
+    description: "Partner with us to bring certification support, mentorship, and exam preparation to opticians across your state.",
+  },
+  {
     title: "Mentors & Volunteers",
     description: "Give back to the profession by helping others learn, grow, and achieve their goals.",
   },

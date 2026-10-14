@@ -20,11 +20,11 @@ export function Sponsorship() {
             Invest in the next generation of opticians
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/75">
-            Elevate Opticians advances the profession through continuous
-            education, American Board of Opticianry (ABO) exam preparation,
-            mentorship, and workforce development. We're a trusted,
-            vendor-agnostic resource connecting opticians, optometrists,
-            educators, and industry partners nationwide.
+            Elevate Opticians advances the profession through education,
+            American Board of Opticianry (ABO) exam preparation, and mentorship
+            — now reaching opticians across the country. We're a trusted,
+            vendor-neutral partner to opticians, optometrists, educators, state
+            associations, and industry leaders nationwide.
           </p>
         </div>
 
