@@ -100,6 +100,20 @@ export const partnerLogos: { name: string; logo: string; url?: string }[] = [
     logo: "/partners/cooley.png",
     url: "https://www.cooley.com/",
   },
+  {
+    name: "Golden State Opticians",
+    logo: "/partners/golden-state-opticians.png",
+    url: "https://www.goldenstateopticians.org/",
+  },
+]
+
+// State associations we work alongside. Add new states here as they come on.
+export const statesServed: { state: string; org: string; url?: string }[] = [
+  {
+    state: "California",
+    org: "Golden State Opticians",
+    url: "https://www.goldenstateopticians.org/",
+  },
 ]
 
 export const donations = {

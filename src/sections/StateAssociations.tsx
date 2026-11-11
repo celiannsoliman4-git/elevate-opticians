@@ -1,5 +1,6 @@
-import { Map, HeartHandshake, GraduationCap, Users } from "lucide-react"
+import { Map, HeartHandshake, GraduationCap, Users, ExternalLink } from "lucide-react"
 import { JOIN_EMAIL } from "@/data/programs"
+import { statesServed } from "@/data/sponsorship"
 
 const pipeline = [
   {
@@ -66,7 +67,37 @@ export function StateAssociations() {
           })}
         </div>
 
-        <div className="mt-14 border-t border-white/15 pt-8">
+        {statesServed.length > 0 && (
+          <div className="mt-14 border-t border-white/15 pt-10">
+            <p className="text-xs font-medium uppercase tracking-[0.32em] text-gold">
+              States We Serve
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
+              {statesServed.map((s) => (
+                <li key={s.state}>
+                  <p className="font-display text-xl font-bold text-white">
+                    {s.state}
+                  </p>
+                  {s.url ? (
+                    <a
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-0.5 inline-flex items-center gap-1.5 text-sm text-white/65 underline underline-offset-4 transition-colors hover:text-gold"
+                    >
+                      {s.org}
+                      <ExternalLink className="size-3.5" />
+                    </a>
+                  ) : (
+                    <p className="mt-0.5 text-sm text-white/65">{s.org}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <div className="mt-12 border-t border-white/15 pt-8">
           <p className="text-base leading-relaxed text-white/75">
             We never charge opticians, and we're not competing for your
             members. If you lead an association and want Elevate Opticians in
