@@ -38,7 +38,7 @@ export function StateAssociations() {
             Growing the profession in your state
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-white/75">
-            Partner with us to bring Elevate Opticians to your state. We help
+            Work with us to bring Elevate Opticians to your state. We help
             aspiring licensed opticians prepare for certification at no cost to
             them, and we encourage everyone who comes through our sessions to
             get involved with the association that represents them.
@@ -70,7 +70,7 @@ export function StateAssociations() {
         {statesServed.length > 0 && (
           <div className="mt-14 border-t border-white/15 pt-10">
             <p className="text-xs font-medium uppercase tracking-[0.32em] text-gold">
-              In Partnership With
+              A Resource For
             </p>
             <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
               {statesServed.map((s) => (
