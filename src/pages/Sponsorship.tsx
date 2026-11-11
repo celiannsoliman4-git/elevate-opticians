@@ -23,8 +23,8 @@ export function Sponsorship() {
             Elevate Opticians advances the profession through education,
             American Board of Opticianry (ABO) exam preparation, and mentorship
             — now reaching opticians across the country. We're a trusted,
-            vendor-neutral partner to opticians, optometrists, educators, state
-            associations, and industry leaders nationwide.
+            vendor-neutral resource for opticians, optometrists, educators,
+            state associations, and industry leaders nationwide.
           </p>
         </div>
 

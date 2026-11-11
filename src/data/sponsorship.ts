@@ -73,7 +73,7 @@ export const sponsorAnOptician = {
 // Organizations we work with. Logos live in public/partners/.
 // Heading is deliberately "Partners & Supporters" rather than "Sponsors" —
 // change `partnersHeading` if a formal sponsorship is in place.
-export const partnersHeading = "Partners & supporters"
+export const partnersHeading = "Organizations we work with"
 
 export const partnerLogos: { name: string; logo: string; url?: string }[] = [
   {
