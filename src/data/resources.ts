@@ -15,4 +15,10 @@ export const resources: Resource[] = [
     image: "/andrew.png",
     provider: "UUniversity",
   },
+  {
+    name: "Golden State Opticians",
+    url: "https://www.goldenstateopticians.org/",
+    description:
+      "A statewide society for California opticians — CPOA, LDO, or ABOC — uniting the profession through education, certification, and advocacy.",
+  },
 ]
