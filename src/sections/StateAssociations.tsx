@@ -70,7 +70,7 @@ export function StateAssociations() {
         {statesServed.length > 0 && (
           <div className="mt-14 border-t border-white/15 pt-10">
             <p className="text-xs font-medium uppercase tracking-[0.32em] text-gold">
-              States We Serve
+              In Partnership With
             </p>
             <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
               {statesServed.map((s) => (
